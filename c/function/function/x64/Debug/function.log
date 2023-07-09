@@ -1,0 +1,7 @@
+﻿  function.cpp
+E:\CS2024\c\function\function\function.cpp(10,17): warning C4305: 'argument': truncation from 'double' to 'float'
+E:\CS2024\c\function\function\function.cpp(11,12): warning C4305: 'argument': truncation from 'double' to 'float'
+E:\CS2024\c\function\function\function.cpp(12,21): warning C4305: 'argument': truncation from 'double' to 'float'
+E:\CS2024\c\function\function\function.cpp(12,12): warning C4305: 'argument': truncation from 'double' to 'float'
+E:\CS2024\c\function\function\function.cpp(14,31): warning C4305: 'argument': truncation from 'double' to 'float'
+  function.vcxproj -> E:\CS2024\c\function\x64\Debug\function.exe
