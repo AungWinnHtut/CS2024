@@ -1,0 +1,4 @@
+﻿  fileio.cpp
+E:\CS2024\c\fileio\fileio\fileio.cpp(16,10): warning C4305: 'initializing': truncation from 'double' to 'float'
+E:\CS2024\c\fileio\fileio\fileio.cpp(17,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  fileio.vcxproj -> E:\CS2024\c\fileio\x64\Debug\fileio.exe
