@@ -19,9 +19,10 @@ else:
     print('Wrond day!')
     exit()
 
-file = open(filename,'r',encoding="utf-8")
+file = open(filename,'r')
 data = file.read()
 print(data)
 file.close()
+
 
 os.system('notepad '+filename)

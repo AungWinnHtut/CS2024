@@ -40,29 +40,188 @@
 
 
 #include <xc.h>
-#define _XTAL_FREQ 1000000
+#include <stdint.h>
+#include <stdio.h>
+
+// LCD module connections
+#define LCD_RS PORTCbits.RC0
+#define LCD_EN PORTCbits.RC1
+#define LCD_D4 PORTCbits.RC2
+#define LCD_D5 PORTCbits.RC3
+#define LCD_D6 PORTCbits.RC4
+#define LCD_D7 PORTCbits.RC5
+#define LCD_DATA_PORT PORTC
+
+// Seven-segment display connections (example)
+#define SEGMENT_A PORTBbits.RB0
+#define SEGMENT_B PORTBbits.RB1
+#define SEGMENT_C PORTBbits.RB2
+#define SEGMENT_D PORTBbits.RB3
+#define SEGMENT_E PORTBbits.RB4
+#define SEGMENT_F PORTBbits.RB5
+#define SEGMENT_G PORTBbits.RB6
+#define _XTAL_FREQ 10000
+
+// Function prototypes
+void LCD_Init();
+void LCD_Cmd(unsigned char);
+void LCD_Char(unsigned char);
+void LCD_String(const char*);
+void LCD_Clear();
+void Display_Oxygen_Level(uint16_t);
+void Display_Time(uint16_t);
+void Display_Temperature(uint16_t);
+uint16_t ADC_Read(uint8_t channel);
+
+// Global variables
+volatile uint16_t oxygenLevel = 0;
+volatile uint16_t timerCount = 0;
+volatile uint16_t temperature = 0;
+
 
 void main(void) {
-    TRISB0=0;
-    int count = 0;
-    RB0=0;
-    
-    while(1)
-    {
-        
-        __delay_ms(10);
-        if(RB0==1)
-        {
-            __delay_ms(10);
-            RB0=0;
-        }
-        if(RB0==0)
-        {
-            count=!count;
-            RB0=1;
-        }
-       
-        
+    // Initialize LCD and other modules
+    LCD_Init();
+
+    // Initialize ADC for oxygen level and temperature readings
+    //ADCON1bits.ADFM = 1;    // Right justify result
+    //ADCON1bits.ADCS = 0b111;    // FOSC/64 as the conversion clock source
+    //ADCON1bits.ADPREF = 0b00;   // VREF+ = AVDD, VREF- = AVSS
+    ADCON0bits.ADON = 1;    // Enable ADC module
+
+    // Initialize Timer1 for time conversion
+    //T1CONbits.TMR1CS = 0;   // Timer1 clock source is FOSC/4
+    //T1CONbits.T1CKPS = 0b11;    // Timer1 prescaler 1:8
+    TMR1 = 0;   // Clear Timer1 register
+    T1CONbits.TMR1ON = 1;   // Start Timer1
+
+    while (1) {
+        // Read oxygen level from potentiometer
+        oxygenLevel = ADC_Read(14);
+
+        // Read temperature from temperature sensor
+        temperature = ADC_Read(2);
+
+        // Display oxygen level on LCD
+        LCD_Clear();
+        LCD_String("Oxygen Level:");
+        LCD_Cmd(0xC0);  // Move cursor to the second line
+        Display_Oxygen_Level(oxygenLevel);
+
+        // Convert 13 seconds to 24 hours and display on seven-segment display
+        Display_Time(13);
+
+        // Display temperature on LCD (optional)
+        //LCD_Clear();
+        //LCD_String("Temperature:");
+        //LCD_Cmd(0xC0);  // Move cursor to the second line
+        //Display_Temperature(temperature);
+
+        __delay_ms(500);    // Delay between consecutive readings
     }
+
     return;
+}
+
+void LCD_Init() {
+    // Configure LCD pins as output
+    TRISCbits.TRISC0 = 0;
+    TRISCbits.TRISC1 = 0;
+    TRISCbits.TRISC2 = 0;
+    TRISCbits.TRISC3 = 0;
+    TRISCbits.TRISC4 = 0;
+    TRISCbits.TRISC5 = 0;
+
+    __delay_ms(15);
+
+    LCD_Cmd(0x02);  // Return home
+    LCD_Cmd(0x28);  // 4-bit mode - 2 line display - 5x7 font
+    LCD_Cmd(0x0C);  // Display ON - Cursor OFF - Blink OFF
+    LCD_Cmd(0x06);  // Increment cursor - No shift
+    LCD_Cmd(0x80);  // Address DDRAM with 0 offset 80h
+}
+
+void LCD_Cmd(unsigned char command) {
+    LCD_RS = 0;     // Command mode
+    LCD_DATA_PORT = (LCD_DATA_PORT & 0x0F) | (command & 0xF0);   // Send higher nibble
+    LCD_EN = 1;     // Enable pulse
+    __delay_us(1);
+    LCD_EN = 0;
+    __delay_us(200);
+    LCD_DATA_PORT = (LCD_DATA_PORT & 0x0F) | ((command << 4) & 0xF0);   // Send lower nibble
+    LCD_EN = 1;     // Enable pulse
+    __delay_us(1);
+    LCD_EN = 0;
+    __delay_ms(2);
+}
+
+void LCD_Char(unsigned char data) {
+    LCD_RS = 1;     // Data mode
+    LCD_DATA_PORT = (LCD_DATA_PORT & 0x0F) | (data & 0xF0);   // Send higher nibble
+    LCD_EN = 1;     // Enable pulse
+    __delay_us(1);
+    LCD_EN = 0;
+    __delay_us(200);
+    LCD_DATA_PORT = (LCD_DATA_PORT & 0x0F) | ((data << 4) & 0xF0);   // Send lower nibble
+    LCD_EN = 1;     // Enable pulse
+    __delay_us(1);
+    LCD_EN = 0;
+    __delay_ms(2);
+}
+
+void LCD_String(const char* text) {
+    while (*text != '\0') {
+        LCD_Char(*text++);
+    }
+}
+
+void LCD_Clear() {
+    LCD_Cmd(0x01);  // Clear display
+    __delay_ms(2);
+}
+
+void Display_Oxygen_Level(uint16_t level) {
+    char buffer[5];
+    sprintf(buffer, "%3u%%", level);
+    LCD_String(buffer);
+}
+
+void Display_Time(uint16_t seconds) {
+    uint16_t hours = seconds / 3600;
+    uint16_t minutes = (seconds % 3600) / 60;
+    seconds = seconds % 60;
+
+    // Display hours on seven-segment display (example)
+    SEGMENT_A = hours % 10;
+    SEGMENT_B = (hours / 10) % 10;
+    SEGMENT_C = (hours / 100) % 10;
+    SEGMENT_D = (hours / 1000) % 10;
+    // ...
+
+    // Display minutes on seven-segment display (example)
+    SEGMENT_E = minutes % 10;
+    SEGMENT_F = (minutes / 10) % 10;
+    // ...
+
+    // Display seconds on seven-segment display (example)
+    SEGMENT_G = seconds % 10;
+    // ...
+}
+
+void Display_Temperature(uint16_t temp) {
+    char buffer[6];
+    float temperature = (float)temp * 0.48876 - 50.0; // Example conversion formula
+    sprintf(buffer, "%.2fC", temperature);
+    LCD_String(buffer);
+}
+
+uint16_t ADC_Read(uint8_t channel) {
+    //ADCON0bits.CHS = channel;    // Select ADC channel    
+    ADCON0bits.ADGO = 1;    // Start ADC conversion
+ // Wait for ADC conversion to complete
+    while (ADCON0bits.ADGO)
+        ;
+
+    // Return the ADC result
+    return ((ADRESH << 8) + ADRESL);
 }
