@@ -20909,7 +20909,7 @@ char *ctermid(char *);
 
 char *tempnam(const char *, const char *);
 # 49 "LCD_Analog_button.c" 2
-# 71 "LCD_Analog_button.c"
+# 78 "LCD_Analog_button.c"
 void LCD_Init();
 void LCD_Cmd(unsigned char);
 void LCD_Char(unsigned char);
@@ -20929,16 +20929,7 @@ volatile uint16_t temperature = 0;
 void main(void) {
 
     LCD_Init();
-
-
-
-
-
     ADCON0bits.ADON = 1;
-
-
-
-
     TMR1 = 0;
     T1CONbits.TMR1ON = 1;
 
@@ -20951,18 +20942,12 @@ void main(void) {
 
 
         LCD_Clear();
-        LCD_String(" Oxygen Level:");
+        LCD_String("Oxygen Level:");
         LCD_Cmd(0xC0);
         Display_Oxygen_Level(oxygenLevel);
 
 
         Display_Time(13);
-
-
-
-
-
-
 
         _delay((unsigned long)((500)*(4000000/4000.0)));
     }

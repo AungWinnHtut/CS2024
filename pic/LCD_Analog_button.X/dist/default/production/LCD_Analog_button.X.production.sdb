@@ -63,23 +63,23 @@
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"87 E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+"94 E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
 [v _main main `(v  1 e 1 0 ]
-"131
+"123
 [v _LCD_Init LCD_Init `(v  1 e 1 0 ]
-"150
+"142
 [v _LCD_Cmd LCD_Cmd `(v  1 e 1 0 ]
-"164
+"156
 [v _LCD_Char LCD_Char `(v  1 e 1 0 ]
-"178
+"170
 [v _LCD_String LCD_String `(v  1 e 1 0 ]
-"184
+"176
 [v _LCD_Clear LCD_Clear `(v  1 e 1 0 ]
-"189
+"181
 [v _Display_Oxygen_Level Display_Oxygen_Level `(v  1 e 1 0 ]
-"195
+"187
 [v _Display_Time Display_Time `(v  1 e 1 0 ]
-"224
+"216
 [v _ADC_Read ADC_Read `(us  1 e 2 0 ]
 [s S232 . 1 `uc 1 RB0 1 0 :1:0 
 `uc 1 RB1 1 0 :1:1 
@@ -195,54 +195,54 @@
 [v _flags flags `uc  1 s 1 flags ]
 "144
 [v _dbuf dbuf `[80]uc  1 s 80 dbuf ]
-"82 E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+"89 E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
 [v _oxygenLevel oxygenLevel `VEus  1 e 2 0 ]
-"83
+"90
 [v _timerCount timerCount `VEus  1 e 2 0 ]
-"84
+"91
 [v _temperature temperature `VEus  1 e 2 0 ]
-"87
+"94
 [v _main main `(v  1 e 1 0 ]
 {
-"129
+"121
 } 0
-"131
+"123
 [v _LCD_Init LCD_Init `(v  1 e 1 0 ]
 {
-"148
+"140
 } 0
-"184
+"176
 [v _LCD_Clear LCD_Clear `(v  1 e 1 0 ]
 {
-"187
+"179
 } 0
-"150
+"142
 [v _LCD_Cmd LCD_Cmd `(v  1 e 1 0 ]
 {
 [v LCD_Cmd@command command `uc  1 a 1 wreg ]
 [v LCD_Cmd@command command `uc  1 a 1 wreg ]
 [v LCD_Cmd@command command `uc  1 a 1 2 ]
-"162
+"154
 } 0
-"195
+"187
 [v _Display_Time Display_Time `(v  1 e 1 0 ]
 {
-"196
+"188
 [v Display_Time@hours hours `us  1 a 2 5 ]
-"197
-[v Display_Time@minutes minutes `us  1 a 2 3 ]
-"195
-[v Display_Time@seconds seconds `us  1 p 2 0 ]
-"215
-} 0
 "189
+[v Display_Time@minutes minutes `us  1 a 2 3 ]
+"187
+[v Display_Time@seconds seconds `us  1 p 2 0 ]
+"207
+} 0
+"181
 [v _Display_Oxygen_Level Display_Oxygen_Level `(v  1 e 1 0 ]
 {
-"190
+"182
 [v Display_Oxygen_Level@buffer buffer `[5]uc  1 a 5 72 ]
-"189
+"181
 [v Display_Oxygen_Level@level level `us  1 p 2 56 ]
-"193
+"185
 } 0
 "9 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_sprintf.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
@@ -627,22 +627,22 @@
 [v ___fldiv@b b `d  1 p 4 4 ]
 "185
 } 0
-"178 E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+"170 E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
 [v _LCD_String LCD_String `(v  1 e 1 0 ]
 {
 [v LCD_String@text text `*.26DCuc  1 p 2 3 ]
-"182
+"174
 } 0
-"164
+"156
 [v _LCD_Char LCD_Char `(v  1 e 1 0 ]
 {
 [v LCD_Char@data data `uc  1 a 1 wreg ]
 [v LCD_Char@data data `uc  1 a 1 wreg ]
 [v LCD_Char@data data `uc  1 a 1 2 ]
-"176
+"168
 } 0
-"224
+"216
 [v _ADC_Read ADC_Read `(us  1 e 2 0 ]
 {
-"233
+"225
 } 0

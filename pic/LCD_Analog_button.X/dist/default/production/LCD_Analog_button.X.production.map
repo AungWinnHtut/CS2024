@@ -6,11 +6,10 @@ Linker command line:
   --edf=C:\Program Files\Microchip\xc8\v2.41\pic\dat\20230208172133_en.msgs \
   -cn -h+dist/default/production\LCD_Analog_button.X.production.sym \
   --cmf=dist/default/production\LCD_Analog_button.X.production.cmf -z \
-  -Q16F18877 \
-  -oC:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_3.o \
+  -Q16F18877 -oC:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_3.o \
   --defsym=__MPLAB_BUILD=1 --fixupoverflow=error \
   -Mdist/default/production/LCD_Analog_button.X.production.map \
-  --md=C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_0.dat -E1 \
+  --md=C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_0.dat -E1 \
   -ver=XC8 Compiler --acfsm=1493 -ACODE=00h-07FFhx16 -ASTRCODE=00h-07FFFh \
   -ASTRING=00h-0FFhx128 -ACONST=00h-0FFhx128 -AENTRY=00h-0FFhx128 \
   -ACOMMON=070h-07Fh -ABANK0=020h-06Fh -ABANK1=0A0h-0EFh \
@@ -59,7 +58,7 @@ Linker command line:
   -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 \
   -preset_vec=00h,intentry,init,end_init -ppowerup=CODE -pcinit=CODE \
   -pfunctab=ENTRY -k \
-  C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_20.o \
+  C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_20.o \
   dist/default/production\LCD_Analog_button.X.production.o 
 
 Object code version is 3.11
@@ -69,7 +68,7 @@ Machine type is 16F18877
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_20.o
+C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_20.o
                 end_init                              2        2        2        0       0
                 reset_vec                             0        0        2        0       0
                 config                             8007     8007        5        0       4
@@ -119,11 +118,11 @@ dist/default/production\LCD_Analog_button.X.production.o
                 bssBANK2                            120      120       50      120       1
                 bssBANK1                             DA       DA       12       A0       1
                 bssBANK0                             6F       6F        1       20       1
-                stringtext5                        181F     181F        4     3000       0
-                stringtext4                        181B     181B        4     3000       0
-                stringtext3                        1815     1815        6     3000       0
-                stringtext2                        180F     180F        6     3000       0
-                stringtext1                        1800     1800        F     3000       0
+                stringtext5                        181E     181E        4     3000       0
+                stringtext4                        181A     181A        4     3000       0
+                stringtext3                        1814     1814        6     3000       0
+                stringtext2                        180E     180E        6     3000       0
+                stringtext1                        1800     1800        E     3000       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   CODE           
@@ -169,11 +168,11 @@ TOTAL           Name                               Link     Load   Length     Sp
                 clrtext                            127F     127F        6         0
 
         CLASS   STRCODE        
-                stringtext5                        181F     181F        4         0
-                stringtext4                        181B     181B        4         0
-                stringtext3                        1815     1815        6         0
-                stringtext2                        180F     180F        6         0
-                stringtext1                        1800     1800        F         0
+                stringtext5                        181E     181E        4         0
+                stringtext4                        181A     181A        4         0
+                stringtext3                        1814     1814        6         0
+                stringtext2                        180E     180E        6         0
+                stringtext1                        1800     1800        E         0
 
         CLASS   STRING         
 
@@ -509,7 +508,7 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
                 text9                          00167B  00007B  0016F6      2CF6       0  CODE        2
                 text23                         0016F6  00007F  001775      2DEC       0  CODE        2
                 text30                         001775  00008B  001800      2EEA       0  CODE        2
-                stringtext1                    001800  000023  001823      3000       0  STRCODE     2
+                stringtext1                    001800  000022  001822      3000       0  STRCODE     2
 
 
 UNUSED ADDRESS RANGES
@@ -567,14 +566,14 @@ UNUSED ADDRESS RANGES
         BIGRAM           02000-02FEF             FF0           1
         CODE             00800-00800               1           2
                          01000-0127E             27F
-                         01823-07FFF             800
+                         01822-07FFF             800
         CONST            00800-00800               1           2
                          01000-0127E             100
-                         01823-07FFF             100
+                         01822-07FFF             100
         EEDATA           0F000-0F0FF             100           2
         ENTRY            00800-00800               1           2
                          01000-0127E             100
-                         01823-07FFF             100
+                         01822-07FFF             100
         IDLOC            08000-08003               4           2
         RAM              000EC-000EF               4           1
                          001A0-001EF              50
@@ -691,10 +690,10 @@ UNUSED ADDRESS RANGES
         SFR9             00480-0049F              20           1
         STRCODE          00800-00800               1           2
                          01000-0127E             27F
-                         01823-07FFF            67DD
+                         01822-07FFF            67DE
         STRING           00800-00800               1           2
                          01000-0127E             100
-                         01823-07FFF             100
+                         01822-07FFF             100
 
                                   Symbol Table
 
@@ -894,7 +893,7 @@ __Hsfr63                      sfr63        00000
 __Hsfr7                       sfr7         00000
 __Hsfr8                       sfr8         00000
 __Hsfr9                       sfr9         00000
-__Hspace_0                    (abs)        01823
+__Hspace_0                    (abs)        01822
 __Hspace_1                    (abs)        00170
 __Hspace_2                    (abs)        00000
 __Hspace_3                    (abs)        00000
@@ -1074,7 +1073,7 @@ __Lstringtext4                stringtext4  00000
 __Lstringtext5                stringtext5  00000
 __Lstringtext6                stringtext6  00000
 __Ltext                       text         00000
-__S0                          (abs)        01823
+__S0                          (abs)        01822
 __S1                          (abs)        00170
 __S3                          (abs)        00000
 __Umul8_16                    text29       01371
@@ -1193,10 +1192,10 @@ __pcstackBANK1                cstackBANK1  000A0
 __pcstackCOMMON               cstackCOMMON 00070
 __pmaintext                   maintext     014C4
 __pstringtext1                stringtext1  01800
-__pstringtext2                stringtext2  0180F
-__pstringtext3                stringtext3  01815
-__pstringtext4                stringtext4  0181B
-__pstringtext5                stringtext5  0181F
+__pstringtext2                stringtext2  0180E
+__pstringtext3                stringtext3  01814
+__pstringtext4                stringtext4  0181A
+__pstringtext5                stringtext5  0181E
 __pstringtext6                stringtext6  00000
 __ptext1                      text1        013B7
 __ptext10                     text10       00801

@@ -1,7 +1,7 @@
 Version 4.0 HI-TECH Software Intermediate Code
 [p mainexit ]
-"71 LCD_Analog_button.c
-[; ;LCD_Analog_button.c: 71: void LCD_Init();
+"78 LCD_Analog_button.c
+[; ;LCD_Analog_button.c: 78: void LCD_Init();
 [v _LCD_Init `(v ~T0 @X0 0 e? ]
 "2138 C:\Program Files\Microchip\xc8\v2.41\pic\include\proc\pic16f18877.h
 [; ;C:\Program Files\Microchip\xc8\v2.41\pic\include\proc\pic16f18877.h: 2138:     struct {
@@ -56,23 +56,23 @@ Version 4.0 HI-TECH Software Intermediate Code
 "6823
 [; ;C:\Program Files\Microchip\xc8\v2.41\pic\include\proc\pic16f18877.h: 6823: extern volatile T1CONbits_t T1CONbits __attribute__((address(0x20E)));
 [v _T1CONbits `VS305 ~T0 @X0 0 e@526 ]
-"79 LCD_Analog_button.c
-[; ;LCD_Analog_button.c: 79: uint16_t ADC_Read(uint8_t channel);
+"86 LCD_Analog_button.c
+[; ;LCD_Analog_button.c: 86: uint16_t ADC_Read(uint8_t channel);
 [v _ADC_Read `(us ~T0 @X0 0 ef1`uc ]
-"75
-[; ;LCD_Analog_button.c: 75: void LCD_Clear();
+"82
+[; ;LCD_Analog_button.c: 82: void LCD_Clear();
 [v _LCD_Clear `(v ~T0 @X0 0 e? ]
-"74
-[; ;LCD_Analog_button.c: 74: void LCD_String(const char*);
+"81
+[; ;LCD_Analog_button.c: 81: void LCD_String(const char*);
 [v _LCD_String `(v ~T0 @X0 0 ef1`*Cuc ]
-"72
-[; ;LCD_Analog_button.c: 72: void LCD_Cmd(unsigned char);
+"79
+[; ;LCD_Analog_button.c: 79: void LCD_Cmd(unsigned char);
 [v _LCD_Cmd `(v ~T0 @X0 0 ef1`uc ]
-"76
-[; ;LCD_Analog_button.c: 76: void Display_Oxygen_Level(uint16_t);
+"83
+[; ;LCD_Analog_button.c: 83: void Display_Oxygen_Level(uint16_t);
 [v _Display_Oxygen_Level `(v ~T0 @X0 0 ef1`us ]
-"77
-[; ;LCD_Analog_button.c: 77: void Display_Time(uint16_t);
+"84
+[; ;LCD_Analog_button.c: 84: void Display_Time(uint16_t);
 [v _Display_Time `(v ~T0 @X0 0 ef1`us ]
 [v F192 `(v ~T0 @X0 1 tf1`ul ]
 "12 C:\Program Files\Microchip\xc8\v2.41\pic\include\builtins.h
@@ -1824,381 +1824,381 @@ Version 4.0 HI-TECH Software Intermediate Code
 "36300
 [; ;C:\Program Files\Microchip\xc8\v2.41\pic\include\proc\pic16f18877.h: 36300: __asm("TOSH equ 01FEFh");
 [; <" TOSH equ 01FEFh ;# ">
-"82 LCD_Analog_button.c
-[; ;LCD_Analog_button.c: 82: volatile uint16_t oxygenLevel = 0;
+"89 LCD_Analog_button.c
+[; ;LCD_Analog_button.c: 89: volatile uint16_t oxygenLevel = 0;
 [v _oxygenLevel `Vus ~T0 @X0 1 e ]
 [i _oxygenLevel
 -> -> 0 `i `us
 ]
-"83
-[; ;LCD_Analog_button.c: 83: volatile uint16_t timerCount = 0;
+"90
+[; ;LCD_Analog_button.c: 90: volatile uint16_t timerCount = 0;
 [v _timerCount `Vus ~T0 @X0 1 e ]
 [i _timerCount
 -> -> 0 `i `us
 ]
-"84
-[; ;LCD_Analog_button.c: 84: volatile uint16_t temperature = 0;
+"91
+[; ;LCD_Analog_button.c: 91: volatile uint16_t temperature = 0;
 [v _temperature `Vus ~T0 @X0 1 e ]
 [i _temperature
 -> -> 0 `i `us
 ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"87
-[; ;LCD_Analog_button.c: 87: void main(void) {
+"94
+[; ;LCD_Analog_button.c: 94: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"89
-[; ;LCD_Analog_button.c: 89:     LCD_Init();
+"96
+[; ;LCD_Analog_button.c: 96:     LCD_Init();
 [e ( _LCD_Init ..  ]
-"95
-[; ;LCD_Analog_button.c: 95:     ADCON0bits.ADON = 1;
+"97
+[; ;LCD_Analog_button.c: 97:     ADCON0bits.ADON = 1;
 [e = . . _ADCON0bits 0 6 -> -> 1 `i `uc ]
-"100
-[; ;LCD_Analog_button.c: 100:     TMR1 = 0;
+"98
+[; ;LCD_Analog_button.c: 98:     TMR1 = 0;
 [e = _TMR1 -> -> 0 `i `us ]
-"101
-[; ;LCD_Analog_button.c: 101:     T1CONbits.TMR1ON = 1;
+"99
+[; ;LCD_Analog_button.c: 99:     T1CONbits.TMR1ON = 1;
 [e = . . _T1CONbits 1 0 -> -> 1 `i `uc ]
-"103
-[; ;LCD_Analog_button.c: 103:     while (1) {
+"101
+[; ;LCD_Analog_button.c: 101:     while (1) {
 [e :U 1617 ]
 {
-"105
-[; ;LCD_Analog_button.c: 105:         oxygenLevel = ADC_Read(14);
+"103
+[; ;LCD_Analog_button.c: 103:         oxygenLevel = ADC_Read(14);
 [e = _oxygenLevel ( _ADC_Read (1 -> -> 14 `i `uc ]
-"108
-[; ;LCD_Analog_button.c: 108:         temperature = ADC_Read(2);
+"106
+[; ;LCD_Analog_button.c: 106:         temperature = ADC_Read(2);
 [e = _temperature ( _ADC_Read (1 -> -> 2 `i `uc ]
-"111
-[; ;LCD_Analog_button.c: 111:         LCD_Clear();
+"109
+[; ;LCD_Analog_button.c: 109:         LCD_Clear();
 [e ( _LCD_Clear ..  ]
-"112
-[; ;LCD_Analog_button.c: 112:         LCD_String(" Oxygen Level:");
+"110
+[; ;LCD_Analog_button.c: 110:         LCD_String("Oxygen Level:");
 [e ( _LCD_String (1 :s 1C ]
-"113
-[; ;LCD_Analog_button.c: 113:         LCD_Cmd(0xC0);
+"111
+[; ;LCD_Analog_button.c: 111:         LCD_Cmd(0xC0);
 [e ( _LCD_Cmd (1 -> -> 192 `i `uc ]
-"114
-[; ;LCD_Analog_button.c: 114:         Display_Oxygen_Level(oxygenLevel);
+"112
+[; ;LCD_Analog_button.c: 112:         Display_Oxygen_Level(oxygenLevel);
 [e ( _Display_Oxygen_Level (1 _oxygenLevel ]
-"117
-[; ;LCD_Analog_button.c: 117:         Display_Time(13);
+"115
+[; ;LCD_Analog_button.c: 115:         Display_Time(13);
 [e ( _Display_Time (1 -> -> 13 `i `us ]
-"125
-[; ;LCD_Analog_button.c: 125:         _delay((unsigned long)((500)*(4000000/4000.0)));
+"117
+[; ;LCD_Analog_button.c: 117:         _delay((unsigned long)((500)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 500 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"126
-[; ;LCD_Analog_button.c: 126:     }
+"118
+[; ;LCD_Analog_button.c: 118:     }
 }
 [e :U 1616 ]
 [e $U 1617  ]
 [e :U 1618 ]
-"128
-[; ;LCD_Analog_button.c: 128:     return;
+"120
+[; ;LCD_Analog_button.c: 120:     return;
 [e $UE 1615  ]
-"129
-[; ;LCD_Analog_button.c: 129: }
+"121
+[; ;LCD_Analog_button.c: 121: }
 [e :UE 1615 ]
 }
-"131
-[; ;LCD_Analog_button.c: 131: void LCD_Init() {
+"123
+[; ;LCD_Analog_button.c: 123: void LCD_Init() {
 [v _LCD_Init `(v ~T0 @X0 1 ef ]
 {
 [e :U _LCD_Init ]
 [f ]
-"133
-[; ;LCD_Analog_button.c: 133:     TRISEbits.TRISE0 = 0;
+"125
+[; ;LCD_Analog_button.c: 125:     TRISEbits.TRISE0 = 0;
 [e = . . _TRISEbits 0 0 -> -> 0 `i `uc ]
-"134
-[; ;LCD_Analog_button.c: 134:     TRISCbits.TRISC0 = 0;
+"126
+[; ;LCD_Analog_button.c: 126:     TRISCbits.TRISC0 = 0;
 [e = . . _TRISCbits 0 0 -> -> 0 `i `uc ]
-"135
-[; ;LCD_Analog_button.c: 135:     TRISCbits.TRISC1 = 0;
+"127
+[; ;LCD_Analog_button.c: 127:     TRISCbits.TRISC1 = 0;
 [e = . . _TRISCbits 0 1 -> -> 0 `i `uc ]
-"136
-[; ;LCD_Analog_button.c: 136:     TRISCbits.TRISC4 = 0;
+"128
+[; ;LCD_Analog_button.c: 128:     TRISCbits.TRISC4 = 0;
 [e = . . _TRISCbits 0 4 -> -> 0 `i `uc ]
-"137
-[; ;LCD_Analog_button.c: 137:     TRISCbits.TRISC5 = 0;
+"129
+[; ;LCD_Analog_button.c: 129:     TRISCbits.TRISC5 = 0;
 [e = . . _TRISCbits 0 5 -> -> 0 `i `uc ]
-"138
-[; ;LCD_Analog_button.c: 138:     TRISCbits.TRISC6 = 0;
+"130
+[; ;LCD_Analog_button.c: 130:     TRISCbits.TRISC6 = 0;
 [e = . . _TRISCbits 0 6 -> -> 0 `i `uc ]
-"139
-[; ;LCD_Analog_button.c: 139:     TRISCbits.TRISC7 = 0;
+"131
+[; ;LCD_Analog_button.c: 131:     TRISCbits.TRISC7 = 0;
 [e = . . _TRISCbits 0 7 -> -> 0 `i `uc ]
-"141
-[; ;LCD_Analog_button.c: 141:     _delay((unsigned long)((15)*(4000000/4000.0)));
+"133
+[; ;LCD_Analog_button.c: 133:     _delay((unsigned long)((15)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 15 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"143
-[; ;LCD_Analog_button.c: 143:     LCD_Cmd(0x02);
+"135
+[; ;LCD_Analog_button.c: 135:     LCD_Cmd(0x02);
 [e ( _LCD_Cmd (1 -> -> 2 `i `uc ]
-"144
-[; ;LCD_Analog_button.c: 144:     LCD_Cmd(0x28);
+"136
+[; ;LCD_Analog_button.c: 136:     LCD_Cmd(0x28);
 [e ( _LCD_Cmd (1 -> -> 40 `i `uc ]
-"145
-[; ;LCD_Analog_button.c: 145:     LCD_Cmd(0x0C);
+"137
+[; ;LCD_Analog_button.c: 137:     LCD_Cmd(0x0C);
 [e ( _LCD_Cmd (1 -> -> 12 `i `uc ]
-"146
-[; ;LCD_Analog_button.c: 146:     LCD_Cmd(0x06);
+"138
+[; ;LCD_Analog_button.c: 138:     LCD_Cmd(0x06);
 [e ( _LCD_Cmd (1 -> -> 6 `i `uc ]
-"147
-[; ;LCD_Analog_button.c: 147:     LCD_Cmd(0x80);
+"139
+[; ;LCD_Analog_button.c: 139:     LCD_Cmd(0x80);
 [e ( _LCD_Cmd (1 -> -> 128 `i `uc ]
-"148
-[; ;LCD_Analog_button.c: 148: }
+"140
+[; ;LCD_Analog_button.c: 140: }
 [e :UE 1619 ]
 }
-"150
-[; ;LCD_Analog_button.c: 150: void LCD_Cmd(unsigned char command) {
+"142
+[; ;LCD_Analog_button.c: 142: void LCD_Cmd(unsigned char command) {
 [v _LCD_Cmd `(v ~T0 @X0 1 ef1`uc ]
 {
 [e :U _LCD_Cmd ]
 [v _command `uc ~T0 @X0 1 r1 ]
 [f ]
-"151
-[; ;LCD_Analog_button.c: 151:     PORTCbits.RC0 = 0;
+"143
+[; ;LCD_Analog_button.c: 143:     PORTCbits.RC0 = 0;
 [e = . . _PORTCbits 0 0 -> -> 0 `i `uc ]
-"152
-[; ;LCD_Analog_button.c: 152:     PORTC = (PORTC & 0x0F) | (command & 0xF0);
+"144
+[; ;LCD_Analog_button.c: 144:     PORTC = (PORTC & 0x0F) | (command & 0xF0);
 [e = _PORTC -> | & -> _PORTC `i -> 15 `i & -> _command `i -> 240 `i `uc ]
-"153
-[; ;LCD_Analog_button.c: 153:     PORTEbits.RE0 = 1;
+"145
+[; ;LCD_Analog_button.c: 145:     PORTEbits.RE0 = 1;
 [e = . . _PORTEbits 0 0 -> -> 1 `i `uc ]
-"154
-[; ;LCD_Analog_button.c: 154:     _delay((unsigned long)((1)*(4000000/4000000.0)));
+"146
+[; ;LCD_Analog_button.c: 146:     _delay((unsigned long)((1)*(4000000/4000000.0)));
 [e ( __delay (1 -> * -> -> 1 `i `d / -> -> 4000000 `l `d .4000000.0 `ul ]
-"155
-[; ;LCD_Analog_button.c: 155:     PORTEbits.RE0 = 0;
+"147
+[; ;LCD_Analog_button.c: 147:     PORTEbits.RE0 = 0;
 [e = . . _PORTEbits 0 0 -> -> 0 `i `uc ]
-"156
-[; ;LCD_Analog_button.c: 156:     _delay((unsigned long)((200)*(4000000/4000000.0)));
+"148
+[; ;LCD_Analog_button.c: 148:     _delay((unsigned long)((200)*(4000000/4000000.0)));
 [e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000000.0 `ul ]
-"157
-[; ;LCD_Analog_button.c: 157:     PORTC = (PORTC & 0x0F) | ((command << 4) & 0xF0);
+"149
+[; ;LCD_Analog_button.c: 149:     PORTC = (PORTC & 0x0F) | ((command << 4) & 0xF0);
 [e = _PORTC -> | & -> _PORTC `i -> 15 `i & << -> _command `i -> 4 `i -> 240 `i `uc ]
-"158
-[; ;LCD_Analog_button.c: 158:     PORTEbits.RE0 = 1;
+"150
+[; ;LCD_Analog_button.c: 150:     PORTEbits.RE0 = 1;
 [e = . . _PORTEbits 0 0 -> -> 1 `i `uc ]
-"159
-[; ;LCD_Analog_button.c: 159:     _delay((unsigned long)((1)*(4000000/4000000.0)));
+"151
+[; ;LCD_Analog_button.c: 151:     _delay((unsigned long)((1)*(4000000/4000000.0)));
 [e ( __delay (1 -> * -> -> 1 `i `d / -> -> 4000000 `l `d .4000000.0 `ul ]
-"160
-[; ;LCD_Analog_button.c: 160:     PORTEbits.RE0 = 0;
+"152
+[; ;LCD_Analog_button.c: 152:     PORTEbits.RE0 = 0;
 [e = . . _PORTEbits 0 0 -> -> 0 `i `uc ]
-"161
-[; ;LCD_Analog_button.c: 161:     _delay((unsigned long)((2)*(4000000/4000.0)));
+"153
+[; ;LCD_Analog_button.c: 153:     _delay((unsigned long)((2)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 2 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"162
-[; ;LCD_Analog_button.c: 162: }
+"154
+[; ;LCD_Analog_button.c: 154: }
 [e :UE 1620 ]
 }
-"164
-[; ;LCD_Analog_button.c: 164: void LCD_Char(unsigned char data) {
+"156
+[; ;LCD_Analog_button.c: 156: void LCD_Char(unsigned char data) {
 [v _LCD_Char `(v ~T0 @X0 1 ef1`uc ]
 {
 [e :U _LCD_Char ]
 [v _data `uc ~T0 @X0 1 r1 ]
 [f ]
-"165
-[; ;LCD_Analog_button.c: 165:     PORTCbits.RC0 = 1;
+"157
+[; ;LCD_Analog_button.c: 157:     PORTCbits.RC0 = 1;
 [e = . . _PORTCbits 0 0 -> -> 1 `i `uc ]
-"166
-[; ;LCD_Analog_button.c: 166:     PORTC = (PORTC & 0x0F) | (data & 0xF0);
+"158
+[; ;LCD_Analog_button.c: 158:     PORTC = (PORTC & 0x0F) | (data & 0xF0);
 [e = _PORTC -> | & -> _PORTC `i -> 15 `i & -> _data `i -> 240 `i `uc ]
-"167
-[; ;LCD_Analog_button.c: 167:     PORTEbits.RE0 = 1;
+"159
+[; ;LCD_Analog_button.c: 159:     PORTEbits.RE0 = 1;
 [e = . . _PORTEbits 0 0 -> -> 1 `i `uc ]
-"168
-[; ;LCD_Analog_button.c: 168:     _delay((unsigned long)((1)*(4000000/4000000.0)));
+"160
+[; ;LCD_Analog_button.c: 160:     _delay((unsigned long)((1)*(4000000/4000000.0)));
 [e ( __delay (1 -> * -> -> 1 `i `d / -> -> 4000000 `l `d .4000000.0 `ul ]
-"169
-[; ;LCD_Analog_button.c: 169:     PORTEbits.RE0 = 0;
+"161
+[; ;LCD_Analog_button.c: 161:     PORTEbits.RE0 = 0;
 [e = . . _PORTEbits 0 0 -> -> 0 `i `uc ]
-"170
-[; ;LCD_Analog_button.c: 170:     _delay((unsigned long)((200)*(4000000/4000000.0)));
+"162
+[; ;LCD_Analog_button.c: 162:     _delay((unsigned long)((200)*(4000000/4000000.0)));
 [e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000000.0 `ul ]
-"171
-[; ;LCD_Analog_button.c: 171:     PORTC = (PORTC & 0x0F) | ((data << 4) & 0xF0);
+"163
+[; ;LCD_Analog_button.c: 163:     PORTC = (PORTC & 0x0F) | ((data << 4) & 0xF0);
 [e = _PORTC -> | & -> _PORTC `i -> 15 `i & << -> _data `i -> 4 `i -> 240 `i `uc ]
-"172
-[; ;LCD_Analog_button.c: 172:     PORTEbits.RE0 = 1;
+"164
+[; ;LCD_Analog_button.c: 164:     PORTEbits.RE0 = 1;
 [e = . . _PORTEbits 0 0 -> -> 1 `i `uc ]
-"173
-[; ;LCD_Analog_button.c: 173:     _delay((unsigned long)((1)*(4000000/4000000.0)));
+"165
+[; ;LCD_Analog_button.c: 165:     _delay((unsigned long)((1)*(4000000/4000000.0)));
 [e ( __delay (1 -> * -> -> 1 `i `d / -> -> 4000000 `l `d .4000000.0 `ul ]
-"174
-[; ;LCD_Analog_button.c: 174:     PORTEbits.RE0 = 0;
+"166
+[; ;LCD_Analog_button.c: 166:     PORTEbits.RE0 = 0;
 [e = . . _PORTEbits 0 0 -> -> 0 `i `uc ]
-"175
-[; ;LCD_Analog_button.c: 175:     _delay((unsigned long)((2)*(4000000/4000.0)));
+"167
+[; ;LCD_Analog_button.c: 167:     _delay((unsigned long)((2)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 2 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"176
-[; ;LCD_Analog_button.c: 176: }
+"168
+[; ;LCD_Analog_button.c: 168: }
 [e :UE 1621 ]
 }
-"178
-[; ;LCD_Analog_button.c: 178: void LCD_String(const char* text) {
+"170
+[; ;LCD_Analog_button.c: 170: void LCD_String(const char* text) {
 [v _LCD_String `(v ~T0 @X0 1 ef1`*Cuc ]
 {
 [e :U _LCD_String ]
 [v _text `*Cuc ~T0 @X0 1 r1 ]
 [f ]
-"179
-[; ;LCD_Analog_button.c: 179:     while (*text != '\0') {
+"171
+[; ;LCD_Analog_button.c: 171:     while (*text != '\0') {
 [e $U 1623  ]
 [e :U 1624 ]
 {
-"180
-[; ;LCD_Analog_button.c: 180:         LCD_Char(*text++);
+"172
+[; ;LCD_Analog_button.c: 172:         LCD_Char(*text++);
 [e ( _LCD_Char (1 -> *U ++ _text * -> -> 1 `i `x -> -> # *U _text `i `x `uc ]
-"181
-[; ;LCD_Analog_button.c: 181:     }
+"173
+[; ;LCD_Analog_button.c: 173:     }
 }
 [e :U 1623 ]
-"179
-[; ;LCD_Analog_button.c: 179:     while (*text != '\0') {
+"171
+[; ;LCD_Analog_button.c: 171:     while (*text != '\0') {
 [e $ != -> *U _text `ui -> 0 `ui 1624  ]
 [e :U 1625 ]
-"182
-[; ;LCD_Analog_button.c: 182: }
+"174
+[; ;LCD_Analog_button.c: 174: }
 [e :UE 1622 ]
 }
-"184
-[; ;LCD_Analog_button.c: 184: void LCD_Clear() {
+"176
+[; ;LCD_Analog_button.c: 176: void LCD_Clear() {
 [v _LCD_Clear `(v ~T0 @X0 1 ef ]
 {
 [e :U _LCD_Clear ]
 [f ]
-"185
-[; ;LCD_Analog_button.c: 185:     LCD_Cmd(0x01);
+"177
+[; ;LCD_Analog_button.c: 177:     LCD_Cmd(0x01);
 [e ( _LCD_Cmd (1 -> -> 1 `i `uc ]
-"186
-[; ;LCD_Analog_button.c: 186:     _delay((unsigned long)((2)*(4000000/4000.0)));
+"178
+[; ;LCD_Analog_button.c: 178:     _delay((unsigned long)((2)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 2 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"187
-[; ;LCD_Analog_button.c: 187: }
+"179
+[; ;LCD_Analog_button.c: 179: }
 [e :UE 1626 ]
 }
-"189
-[; ;LCD_Analog_button.c: 189: void Display_Oxygen_Level(uint16_t level) {
+"181
+[; ;LCD_Analog_button.c: 181: void Display_Oxygen_Level(uint16_t level) {
 [v _Display_Oxygen_Level `(v ~T0 @X0 1 ef1`us ]
 {
 [e :U _Display_Oxygen_Level ]
 [v _level `us ~T0 @X0 1 r1 ]
 [f ]
-"190
-[; ;LCD_Analog_button.c: 190:     char buffer[5];
+"182
+[; ;LCD_Analog_button.c: 182:     char buffer[5];
 [v _buffer `uc ~T0 @X0 -> 5 `i a ]
-"191
-[; ;LCD_Analog_button.c: 191:     sprintf(buffer, "%3u%%", level);
+"183
+[; ;LCD_Analog_button.c: 183:     sprintf(buffer, "%3u%%", level);
 [e ( _sprintf (1 , (. , &U _buffer :s 2C -> _level `ui ]
-"192
-[; ;LCD_Analog_button.c: 192:     LCD_String(buffer);
+"184
+[; ;LCD_Analog_button.c: 184:     LCD_String(buffer);
 [e ( _LCD_String (1 -> &U _buffer `*Cuc ]
-"193
-[; ;LCD_Analog_button.c: 193: }
+"185
+[; ;LCD_Analog_button.c: 185: }
 [e :UE 1627 ]
 }
-"195
-[; ;LCD_Analog_button.c: 195: void Display_Time(uint16_t seconds) {
+"187
+[; ;LCD_Analog_button.c: 187: void Display_Time(uint16_t seconds) {
 [v _Display_Time `(v ~T0 @X0 1 ef1`us ]
 {
 [e :U _Display_Time ]
 [v _seconds `us ~T0 @X0 1 r1 ]
 [f ]
-"196
-[; ;LCD_Analog_button.c: 196:     uint16_t hours = seconds / 3600;
+"188
+[; ;LCD_Analog_button.c: 188:     uint16_t hours = seconds / 3600;
 [v _hours `us ~T0 @X0 1 a ]
 [e = _hours -> / -> _seconds `ui -> -> 3600 `i `ui `us ]
-"197
-[; ;LCD_Analog_button.c: 197:     uint16_t minutes = (seconds % 3600) / 60;
+"189
+[; ;LCD_Analog_button.c: 189:     uint16_t minutes = (seconds % 3600) / 60;
 [v _minutes `us ~T0 @X0 1 a ]
 [e = _minutes -> / % -> _seconds `ui -> -> 3600 `i `ui -> -> 60 `i `ui `us ]
-"198
-[; ;LCD_Analog_button.c: 198:     seconds = seconds % 60;
+"190
+[; ;LCD_Analog_button.c: 190:     seconds = seconds % 60;
 [e = _seconds -> % -> _seconds `ui -> -> 60 `i `ui `us ]
-"201
-[; ;LCD_Analog_button.c: 201:     PORTBbits.RB0 = hours % 10;
+"193
+[; ;LCD_Analog_button.c: 193:     PORTBbits.RB0 = hours % 10;
 [e = . . _PORTBbits 0 0 -> % -> _hours `ui -> -> 10 `i `ui `uc ]
-"202
-[; ;LCD_Analog_button.c: 202:     PORTBbits.RB1 = (hours / 10) % 10;
+"194
+[; ;LCD_Analog_button.c: 194:     PORTBbits.RB1 = (hours / 10) % 10;
 [e = . . _PORTBbits 0 1 -> % / -> _hours `ui -> -> 10 `i `ui -> -> 10 `i `ui `uc ]
-"203
-[; ;LCD_Analog_button.c: 203:     PORTBbits.RB2 = (hours / 100) % 10;
+"195
+[; ;LCD_Analog_button.c: 195:     PORTBbits.RB2 = (hours / 100) % 10;
 [e = . . _PORTBbits 0 2 -> % / -> _hours `ui -> -> 100 `i `ui -> -> 10 `i `ui `uc ]
-"204
-[; ;LCD_Analog_button.c: 204:     PORTBbits.RB3 = (hours / 1000) % 10;
+"196
+[; ;LCD_Analog_button.c: 196:     PORTBbits.RB3 = (hours / 1000) % 10;
 [e = . . _PORTBbits 0 3 -> % / -> _hours `ui -> -> 1000 `i `ui -> -> 10 `i `ui `uc ]
-"208
-[; ;LCD_Analog_button.c: 208:     PORTBbits.RB4 = minutes % 10;
+"200
+[; ;LCD_Analog_button.c: 200:     PORTBbits.RB4 = minutes % 10;
 [e = . . _PORTBbits 0 4 -> % -> _minutes `ui -> -> 10 `i `ui `uc ]
-"209
-[; ;LCD_Analog_button.c: 209:     PORTBbits.RB5 = (minutes / 10) % 10;
+"201
+[; ;LCD_Analog_button.c: 201:     PORTBbits.RB5 = (minutes / 10) % 10;
 [e = . . _PORTBbits 0 5 -> % / -> _minutes `ui -> -> 10 `i `ui -> -> 10 `i `ui `uc ]
-"213
-[; ;LCD_Analog_button.c: 213:     PORTBbits.RB6 = seconds % 10;
+"205
+[; ;LCD_Analog_button.c: 205:     PORTBbits.RB6 = seconds % 10;
 [e = . . _PORTBbits 0 6 -> % -> _seconds `ui -> -> 10 `i `ui `uc ]
-"215
-[; ;LCD_Analog_button.c: 215: }
+"207
+[; ;LCD_Analog_button.c: 207: }
 [e :UE 1628 ]
 }
-"217
-[; ;LCD_Analog_button.c: 217: void Display_Temperature(uint16_t temp) {
+"209
+[; ;LCD_Analog_button.c: 209: void Display_Temperature(uint16_t temp) {
 [v _Display_Temperature `(v ~T0 @X0 1 ef1`us ]
 {
 [e :U _Display_Temperature ]
 [v _temp `us ~T0 @X0 1 r1 ]
 [f ]
-"218
-[; ;LCD_Analog_button.c: 218:     char buffer[6];
+"210
+[; ;LCD_Analog_button.c: 210:     char buffer[6];
 [v _buffer `uc ~T0 @X0 -> 6 `i a ]
-"219
-[; ;LCD_Analog_button.c: 219:     float temperature = (float)temp * 0.48876 - 50.0;
+"211
+[; ;LCD_Analog_button.c: 211:     float temperature = (float)temp * 0.48876 - 50.0;
 [v _temperature `f ~T0 @X0 1 a ]
 [e = _temperature -> - * -> -> _temp `f `d .0.48876 .50.0 `f ]
-"220
-[; ;LCD_Analog_button.c: 220:     sprintf(buffer, "%.2fC", temperature);
+"212
+[; ;LCD_Analog_button.c: 212:     sprintf(buffer, "%.2fC", temperature);
 [e ( _sprintf (1 , (. , &U _buffer :s 3C -> _temperature `d ]
-"221
-[; ;LCD_Analog_button.c: 221:     LCD_String(buffer);
+"213
+[; ;LCD_Analog_button.c: 213:     LCD_String(buffer);
 [e ( _LCD_String (1 -> &U _buffer `*Cuc ]
-"222
-[; ;LCD_Analog_button.c: 222: }
+"214
+[; ;LCD_Analog_button.c: 214: }
 [e :UE 1629 ]
 }
-"224
-[; ;LCD_Analog_button.c: 224: uint16_t ADC_Read(uint8_t channel) {
+"216
+[; ;LCD_Analog_button.c: 216: uint16_t ADC_Read(uint8_t channel) {
 [v _ADC_Read `(us ~T0 @X0 1 ef1`uc ]
 {
 [e :U _ADC_Read ]
 [v _channel `uc ~T0 @X0 1 r1 ]
 [f ]
-"226
-[; ;LCD_Analog_button.c: 226:     ADCON0bits.ADGO = 1;
+"218
+[; ;LCD_Analog_button.c: 218:     ADCON0bits.ADGO = 1;
 [e = . . _ADCON0bits 0 0 -> -> 1 `i `uc ]
-"228
-[; ;LCD_Analog_button.c: 228:     while (ADCON0bits.ADGO)
+"220
+[; ;LCD_Analog_button.c: 220:     while (ADCON0bits.ADGO)
 [e $U 1631  ]
 [e :U 1632 ]
-"229
-[; ;LCD_Analog_button.c: 229:         ;
+"221
+[; ;LCD_Analog_button.c: 221:         ;
 [e :U 1631 ]
-"228
-[; ;LCD_Analog_button.c: 228:     while (ADCON0bits.ADGO)
+"220
+[; ;LCD_Analog_button.c: 220:     while (ADCON0bits.ADGO)
 [e $ != -> . . _ADCON0bits 0 0 `i -> 0 `i 1632  ]
 [e :U 1633 ]
-"232
-[; ;LCD_Analog_button.c: 232:     return ((ADRESH << 8) + ADRESL);
+"224
+[; ;LCD_Analog_button.c: 224:     return ((ADRESH << 8) + ADRESL);
 [e ) -> + << -> _ADRESH `i -> 8 `i -> _ADRESL `i `us ]
 [e $UE 1630  ]
-"233
-[; ;LCD_Analog_button.c: 233: }
+"225
+[; ;LCD_Analog_button.c: 225: }
 [e :UE 1630 ]
 }
 [p f _sprintf 9544704 ]
 [a 3C 37 46 50 102 67 0 ]
-[a 1C 32 79 120 121 103 101 110 32 76 101 118 101 108 58 0 ]
+[a 1C 79 120 121 103 101 110 32 76 101 118 101 108 58 0 ]
 [a 2C 37 51 117 37 37 0 ]

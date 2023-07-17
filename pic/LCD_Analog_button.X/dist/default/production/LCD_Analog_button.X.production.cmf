@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_20.o
+$C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_20.o
 reset_vec CODE 0 0 0 2 2 1
 end_init CODE 0 2 2 2 2 1
 config CONFIG 4 8007 8007 5 2 1
@@ -56,11 +56,11 @@ maintext CODE 0 14C4 14C4 49 2 1
 cstackCOMMON COMMON 1 70 70 E 1 1
 cstackBANK0 BANK0 1 20 20 4F 1 1
 cstackBANK1 BANK1 1 A0 A0 3A 1 1
-stringtext1 STRCODE 0 1800 1800 F 2 1
-stringtext2 STRCODE 0 180F 180F 6 2 1
-stringtext3 STRCODE 0 1815 1815 6 2 1
-stringtext4 STRCODE 0 181B 181B 4 2 1
-stringtext5 STRCODE 0 181F 181F 4 2 1
+stringtext1 STRCODE 0 1800 1800 E 2 1
+stringtext2 STRCODE 0 180E 180E 6 2 1
+stringtext3 STRCODE 0 1814 1814 6 2 1
+stringtext4 STRCODE 0 181A 181A 4 2 1
+stringtext5 STRCODE 0 181E 181E 4 2 1
 bssBANK0 BANK0 1 6F 6F 1 1 1
 bssBANK1 BANK1 1 DA DA 12 1 1
 bssBANK2 BANK2 1 120 120 50 1 1
@@ -131,10 +131,10 @@ BANK8 420-46F 1
 BANK9 4A0-4EF 1
 CONST 800-800 2
 CONST 1000-127E 2
-CONST 1823-7FFF 2
+CONST 1822-7FFF 2
 ENTRY 800-800 2
 ENTRY 1000-127E 2
-ENTRY 1823-7FFF 2
+ENTRY 1822-7FFF 2
 IDLOC 8000-8003 2
 SFR10 500-51F 1
 SFR11 580-59F 1
@@ -192,7 +192,7 @@ SFR62 1F00-1F6F 1
 SFR63 1F80-1FEF 1
 CODE 800-800 2
 CODE 1000-127E 2
-CODE 1823-7FFF 2
+CODE 1822-7FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
 SFR2 100-11F 1
@@ -248,10 +248,10 @@ BIGRAM 2000-2FEF 1
 EEDATA F000-F0FF 2
 STRCODE 800-800 2
 STRCODE 1000-127E 2
-STRCODE 1823-7FFF 2
+STRCODE 1822-7FFF 2
 STRING 800-800 2
 STRING 1000-127E 2
-STRING 1823-7FFF 2
+STRING 1822-7FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -266,49 +266,49 @@ STRING 1823-7FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\LCD_Analog_button.X.production.o
-7EB cinit CODE >2450:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_1.s
-7EB cinit CODE >2453:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_1.s
-7EB cinit CODE >2507:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_1.s
-7EC cinit CODE >2508:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_1.s
-7ED cinit CODE >2512:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_1.s
-7EE cinit CODE >2513:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_1.s
-7EF cinit CODE >2514:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_1.s
-7F0 cinit CODE >2515:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_1.s
-7F1 cinit CODE >2516:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_1.s
-7F2 cinit CODE >2517:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_1.s
-7F5 cinit CODE >2521:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_1.s
-7F6 cinit CODE >2522:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_1.s
-7F7 cinit CODE >2523:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_1.s
-7F8 cinit CODE >2524:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_1.s
-7F9 cinit CODE >2525:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_1.s
-7FA cinit CODE >2526:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_1.s
-7FD cinit CODE >2532:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_1.s
-7FD cinit CODE >2534:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_1.s
-7FE cinit CODE >2535:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_1.s
-1285 text35 CODE >224:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-1285 text35 CODE >226:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-1287 text35 CODE >228:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-1287 text35 CODE >229:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-128B text35 CODE >232:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-128F text35 CODE >233:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-1427 text34 CODE >164:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-1428 text34 CODE >165:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-142A text34 CODE >166:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-1431 text34 CODE >167:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-1432 text34 CODE >168:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-1433 text34 CODE >169:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-1435 text34 CODE >170:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-1439 text34 CODE >171:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-1447 text34 CODE >172:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-1448 text34 CODE >173:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-1449 text34 CODE >174:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-144B text34 CODE >175:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-1452 text34 CODE >176:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-12BC text33 CODE >178:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-12BC text33 CODE >179:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-12BD text33 CODE >180:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-12C9 text33 CODE >179:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-12D2 text33 CODE >182:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+7EB cinit CODE >2449:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_1.s
+7EB cinit CODE >2452:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_1.s
+7EB cinit CODE >2506:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_1.s
+7EC cinit CODE >2507:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_1.s
+7ED cinit CODE >2511:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_1.s
+7EE cinit CODE >2512:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_1.s
+7EF cinit CODE >2513:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_1.s
+7F0 cinit CODE >2514:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_1.s
+7F1 cinit CODE >2515:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_1.s
+7F2 cinit CODE >2516:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_1.s
+7F5 cinit CODE >2520:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_1.s
+7F6 cinit CODE >2521:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_1.s
+7F7 cinit CODE >2522:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_1.s
+7F8 cinit CODE >2523:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_1.s
+7F9 cinit CODE >2524:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_1.s
+7FA cinit CODE >2525:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_1.s
+7FD cinit CODE >2531:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_1.s
+7FD cinit CODE >2533:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_1.s
+7FE cinit CODE >2534:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_1.s
+1285 text35 CODE >216:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+1285 text35 CODE >218:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+1287 text35 CODE >220:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+1287 text35 CODE >221:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+128B text35 CODE >224:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+128F text35 CODE >225:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+1427 text34 CODE >156:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+1428 text34 CODE >157:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+142A text34 CODE >158:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+1431 text34 CODE >159:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+1432 text34 CODE >160:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+1433 text34 CODE >161:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+1435 text34 CODE >162:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+1439 text34 CODE >163:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+1447 text34 CODE >164:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+1448 text34 CODE >165:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+1449 text34 CODE >166:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+144B text34 CODE >167:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+1452 text34 CODE >168:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+12BC text33 CODE >170:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+12BC text33 CODE >171:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+12BD text33 CODE >172:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+12C9 text33 CODE >171:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+12D2 text33 CODE >174:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
 41 text32 CODE >8:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcdiv.c
 41 text32 CODE >26:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcdiv.c
 45 text32 CODE >27:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcdiv.c
@@ -1066,75 +1066,75 @@ BB8 text8 CODE >1543:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common
 12DD text6 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_sprintf.c
 12E8 text6 CODE >20:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_sprintf.c
 12F0 text6 CODE >23:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_sprintf.c
-12A7 text5 CODE >189:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-12A7 text5 CODE >191:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-12B4 text5 CODE >192:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-12BB text5 CODE >193:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-920 text4 CODE >195:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-920 text4 CODE >196:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-931 text4 CODE >197:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-94C text4 CODE >198:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-95C text4 CODE >201:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-96D text4 CODE >202:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-98C text4 CODE >203:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-9AC text4 CODE >204:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-9CD text4 CODE >208:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-9E1 text4 CODE >209:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-A01 text4 CODE >213:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-A17 text4 CODE >215:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-1453 text3 CODE >150:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-1454 text3 CODE >151:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-1456 text3 CODE >152:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-145D text3 CODE >153:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-145E text3 CODE >154:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-145F text3 CODE >155:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-1461 text3 CODE >156:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-1465 text3 CODE >157:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-1473 text3 CODE >158:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-1474 text3 CODE >159:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-1475 text3 CODE >160:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-1477 text3 CODE >161:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-147E text3 CODE >162:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-129B text2 CODE >184:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-129B text2 CODE >185:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-129F text2 CODE >186:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-12A6 text2 CODE >187:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-13B7 text1 CODE >131:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-13B7 text1 CODE >133:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-13B9 text1 CODE >134:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-13BA text1 CODE >135:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-13BB text1 CODE >136:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-13BC text1 CODE >137:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-13BD text1 CODE >138:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-13BE text1 CODE >139:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-13BF text1 CODE >141:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-13C6 text1 CODE >143:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-13CA text1 CODE >144:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-13CE text1 CODE >145:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-13D2 text1 CODE >146:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-13D6 text1 CODE >147:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-13DA text1 CODE >148:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-14C4 maintext CODE >87:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-14C4 maintext CODE >89:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-14C7 maintext CODE >95:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-14C9 maintext CODE >100:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-14CC maintext CODE >101:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-14CD maintext CODE >105:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-14D6 maintext CODE >108:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-14DF maintext CODE >111:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-14E2 maintext CODE >112:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-14E9 maintext CODE >113:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-14ED maintext CODE >114:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-14F5 maintext CODE >117:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-14FD maintext CODE >125:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
-127F clrtext CODE >2496:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_1.s
-127F clrtext CODE >2497:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_1.s
-1280 clrtext CODE >2498:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_1.s
-1280 clrtext CODE >2499:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_1.s
-1281 clrtext CODE >2500:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_1.s
-1282 clrtext CODE >2501:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_1.s
-1283 clrtext CODE >2502:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_1.s
-1284 clrtext CODE >2503:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_1.s
+12A7 text5 CODE >181:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+12A7 text5 CODE >183:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+12B4 text5 CODE >184:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+12BB text5 CODE >185:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+920 text4 CODE >187:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+920 text4 CODE >188:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+931 text4 CODE >189:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+94C text4 CODE >190:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+95C text4 CODE >193:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+96D text4 CODE >194:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+98C text4 CODE >195:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+9AC text4 CODE >196:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+9CD text4 CODE >200:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+9E1 text4 CODE >201:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+A01 text4 CODE >205:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+A17 text4 CODE >207:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+1453 text3 CODE >142:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+1454 text3 CODE >143:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+1456 text3 CODE >144:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+145D text3 CODE >145:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+145E text3 CODE >146:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+145F text3 CODE >147:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+1461 text3 CODE >148:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+1465 text3 CODE >149:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+1473 text3 CODE >150:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+1474 text3 CODE >151:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+1475 text3 CODE >152:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+1477 text3 CODE >153:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+147E text3 CODE >154:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+129B text2 CODE >176:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+129B text2 CODE >177:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+129F text2 CODE >178:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+12A6 text2 CODE >179:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+13B7 text1 CODE >123:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+13B7 text1 CODE >125:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+13B9 text1 CODE >126:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+13BA text1 CODE >127:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+13BB text1 CODE >128:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+13BC text1 CODE >129:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+13BD text1 CODE >130:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+13BE text1 CODE >131:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+13BF text1 CODE >133:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+13C6 text1 CODE >135:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+13CA text1 CODE >136:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+13CE text1 CODE >137:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+13D2 text1 CODE >138:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+13D6 text1 CODE >139:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+13DA text1 CODE >140:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+14C4 maintext CODE >94:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+14C4 maintext CODE >96:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+14C7 maintext CODE >97:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+14C9 maintext CODE >98:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+14CC maintext CODE >99:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+14CD maintext CODE >103:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+14D6 maintext CODE >106:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+14DF maintext CODE >109:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+14E2 maintext CODE >110:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+14E9 maintext CODE >111:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+14ED maintext CODE >112:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+14F5 maintext CODE >115:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+14FD maintext CODE >117:E:\CS2024\pic\LCD_Analog_button.X\LCD_Analog_button.c
+127F clrtext CODE >2495:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_1.s
+127F clrtext CODE >2496:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_1.s
+1280 clrtext CODE >2497:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_1.s
+1280 clrtext CODE >2498:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_1.s
+1281 clrtext CODE >2499:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_1.s
+1282 clrtext CODE >2500:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_1.s
+1283 clrtext CODE >2501:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_1.s
+1284 clrtext CODE >2502:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_1.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -1152,7 +1152,7 @@ ___fpclassifyf@e 20 0 BANK0 1 cstackBANK0 dist/default/production\LCD_Analog_but
 ___fpclassifyf@u 22 0 BANK0 1 cstackBANK0 dist/default/production\LCD_Analog_button.X.production.o
 ___fpclassifyf@x 70 0 COMMON 1 cstackCOMMON dist/default/production\LCD_Analog_button.X.production.o
 ___lwmod@counter 75 0 COMMON 1 cstackCOMMON dist/default/production\LCD_Analog_button.X.production.o
-__Hspace_0 1823 0 ABS 0 - -
+__Hspace_0 1822 0 ABS 0 - -
 __Hspace_1 170 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
@@ -1166,7 +1166,7 @@ __L__absolute__ 0 0 ABS 0 __absolute__ -
 __Hstrings 0 0 ABS 0 strings -
 ?_vfprintf CF 0 BANK1 1 cstackBANK1 dist/default/production\LCD_Analog_button.X.production.o
 _TMR1 20C 0 ABS 0 - dist/default/production\LCD_Analog_button.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_20.o
+___sp 0 0 STACK 2 stack C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_20.o
 _dbuf 120 0 BANK2 1 bssBANK2 dist/default/production\LCD_Analog_button.X.production.o
 _labs 269E 0 CODE 0 text21 dist/default/production\LCD_Analog_button.X.production.o
 _main 2988 0 CODE 0 maintext dist/default/production\LCD_Analog_button.X.production.o
@@ -1178,7 +1178,7 @@ read_prec_or_width@n 21 0 BANK0 1 cstackBANK0 dist/default/production\LCD_Analog
 pad@i 25 0 BANK0 1 cstackBANK0 dist/default/production\LCD_Analog_button.X.production.o
 pad@p 7C 0 COMMON 1 cstackCOMMON dist/default/production\LCD_Analog_button.X.production.o
 pad@w 27 0 BANK0 1 cstackBANK0 dist/default/production\LCD_Analog_button.X.production.o
-start 4 0 CODE 0 init C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_20.o
+start 4 0 CODE 0 init C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_20.o
 ___flmul@aexp 2D 0 BANK0 1 cstackBANK0 dist/default/production\LCD_Analog_button.X.production.o
 ___flmul@bexp 2E 0 BANK0 1 cstackBANK0 dist/default/production\LCD_Analog_button.X.production.o
 ___flmul@prod 2F 0 BANK0 1 cstackBANK0 dist/default/production\LCD_Analog_button.X.production.o
@@ -1201,12 +1201,12 @@ utoa@p 30 0 BANK0 1 cstackBANK0 dist/default/production\LCD_Analog_button.X.prod
 utoa@w 2D 0 BANK0 1 cstackBANK0 dist/default/production\LCD_Analog_button.X.production.o
 __end_of_LCD_Char 28A6 0 CODE 0 text34 dist/default/production\LCD_Analog_button.X.production.o
 __end_of_LCD_Init 27B6 0 CODE 0 text1 dist/default/production\LCD_Analog_button.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_20.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_20.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_20.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_20.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_20.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_20.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_20.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_20.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_20.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_20.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_20.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_20.o
 floorf@e 3B 0 BANK0 1 cstackBANK0 dist/default/production\LCD_Analog_button.X.production.o
 floorf@m 37 0 BANK0 1 cstackBANK0 dist/default/production\LCD_Analog_button.X.production.o
 floorf@u 3D 0 BANK0 1 cstackBANK0 dist/default/production\LCD_Analog_button.X.production.o
@@ -1243,8 +1243,8 @@ __end_of___lwmod 106A 0 CODE 0 text10 dist/default/production\LCD_Analog_button.
 ?___fpclassifyf 70 0 COMMON 1 cstackCOMMON dist/default/production\LCD_Analog_button.X.production.o
 __Umul8_16@multiplicand 70 0 COMMON 1 cstackCOMMON dist/default/production\LCD_Analog_button.X.production.o
 __end_of_ADC_Read 2520 0 CODE 0 text35 dist/default/production\LCD_Analog_button.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_20.o
-___stacklo 0 0 ABS 0 - C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_20.o
+___stackhi 0 0 ABS 0 - C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_20.o
+___stacklo 0 0 ABS 0 - C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_20.o
 __end_of_efgtoa FD6 0 CODE 0 text14 dist/default/production\LCD_Analog_button.X.production.o
 __end_of_LCD_Cmd 28FE 0 CODE 0 text3 dist/default/production\LCD_Analog_button.X.production.o
 utoa@fp 2F 0 BANK0 1 cstackBANK0 dist/default/production\LCD_Analog_button.X.production.o
@@ -1291,7 +1291,7 @@ _efgtoa$902 A6 0 BANK1 1 cstackBANK1 dist/default/production\LCD_Analog_button.X
 fputc@fp 72 0 COMMON 1 cstackCOMMON dist/default/production\LCD_Analog_button.X.production.o
 fputs@fp 78 0 COMMON 1 cstackCOMMON dist/default/production\LCD_Analog_button.X.production.o
 __end_of_LCD_Clear 254E 0 CODE 0 text2 dist/default/production\LCD_Analog_button.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_20.o
+___int_sp 0 0 STACK 2 stack C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_20.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -1530,10 +1530,10 @@ memcpy@d 76 0 COMMON 1 cstackCOMMON dist/default/production\LCD_Analog_button.X.
 memcpy@n 71 0 COMMON 1 cstackCOMMON dist/default/production\LCD_Analog_button.X.production.o
 memcpy@s 77 0 COMMON 1 cstackCOMMON dist/default/production\LCD_Analog_button.X.production.o
 __pstringtext1 3000 0 STRCODE 0 stringtext1 dist/default/production\LCD_Analog_button.X.production.o
-__pstringtext2 301E 0 STRCODE 0 stringtext2 dist/default/production\LCD_Analog_button.X.production.o
-__pstringtext3 302A 0 STRCODE 0 stringtext3 dist/default/production\LCD_Analog_button.X.production.o
-__pstringtext4 3036 0 STRCODE 0 stringtext4 dist/default/production\LCD_Analog_button.X.production.o
-__pstringtext5 303E 0 STRCODE 0 stringtext5 dist/default/production\LCD_Analog_button.X.production.o
+__pstringtext2 301C 0 STRCODE 0 stringtext2 dist/default/production\LCD_Analog_button.X.production.o
+__pstringtext3 3028 0 STRCODE 0 stringtext3 dist/default/production\LCD_Analog_button.X.production.o
+__pstringtext4 3034 0 STRCODE 0 stringtext4 dist/default/production\LCD_Analog_button.X.production.o
+__pstringtext5 303C 0 STRCODE 0 stringtext5 dist/default/production\LCD_Analog_button.X.production.o
 __pstringtext6 0 0 STRCODE 0 stringtext6 dist/default/production\LCD_Analog_button.X.production.o
 ___fleq 2A1A 0 CODE 0 text31 dist/default/production\LCD_Analog_button.X.production.o
 ___flge 2EEA 0 CODE 0 text30 dist/default/production\LCD_Analog_button.X.production.o
@@ -1541,7 +1541,7 @@ ___wmul 2620 0 CODE 0 text13 dist/default/production\LCD_Analog_button.X.product
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __LcstackBANK1 0 0 ABS 0 cstackBANK1 -
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
-__S0 1823 0 ABS 0 - -
+__S0 1822 0 ABS 0 - -
 __S1 170 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
 _pad 28FE 0 CODE 0 text16 dist/default/production\LCD_Analog_button.X.production.o
@@ -1555,7 +1555,7 @@ __end_of_pad 2988 0 CODE 0 text16 dist/default/production\LCD_Analog_button.X.pr
 __Lintentry 4 0 CODE 0 intentry -
 strcpy@d 76 0 COMMON 1 cstackCOMMON dist/default/production\LCD_Analog_button.X.production.o
 strcpy@s 74 0 COMMON 1 cstackCOMMON dist/default/production\LCD_Analog_button.X.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_20.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_20.o
 __LbssBANK0 0 0 ABS 0 bssBANK0 -
 __LbssBANK1 0 0 ABS 0 bssBANK1 -
 __LbssBANK2 0 0 ABS 0 bssBANK2 -
@@ -1752,8 +1752,8 @@ __Hstringtext5 0 0 ABS 0 stringtext5 -
 __Hstringtext6 0 0 ABS 0 stringtext6 -
 __end_of_vfprintf 276E 0 CODE 0 text7 dist/default/production\LCD_Analog_button.X.production.o
 LCD_Cmd@command 72 0 COMMON 1 cstackCOMMON dist/default/production\LCD_Analog_button.X.production.o
-___heap_hi 0 0 ABS 0 - C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_20.o
-___heap_lo 0 0 ABS 0 - C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs11ls.\driver_tmp_20.o
+___heap_hi 0 0 ABS 0 - C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_20.o
+___heap_lo 0 0 ABS 0 - C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsos4.\driver_tmp_20.o
 ___fltol@f1 70 0 COMMON 1 cstackCOMMON dist/default/production\LCD_Analog_button.X.production.o
 strcpy@src 70 0 COMMON 1 cstackCOMMON dist/default/production\LCD_Analog_button.X.production.o
 __end_of__initialization FFA 0 CODE 0 cinit dist/default/production\LCD_Analog_button.X.production.o
@@ -1853,7 +1853,7 @@ maintext 0 14C4 2988 49 2
 cstackCOMMON 1 70 70 E 1
 cstackBANK0 1 20 20 50 1
 cstackBANK1 1 A0 A0 4C 1
-stringtext1 0 1800 3000 23 2
+stringtext1 0 1800 3000 22 2
 reset_vec 0 0 0 5 2
 bssBANK2 1 120 120 50 1
 clrtext 0 127F 24FE 6 2

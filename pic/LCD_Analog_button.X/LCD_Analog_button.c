@@ -56,6 +56,13 @@
 #define LCD_D6 PORTCbits.RC6
 #define LCD_D7 PORTCbits.RC7
 #define LCD_DATA_PORT PORTC
+// User Input with buttons
+#define BUTTON_A PORTAbits.RA0;
+#define BUTTON_A PORTAbits.RA1;
+#define BUTTON_A PORTAbits.RA2;
+#define BUTTON_A PORTAbits.RA5;
+// Analog input
+#define ANALOG_INPUT PORTAbits.RA3;
 
 // Seven-segment display connections (example)
 #define SEGMENT_A PORTBbits.RB0
@@ -86,17 +93,8 @@ volatile uint16_t temperature = 0;
 
 void main(void) {
     // Initialize LCD and other modules
-    LCD_Init();
-
-    // Initialize ADC for oxygen level and temperature readings
-    //ADCON1bits.ADFM = 1;    // Right justify result
-    //ADCON1bits.ADCS = 0b111;    // FOSC/64 as the conversion clock source
-    //ADCON1bits.ADPREF = 0b00;   // VREF+ = AVDD, VREF- = AVSS
+    LCD_Init();    
     ADCON0bits.ADON = 1;    // Enable ADC module
-
-    // Initialize Timer1 for time conversion
-    //T1CONbits.TMR1CS = 0;   // Timer1 clock source is FOSC/4
-    //T1CONbits.T1CKPS = 0b11;    // Timer1 prescaler 1:8
     TMR1 = 0;   // Clear Timer1 register
     T1CONbits.TMR1ON = 1;   // Start Timer1
 
@@ -109,18 +107,12 @@ void main(void) {
 
         // Display oxygen level on LCD
         LCD_Clear();
-        LCD_String(" Oxygen Level:");
+        LCD_String("Oxygen Level:");
         LCD_Cmd(0xC0);  // Move cursor to the second line
         Display_Oxygen_Level(oxygenLevel);
 
         // Convert 13 seconds to 24 hours and display on seven-segment display
-        Display_Time(13);
-
-        // Display temperature on LCD (optional)
-        //LCD_Clear();
-        //LCD_String("Temperature:");
-        //LCD_Cmd(0xC0);  // Move cursor to the second line
-        //Display_Temperature(temperature);
+        Display_Time(13);   
 
         __delay_ms(500);    // Delay between consecutive readings
     }
