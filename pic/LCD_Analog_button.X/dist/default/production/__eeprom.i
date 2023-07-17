@@ -1,4 +1,4 @@
-# 1 "newmain.c"
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\sources\\c99\\pic\\__eeprom.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,49 +6,7 @@
 # 1 "<built-in>" 2
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "newmain.c" 2
-
-
-
-
-
-
-#pragma config FEXTOSC = OFF
-#pragma config RSTOSC = HFINT1
-#pragma config CLKOUTEN = OFF
-#pragma config CSWEN = ON
-#pragma config FCMEN = ON
-
-
-#pragma config MCLRE = ON
-#pragma config PWRTE = OFF
-#pragma config LPBOREN = OFF
-#pragma config BOREN = ON
-#pragma config BORV = LO
-#pragma config ZCD = OFF
-#pragma config PPS1WAY = ON
-#pragma config STVREN = ON
-
-
-#pragma config WDTCPS = WDTCPS_31
-#pragma config WDTE = OFF
-#pragma config WDTCWS = WDTCWS_7
-#pragma config WDTCCS = SC
-
-
-#pragma config WRT = OFF
-#pragma config SCANE = available
-#pragma config LVP = ON
-
-
-#pragma config CP = OFF
-#pragma config CPD = OFF
-
-
-
-
-
-
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\sources\\c99\\pic\\__eeprom.c" 2
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\xc.h" 1 3
 # 18 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -20764,317 +20722,184 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 28 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\xc.h" 2 3
-# 42 "newmain.c" 2
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\sources\\c99\\pic\\__eeprom.c" 2
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdio.h" 1 3
-# 24 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdio.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\bits/alltypes.h" 1 3
 
 
+void
+__eecpymem(volatile unsigned char *to, __eeprom unsigned char * from, unsigned char size)
+{
+ volatile unsigned char *cp = to;
+# 22 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\sources\\c99\\pic\\__eeprom.c"
+ while (NVMCON1bits.WR) {
+  continue;
+ }
+ NVMCON1bits.NVMREGS = 1;
+ NVMADRL = (unsigned char) from;
+ NVMADRH = 0x70;
+ while (size--) {
+  NVMCON1bits.RD = 1;
+  *cp++ = NVMDATL;
+  NVMADRL++;
+ }
 
 
-
-typedef void * va_list[1];
-
-
-
-
-typedef void * __isoc_va_list[1];
-# 137 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef long ssize_t;
-# 246 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef long long off_t;
-# 399 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef struct _IO_FILE FILE;
-# 25 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdio.h" 2 3
-# 52 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdio.h" 3
-typedef union _G_fpos64_t {
- char __opaque[16];
- double __align;
-} fpos_t;
-
-extern FILE *const stdin;
-extern FILE *const stdout;
-extern FILE *const stderr;
-
-
-
-
-
-FILE *fopen(const char *restrict, const char *restrict);
-FILE *freopen(const char *restrict, const char *restrict, FILE *restrict);
-int fclose(FILE *);
-
-int remove(const char *);
-int rename(const char *, const char *);
-
-int feof(FILE *);
-int ferror(FILE *);
-int fflush(FILE *);
-void clearerr(FILE *);
-
-int fseek(FILE *, long, int);
-long ftell(FILE *);
-void rewind(FILE *);
-
-int fgetpos(FILE *restrict, fpos_t *restrict);
-int fsetpos(FILE *, const fpos_t *);
-
-size_t fread(void *restrict, size_t, size_t, FILE *restrict);
-size_t fwrite(const void *restrict, size_t, size_t, FILE *restrict);
-
-int fgetc(FILE *);
-int getc(FILE *);
-int getchar(void);
-int ungetc(int, FILE *);
-int getch(void);
-
-int fputc(int, FILE *);
-int putc(int, FILE *);
-int putchar(int);
-void putch(char);
-
-char *fgets(char *restrict, int, FILE *restrict);
-
-char *gets(char *);
-
-
-int fputs(const char *restrict, FILE *restrict);
-int puts(const char *);
-
-__attribute__((__format__(__printf__, 1, 2)))
-int printf(const char *restrict, ...);
-__attribute__((__format__(__printf__, 2, 3)))
-int fprintf(FILE *restrict, const char *restrict, ...);
-__attribute__((__format__(__printf__, 2, 3)))
-int sprintf(char *restrict, const char *restrict, ...);
-__attribute__((__format__(__printf__, 3, 4)))
-int snprintf(char *restrict, size_t, const char *restrict, ...);
-
-__attribute__((__format__(__printf__, 1, 0)))
-int vprintf(const char *restrict, __isoc_va_list);
-int vfprintf(FILE *restrict, const char *restrict, __isoc_va_list);
-__attribute__((__format__(__printf__, 2, 0)))
-int vsprintf(char *restrict, const char *restrict, __isoc_va_list);
-__attribute__((__format__(__printf__, 3, 0)))
-int vsnprintf(char *restrict, size_t, const char *restrict, __isoc_va_list);
-
-__attribute__((__format__(__scanf__, 1, 2)))
-int scanf(const char *restrict, ...);
-__attribute__((__format__(__scanf__, 2, 3)))
-int fscanf(FILE *restrict, const char *restrict, ...);
-__attribute__((__format__(__scanf__, 2, 3)))
-int sscanf(const char *restrict, const char *restrict, ...);
-
-__attribute__((__format__(__scanf__, 1, 0)))
-int vscanf(const char *restrict, __isoc_va_list);
-int vfscanf(FILE *restrict, const char *restrict, __isoc_va_list);
-__attribute__((__format__(__scanf__, 2, 0)))
-int vsscanf(const char *restrict, const char *restrict, __isoc_va_list);
-
-void perror(const char *);
-
-int setvbuf(FILE *restrict, char *restrict, int, size_t);
-void setbuf(FILE *restrict, char *restrict);
-
-char *tmpnam(char *);
-FILE *tmpfile(void);
-
-
-
-
-FILE *fmemopen(void *restrict, size_t, const char *restrict);
-FILE *open_memstream(char **, size_t *);
-FILE *fdopen(int, const char *);
-FILE *popen(const char *, const char *);
-int pclose(FILE *);
-int fileno(FILE *);
-int fseeko(FILE *, off_t, int);
-off_t ftello(FILE *);
-int dprintf(int, const char *restrict, ...);
-int vdprintf(int, const char *restrict, __isoc_va_list);
-void flockfile(FILE *);
-int ftrylockfile(FILE *);
-void funlockfile(FILE *);
-int getc_unlocked(FILE *);
-int getchar_unlocked(void);
-int putc_unlocked(int, FILE *);
-int putchar_unlocked(int);
-ssize_t getdelim(char **restrict, size_t *restrict, int, FILE *restrict);
-ssize_t getline(char **restrict, size_t *restrict, FILE *restrict);
-int renameat(int, const char *, int, const char *);
-char *ctermid(char *);
-
-
-
-
-
-
-
-char *tempnam(const char *, const char *);
-# 44 "newmain.c" 2
-# 66 "newmain.c"
-void LCD_Init();
-void LCD_Cmd(unsigned char);
-void LCD_Char(unsigned char);
-void LCD_String(const char*);
-void LCD_Clear();
-void Display_Oxygen_Level(uint16_t);
-void Display_Time(uint16_t);
-void Display_Temperature(uint16_t);
-uint16_t ADC_Read(uint8_t channel);
-
-
-volatile uint16_t oxygenLevel = 0;
-volatile uint16_t timerCount = 0;
-volatile uint16_t temperature = 0;
-
-
-void main(void) {
-
-    LCD_Init();
-
-
-
-
-
-    ADCON0bits.ADON = 1;
-
-
-
-
-    TMR1 = 0;
-    T1CONbits.TMR1ON = 1;
-
-    while (1) {
-
-        oxygenLevel = ADC_Read(14);
-
-
-        temperature = ADC_Read(2);
-
-
-        LCD_Clear();
-        LCD_String(" Oxygen Level:");
-        LCD_Cmd(0xC0);
-        Display_Oxygen_Level(oxygenLevel);
-
-
-        Display_Time(13);
-
-
-
-
-
-
-
-        _delay((unsigned long)((500)*(10000/4000.0)));
-    }
-
-    return;
-}
-
-void LCD_Init() {
-
-    TRISEbits.TRISE0 = 0;
-    TRISCbits.TRISC0 = 0;
-    TRISCbits.TRISC1 = 0;
-    TRISCbits.TRISC4 = 0;
-    TRISCbits.TRISC5 = 0;
-    TRISCbits.TRISC6 = 0;
-    TRISCbits.TRISC7 = 0;
-
-    _delay((unsigned long)((15)*(10000/4000.0)));
-
-    LCD_Cmd(0x02);
-    LCD_Cmd(0x28);
-    LCD_Cmd(0x0C);
-    LCD_Cmd(0x06);
-    LCD_Cmd(0x80);
-}
-
-void LCD_Cmd(unsigned char command) {
-    PORTCbits.RC0 = 0;
-    PORTC = (PORTC & 0x0F) | (command & 0xF0);
-    PORTEbits.RE0 = 1;
-    _delay((unsigned long)((1)*(10000/4000000.0)));
-    PORTEbits.RE0 = 0;
-    _delay((unsigned long)((200)*(10000/4000000.0)));
-    PORTC = (PORTC & 0x0F) | ((command << 4) & 0xF0);
-    PORTEbits.RE0 = 1;
-    _delay((unsigned long)((1)*(10000/4000000.0)));
-    PORTEbits.RE0 = 0;
-    _delay((unsigned long)((2)*(10000/4000.0)));
-}
-
-void LCD_Char(unsigned char data) {
-    PORTCbits.RC0 = 1;
-    PORTC = (PORTC & 0x0F) | (data & 0xF0);
-    PORTEbits.RE0 = 1;
-    _delay((unsigned long)((1)*(10000/4000000.0)));
-    PORTEbits.RE0 = 0;
-    _delay((unsigned long)((200)*(10000/4000000.0)));
-    PORTC = (PORTC & 0x0F) | ((data << 4) & 0xF0);
-    PORTEbits.RE0 = 1;
-    _delay((unsigned long)((1)*(10000/4000000.0)));
-    PORTEbits.RE0 = 0;
-    _delay((unsigned long)((2)*(10000/4000.0)));
-}
-
-void LCD_String(const char* text) {
-    while (*text != '\0') {
-        LCD_Char(*text++);
-    }
-}
-
-void LCD_Clear() {
-    LCD_Cmd(0x01);
-    _delay((unsigned long)((2)*(10000/4000.0)));
-}
-
-void Display_Oxygen_Level(uint16_t level) {
-    char buffer[5];
-    sprintf(buffer, "%3u%%", level);
-    LCD_String(buffer);
-}
-
-void Display_Time(uint16_t seconds) {
-    uint16_t hours = seconds / 3600;
-    uint16_t minutes = (seconds % 3600) / 60;
-    seconds = seconds % 60;
-
-
-    PORTBbits.RB0 = hours % 10;
-    PORTBbits.RB1 = (hours / 10) % 10;
-    PORTBbits.RB2 = (hours / 100) % 10;
-    PORTBbits.RB3 = (hours / 1000) % 10;
-
-
-
-    PORTBbits.RB4 = minutes % 10;
-    PORTBbits.RB5 = (minutes / 10) % 10;
-
-
-
-    PORTBbits.RB6 = seconds % 10;
 
 }
 
-void Display_Temperature(uint16_t temp) {
-    char buffer[6];
-    float temperature = (float)temp * 0.48876 - 50.0;
-    sprintf(buffer, "%.2fC", temperature);
-    LCD_String(buffer);
+void
+__memcpyee(__eeprom unsigned char * to, const unsigned char *from, unsigned char size)
+{
+ const unsigned char *ptr =from;
+# 69 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\sources\\c99\\pic\\__eeprom.c"
+ while (NVMCON1bits.WR) {
+  continue;
+ }
+ NVMCON1bits.NVMREGS = 1;
+ NVMADRL = (unsigned char) to - 1U;
+ NVMADRH = 0x70;
+ NVMDATH = 0;
+ while (size--) {
+  while (NVMCON1bits.WR) {
+   continue;
+  }
+  NVMDATL = *ptr++;
+  NVMADRL++;
+  STATUSbits.CARRY = 0;
+  if (INTCONbits.GIE) {
+   STATUSbits.CARRY = 1;
+  }
+  NVMCON1bits.WREN = 1;
+  NVMCON2 = 0x55;
+  NVMCON2 = 0xAA;
+  NVMCON1bits.WR = 1;
+  while (NVMCON1bits.WR) {
+   continue;
+  }
+  NVMCON1bits.WREN = 0;
+  if (STATUSbits.CARRY) {
+   INTCONbits.GIE = 1;
+  }
+ }
+
+
+
 }
 
-uint16_t ADC_Read(uint8_t channel) {
+unsigned char
+__eetoc(__eeprom void *addr)
+{
+ unsigned char data;
+ __eecpymem((unsigned char *) &data,addr,1);
+ return data;
+}
 
-    ADCON0bits.ADGO = 1;
+unsigned int
+__eetoi(__eeprom void *addr)
+{
+ unsigned int data;
+ __eecpymem((unsigned char *) &data,addr,2);
+ return data;
+}
 
-    while (ADCON0bits.ADGO)
-        ;
+#pragma warning push
+#pragma warning disable 2040
+__uint24
+__eetom(__eeprom void *addr)
+{
+ __uint24 data;
+ __eecpymem((unsigned char *) &data,addr,3);
+ return data;
+}
+#pragma warning pop
 
+unsigned long
+__eetol(__eeprom void *addr)
+{
+ unsigned long data;
+ __eecpymem((unsigned char *) &data,addr,4);
+ return data;
+}
 
-    return ((ADRESH << 8) + ADRESL);
+#pragma warning push
+#pragma warning disable 1516
+unsigned long long
+__eetoo(__eeprom void *addr)
+{
+ unsigned long long data;
+ __eecpymem((unsigned char *) &data,addr,8);
+ return data;
+}
+#pragma warning pop
+
+unsigned char
+__ctoee(__eeprom void *addr, unsigned char data)
+{
+ __memcpyee(addr,(unsigned char *) &data,1);
+ return data;
+}
+
+unsigned int
+__itoee(__eeprom void *addr, unsigned int data)
+{
+ __memcpyee(addr,(unsigned char *) &data,2);
+ return data;
+}
+
+#pragma warning push
+#pragma warning disable 2040
+__uint24
+__mtoee(__eeprom void *addr, __uint24 data)
+{
+ __memcpyee(addr,(unsigned char *) &data,3);
+ return data;
+}
+#pragma warning pop
+
+unsigned long
+__ltoee(__eeprom void *addr, unsigned long data)
+{
+ __memcpyee(addr,(unsigned char *) &data,4);
+ return data;
+}
+
+#pragma warning push
+#pragma warning disable 1516
+unsigned long long
+__otoee(__eeprom void *addr, unsigned long long data)
+{
+ __memcpyee(addr,(unsigned char *) &data,8);
+ return data;
+}
+#pragma warning pop
+
+float
+__eetoft(__eeprom void *addr)
+{
+ float data;
+ __eecpymem((unsigned char *) &data,addr,3);
+ return data;
+}
+
+double
+__eetofl(__eeprom void *addr)
+{
+ double data;
+ __eecpymem((unsigned char *) &data,addr,4);
+ return data;
+}
+
+float
+__fttoee(__eeprom void *addr, float data)
+{
+ __memcpyee(addr,(unsigned char *) &data,3);
+ return data;
+}
+
+double
+__fltoee(__eeprom void *addr, double data)
+{
+ __memcpyee(addr,(unsigned char *) &data,4);
+ return data;
 }

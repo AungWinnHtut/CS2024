@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-  <executable name="dist/default/production\PIC1.X.production.hex">
+  <executable name="dist/default/production\LCD_Analog_button.X.production.hex">
     <memory name="program">
       <units>words</units>
       <length>32768</length>
-      <used>5505</used>
-      <free>27263</free>
+      <used>5539</used>
+      <free>27229</free>
     </memory>
     <memory name="data">
       <units>bytes</units>
       <length>4096</length>
-      <used>250</used>
-      <free>3846</free>
+      <used>252</used>
+      <free>3844</free>
     </memory>
   </executable>
 </project>

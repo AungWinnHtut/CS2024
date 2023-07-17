@@ -1,8 +1,13 @@
 
 // PIC16F18877 Configuration Bit Settings
 
-// 'C' source line config statements
-
+// 2023-07-16 19:50
+/*
+#pragma config FEXTOSC = XT
+#pragma config WDTE = OFF
+#pragma config LVP = OFF
+#define _XTAL_FREQ 4000000
+ */
 // CONFIG1
 #pragma config FEXTOSC = OFF    // External Oscillator mode selection bits (Oscillator not enabled)
 #pragma config RSTOSC = HFINT1  // Power-up default value for COSC bits (HFINTOSC (1MHz))
@@ -44,9 +49,9 @@
 #include <stdio.h>
 
 // LCD module connections
-#define LCD_RS PORTCbits.RC0
-#define LCD_EN PORTEbits.RE0
-#define LCD_D4 PORTCbits.RC4
+#define LCD_RS PORTCbits.RC0 //RS
+#define LCD_EN PORTEbits.RE0 //Enable
+#define LCD_D4 PORTCbits.RC4 //Data 4 bit mode
 #define LCD_D5 PORTCbits.RC5
 #define LCD_D6 PORTCbits.RC6
 #define LCD_D7 PORTCbits.RC7
@@ -60,7 +65,7 @@
 #define SEGMENT_E PORTBbits.RB4
 #define SEGMENT_F PORTBbits.RB5
 #define SEGMENT_G PORTBbits.RB6
-#define _XTAL_FREQ 10000
+#define _XTAL_FREQ 4000000
 
 // Function prototypes
 void LCD_Init();
@@ -226,3 +231,4 @@ uint16_t ADC_Read(uint8_t channel) {
     // Return the ADC result
     return ((ADRESH << 8) + ADRESL);
 }
+

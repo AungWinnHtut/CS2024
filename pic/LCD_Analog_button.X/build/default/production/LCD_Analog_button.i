@@ -1,4 +1,4 @@
-# 1 "newmain.c"
+# 1 "LCD_Analog_button.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,13 +6,8 @@
 # 1 "<built-in>" 2
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "newmain.c" 2
-
-
-
-
-
-
+# 1 "LCD_Analog_button.c" 2
+# 12 "LCD_Analog_button.c"
 #pragma config FEXTOSC = OFF
 #pragma config RSTOSC = HFINT1
 #pragma config CLKOUTEN = OFF
@@ -20764,7 +20759,7 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 28 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\xc.h" 2 3
-# 42 "newmain.c" 2
+# 47 "LCD_Analog_button.c" 2
 
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdio.h" 1 3
@@ -20913,8 +20908,8 @@ char *ctermid(char *);
 
 
 char *tempnam(const char *, const char *);
-# 44 "newmain.c" 2
-# 66 "newmain.c"
+# 49 "LCD_Analog_button.c" 2
+# 71 "LCD_Analog_button.c"
 void LCD_Init();
 void LCD_Cmd(unsigned char);
 void LCD_Char(unsigned char);
@@ -20969,7 +20964,7 @@ void main(void) {
 
 
 
-        _delay((unsigned long)((500)*(10000/4000.0)));
+        _delay((unsigned long)((500)*(4000000/4000.0)));
     }
 
     return;
@@ -20985,7 +20980,7 @@ void LCD_Init() {
     TRISCbits.TRISC6 = 0;
     TRISCbits.TRISC7 = 0;
 
-    _delay((unsigned long)((15)*(10000/4000.0)));
+    _delay((unsigned long)((15)*(4000000/4000.0)));
 
     LCD_Cmd(0x02);
     LCD_Cmd(0x28);
@@ -20998,28 +20993,28 @@ void LCD_Cmd(unsigned char command) {
     PORTCbits.RC0 = 0;
     PORTC = (PORTC & 0x0F) | (command & 0xF0);
     PORTEbits.RE0 = 1;
-    _delay((unsigned long)((1)*(10000/4000000.0)));
+    _delay((unsigned long)((1)*(4000000/4000000.0)));
     PORTEbits.RE0 = 0;
-    _delay((unsigned long)((200)*(10000/4000000.0)));
+    _delay((unsigned long)((200)*(4000000/4000000.0)));
     PORTC = (PORTC & 0x0F) | ((command << 4) & 0xF0);
     PORTEbits.RE0 = 1;
-    _delay((unsigned long)((1)*(10000/4000000.0)));
+    _delay((unsigned long)((1)*(4000000/4000000.0)));
     PORTEbits.RE0 = 0;
-    _delay((unsigned long)((2)*(10000/4000.0)));
+    _delay((unsigned long)((2)*(4000000/4000.0)));
 }
 
 void LCD_Char(unsigned char data) {
     PORTCbits.RC0 = 1;
     PORTC = (PORTC & 0x0F) | (data & 0xF0);
     PORTEbits.RE0 = 1;
-    _delay((unsigned long)((1)*(10000/4000000.0)));
+    _delay((unsigned long)((1)*(4000000/4000000.0)));
     PORTEbits.RE0 = 0;
-    _delay((unsigned long)((200)*(10000/4000000.0)));
+    _delay((unsigned long)((200)*(4000000/4000000.0)));
     PORTC = (PORTC & 0x0F) | ((data << 4) & 0xF0);
     PORTEbits.RE0 = 1;
-    _delay((unsigned long)((1)*(10000/4000000.0)));
+    _delay((unsigned long)((1)*(4000000/4000000.0)));
     PORTEbits.RE0 = 0;
-    _delay((unsigned long)((2)*(10000/4000.0)));
+    _delay((unsigned long)((2)*(4000000/4000.0)));
 }
 
 void LCD_String(const char* text) {
@@ -21030,7 +21025,7 @@ void LCD_String(const char* text) {
 
 void LCD_Clear() {
     LCD_Cmd(0x01);
-    _delay((unsigned long)((2)*(10000/4000.0)));
+    _delay((unsigned long)((2)*(4000000/4000.0)));
 }
 
 void Display_Oxygen_Level(uint16_t level) {
