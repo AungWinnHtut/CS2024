@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Csharp4Clearners", "Csharp4Clearners\Csharp4Clearners.csproj", "{DC95AE11-ACED-4192-9ECF-8E077A05B792}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC95AE11-ACED-4192-9ECF-8E077A05B792}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC95AE11-ACED-4192-9ECF-8E077A05B792}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC95AE11-ACED-4192-9ECF-8E077A05B792}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC95AE11-ACED-4192-9ECF-8E077A05B792}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C6639744-A0DC-4DB5-B00E-D9118D76CFF8}
+	EndGlobalSection
+EndGlobal

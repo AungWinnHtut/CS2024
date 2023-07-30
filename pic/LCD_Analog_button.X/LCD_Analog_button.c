@@ -100,7 +100,7 @@ void main(void) {
 
     while (1) {
         // Read oxygen level from potentiometer
-        oxygenLevel = ADC_Read(14);
+        oxygenLevel = ADC_Read(3);
 
         // Read temperature from temperature sensor
         temperature = ADC_Read(2);

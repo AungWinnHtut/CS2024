@@ -1,3 +1,3 @@
 ﻿  stringlib.cpp
-E:\CS2024\c\stringlib\stringlib\stringlib.cpp(47,13): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data
+E:\CS2024\c\stringlib\stringlib\stringlib.cpp(55,13): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data
   stringlib.vcxproj -> E:\CS2024\c\stringlib\x64\Debug\stringlib.exe

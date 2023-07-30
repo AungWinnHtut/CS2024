@@ -20914,7 +20914,12 @@ char *ctermid(char *);
 
 char *tempnam(const char *, const char *);
 # 44 "newmain.c" 2
-# 66 "newmain.c"
+# 80 "newmain.c"
+void keypad_init();
+char keypad_get_key();
+char keypad_scanner();
+
+
 void LCD_Init();
 void LCD_Cmd(unsigned char);
 void LCD_Char(unsigned char);
@@ -20923,56 +20928,136 @@ void LCD_Clear();
 void Display_Oxygen_Level(uint16_t);
 void Display_Time(uint16_t);
 void Display_Temperature(uint16_t);
-uint16_t ADC_Read(uint8_t channel);
+void ADC_Init();
+unsigned int ADC_Read(uint8_t channel);
+void button_press_show(uint16_t level);
 
 
 volatile uint16_t oxygenLevel = 0;
 volatile uint16_t timerCount = 0;
 volatile uint16_t temperature = 0;
+volatile uint16_t analog_choice = 3;
 
 
 void main(void) {
+    ANSELA = 0b00001000;
+    TRISA = 0b11111111;
 
     LCD_Init();
 
 
+    ADC_Init();
+
+
+    char key;
 
 
 
-    ADCON0bits.ADON = 1;
 
-
-
-
-    TMR1 = 0;
-    T1CONbits.TMR1ON = 1;
+    ANSELD = 0b00000000;
+    TRISD = 0b11111111;
 
     while (1) {
-
-        oxygenLevel = ADC_Read(14);
-
-
-        temperature = ADC_Read(2);
-
-
         LCD_Clear();
-        LCD_String(" Oxygen Level:");
         LCD_Cmd(0xC0);
-        Display_Oxygen_Level(oxygenLevel);
+
+        if(PORTDbits.RD7==0)
+        {
+             _delay((unsigned long)((100)*(10000/4000.0)));
+             while(PORTDbits.RD7==0);
+            LCD_String("Button Pressed");
+        }
+        key = keypad_scanner();
+
+        if (key != '\0') {
+            LCD_Char(key);
+        }
+        if(PORTAbits.RA0 == 0)
+        {
+            analog_choice = 3;
+
+        }
+        else if(PORTAbits.RA1 == 0)
+        {
+            analog_choice = 6;
+
+        }
+
+        oxygenLevel = ADC_Read(analog_choice);
+
+        _delay((unsigned long)((100)*(10000/4000.0)));
 
 
-        Display_Time(13);
 
 
 
 
 
-
-
-        _delay((unsigned long)((500)*(10000/4000.0)));
     }
 
     return;
+}
+
+char keypad_scanner() {
+    RD0=0; RD1=1; RD2=1; RD3=1;
+    if(RD4==0) { _delay((unsigned long)((100)*(10000/4000.0))); return '1'; }
+    if(RD5==0) { _delay((unsigned long)((100)*(10000/4000.0))); while(RD5==0); return '2'; }
+    if(RD6==0) { _delay((unsigned long)((100)*(10000/4000.0))); while(RD6==0); return '3'; }
+    if(RD7==0) { _delay((unsigned long)((100)*(10000/4000.0))); while(RD7==0); return 'A'; }
+
+    RD1=0; RD0=1; RD2=1; RD3=1;
+    if(RD4==0) { _delay((unsigned long)((100)*(10000/4000.0))); while(RD4==0); return '4'; }
+    if(RD5==0) { _delay((unsigned long)((100)*(10000/4000.0))); while(RD5==0); return '5'; }
+    if(RD6==0) { _delay((unsigned long)((100)*(10000/4000.0))); while(RD6==0); return '6'; }
+    if(RD7==0) { _delay((unsigned long)((100)*(10000/4000.0))); while(RD7==0); return 'B'; }
+
+    RD2=0; RD0=1; RD1=1; RD3=1;
+    if(RD4==0) { _delay((unsigned long)((100)*(10000/4000.0))); while(RD4==0); return '7'; }
+    if(RD5==0) { _delay((unsigned long)((100)*(10000/4000.0))); while(RD5==0); return '8'; }
+    if(RD6==0) { _delay((unsigned long)((100)*(10000/4000.0))); while(RD6==0); return '9'; }
+    if(RD7==0) { _delay((unsigned long)((100)*(10000/4000.0))); while(RD7==0); return 'C'; }
+
+    RD3=0; RD1=1; RD2=1; RD0=1;
+    if(RD4==0) { _delay((unsigned long)((100)*(10000/4000.0))); while(RD4==0); return '*'; }
+    if(RD5==0) { _delay((unsigned long)((100)*(10000/4000.0))); while(RD5==0); return '0'; }
+    if(RD6==0) { _delay((unsigned long)((100)*(10000/4000.0))); while(RD6==0); return '#'; }
+    if(RD7==0) { _delay((unsigned long)((100)*(10000/4000.0))); while(RD7==0); return 'D'; }
+
+    return '\0';
+}
+
+void keypad_init() {
+
+    PORTD = 0;
+    TRISD = 0b11110000;
+
+    WPUD = 0xFF;
+}
+char keypad_get_key() {
+
+    unsigned char row, col;
+    const unsigned char keypad[4][4] = {
+        {'1', '2', '3', 'A'},
+        {'4', '5', '6', 'B'},
+        {'7', '8', '9', 'C'},
+        {'*', '0', '#', 'D'}
+    };
+
+    for (col = 0; col < 3; col++) {
+
+        PORTD = (PORTD & 0xF0) | (1 << col);
+
+        for (row = 0; row < 4; row++) {
+            if ((PORTD & (1 << (row + 4))) == 0) {
+
+
+                return keypad[row][col];
+            }
+        }
+    }
+
+
+    return '\0';
 }
 
 void LCD_Init() {
@@ -21068,13 +21153,39 @@ void Display_Temperature(uint16_t temp) {
     LCD_String(buffer);
 }
 
-uint16_t ADC_Read(uint8_t channel) {
-
-    ADCON0bits.ADGO = 1;
-
-    while (ADCON0bits.ADGO)
-        ;
+void ADC_Init() {
 
 
-    return ((ADRESH << 8) + ADRESL);
+    ANSELA = 0b00001000;
+    TRISA = 0b11111111;
+    ADREF = 0b00000000;
+    ADCLK = 0b00000011;
+    ADACQ = 0b00000000;
+    ADCON0 = 0b10000100;
+
+
+
+    _delay((unsigned long)((20)*(10000/4000000.0)));
+}
+
+
+unsigned int ADC_Read(uint8_t channel) {
+
+    unsigned int result;
+     ADPCH = channel;
+    _delay((unsigned long)((2)*(10000/4000000.0)));
+
+    ADCON0bits.GO = 1;
+
+
+    while (ADCON0bits.GO);
+    result = ((unsigned int)ADRESH << 8) | ADRESL;
+
+    return(result);
+}
+
+void button_press_show(uint16_t level) {
+    char buffer[5];
+    sprintf(buffer, "%3u%%", level);
+    LCD_String(buffer);
 }

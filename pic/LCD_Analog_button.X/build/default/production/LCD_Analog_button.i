@@ -20935,7 +20935,7 @@ void main(void) {
 
     while (1) {
 
-        oxygenLevel = ADC_Read(14);
+        oxygenLevel = ADC_Read(3);
 
 
         temperature = ADC_Read(2);

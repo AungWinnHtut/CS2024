@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.41 build 20230208172133 
-                                                                                               Mon Jul 17 13:57:27 2023
+                                                                                               Sun Jul 23 19:05:32 2023
 
 Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og1 
      1                           	processor	16F18877
@@ -2111,8 +2111,8 @@ Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og1
   2082     14CC  140E               	bsf	14,0	;volatile
   2083     14CD                     l3427:
   2084                           
-  2085                           ;LCD_Analog_button.c: 103:         oxygenLevel = ADC_Read(14);
-  2086     14CD  300E               	movlw	14
+  2085                           ;LCD_Analog_button.c: 103:         oxygenLevel = ADC_Read(3);
+  2086     14CD  3003               	movlw	3
   2087     14CE  3192  2285  3194   	fcall	_ADC_Read
   2088     14D1  0871               	movf	?_ADC_Read+1,w
   2089     14D2  0141               	movlb	1	; select bank1
@@ -12197,7 +12197,7 @@ BANK50              50      0       0     107        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.41 build 20230208172133 
-Symbol Table                                                                                   Mon Jul 17 13:57:27 2023
+Symbol Table                                                                                   Sun Jul 23 19:05:32 2023
 
                 ___fldiv@aexp 002C                  ___fldiv@bexp 002B                  ___fldiv@sign 0024  
                           l60 147E                            l63 1452                            l72 12A6  

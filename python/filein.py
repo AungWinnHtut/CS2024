@@ -1,5 +1,5 @@
 def greeting(name):
-    print('Hello '+name)
+    print('မဂင်္လာပါ '+name)
 
 
 def area():

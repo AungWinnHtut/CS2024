@@ -1,0 +1,11 @@
+E:\CS2024\c\GUItest\GUItest\bin\Debug\GUItest.exe.config
+E:\CS2024\c\GUItest\GUItest\bin\Debug\GUItest.exe
+E:\CS2024\c\GUItest\GUItest\bin\Debug\GUItest.pdb
+E:\CS2024\c\GUItest\GUItest\obj\Debug\GUItest.csproj.AssemblyReference.cache
+E:\CS2024\c\GUItest\GUItest\obj\Debug\GUItest.csproj.SuggestedBindingRedirects.cache
+E:\CS2024\c\GUItest\GUItest\obj\Debug\GUItest.frmMain.resources
+E:\CS2024\c\GUItest\GUItest\obj\Debug\GUItest.Properties.Resources.resources
+E:\CS2024\c\GUItest\GUItest\obj\Debug\GUItest.csproj.GenerateResource.cache
+E:\CS2024\c\GUItest\GUItest\obj\Debug\GUItest.csproj.CoreCompileInputs.cache
+E:\CS2024\c\GUItest\GUItest\obj\Debug\GUItest.exe
+E:\CS2024\c\GUItest\GUItest\obj\Debug\GUItest.pdb

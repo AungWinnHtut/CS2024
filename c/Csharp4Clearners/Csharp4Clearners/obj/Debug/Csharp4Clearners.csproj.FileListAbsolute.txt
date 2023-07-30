@@ -1,0 +1,12 @@
+E:\CS2024\c\Csharp4Clearners\Csharp4Clearners\bin\Debug\Csharp4Clearners.exe.config
+E:\CS2024\c\Csharp4Clearners\Csharp4Clearners\bin\Debug\Csharp4Clearners.exe
+E:\CS2024\c\Csharp4Clearners\Csharp4Clearners\bin\Debug\Csharp4Clearners.pdb
+E:\CS2024\c\Csharp4Clearners\Csharp4Clearners\obj\Debug\Csharp4Clearners.csproj.AssemblyReference.cache
+E:\CS2024\c\Csharp4Clearners\Csharp4Clearners\obj\Debug\Csharp4Clearners.csproj.SuggestedBindingRedirects.cache
+E:\CS2024\c\Csharp4Clearners\Csharp4Clearners\obj\Debug\Csharp4Clearners.frmMain.resources
+E:\CS2024\c\Csharp4Clearners\Csharp4Clearners\obj\Debug\Csharp4Clearners.Properties.Resources.resources
+E:\CS2024\c\Csharp4Clearners\Csharp4Clearners\obj\Debug\Csharp4Clearners.csproj.GenerateResource.cache
+E:\CS2024\c\Csharp4Clearners\Csharp4Clearners\obj\Debug\Csharp4Clearners.csproj.CoreCompileInputs.cache
+E:\CS2024\c\Csharp4Clearners\Csharp4Clearners\obj\Debug\Csharp4Clearners.exe
+E:\CS2024\c\Csharp4Clearners\Csharp4Clearners\obj\Debug\Csharp4Clearners.pdb
+E:\CS2024\c\Csharp4Clearners\Csharp4Clearners\obj\Debug\Csharp4Clearners.frmSecretMsg.resources

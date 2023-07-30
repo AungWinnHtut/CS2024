@@ -1,0 +1,15 @@
+﻿  main.cpp
+E:\CS2024\c\basic1\basic1\main.cpp(11,9): warning C4477: 'printf' : format string '%x' requires an argument of type 'unsigned int', but variadic argument 1 has type 'int *'
+E:\CS2024\c\basic1\basic1\main.cpp(11,9): warning C4313: 'printf': '%x' in format string conflicts with argument 1 of type 'int *'
+E:\CS2024\c\basic1\basic1\main.cpp(12,9): warning C4477: 'printf' : format string '%x' requires an argument of type 'unsigned int', but variadic argument 1 has type 'int *'
+E:\CS2024\c\basic1\basic1\main.cpp(12,9): warning C4313: 'printf': '%x' in format string conflicts with argument 1 of type 'int *'
+E:\CS2024\c\basic1\basic1\main.cpp(13,9): warning C4477: 'printf' : format string '%x' requires an argument of type 'unsigned int', but variadic argument 1 has type 'int *'
+E:\CS2024\c\basic1\basic1\main.cpp(13,9): warning C4313: 'printf': '%x' in format string conflicts with argument 1 of type 'int *'
+E:\CS2024\c\basic1\basic1\main.cpp(14,9): warning C4477: 'printf' : format string '%x' requires an argument of type 'unsigned int', but variadic argument 1 has type 'int *'
+E:\CS2024\c\basic1\basic1\main.cpp(14,9): warning C4313: 'printf': '%x' in format string conflicts with argument 1 of type 'int *'
+E:\CS2024\c\basic1\basic1\main.cpp(15,9): warning C4477: 'printf' : format string '%x' requires an argument of type 'unsigned int', but variadic argument 1 has type 'int *'
+E:\CS2024\c\basic1\basic1\main.cpp(15,9): warning C4313: 'printf': '%x' in format string conflicts with argument 1 of type 'int *'
+E:\CS2024\c\basic1\basic1\main.cpp(16,9): warning C4477: 'printf' : format string '%x' requires an argument of type 'unsigned int', but variadic argument 1 has type 'int *'
+E:\CS2024\c\basic1\basic1\main.cpp(16,9): warning C4313: 'printf': '%x' in format string conflicts with argument 1 of type 'int *'
+E:\CS2024\c\basic1\basic1\main.cpp(6,6): warning C4101: 'a': unreferenced local variable
+  basic1.vcxproj -> E:\CS2024\c\basic1\x64\Debug\basic1.exe

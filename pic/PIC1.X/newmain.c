@@ -62,6 +62,25 @@
 #define SEGMENT_G PORTBbits.RB6
 #define _XTAL_FREQ 10000
 
+
+//keypad row and col
+#define R_1 RD0
+#define R_2 RD1
+#define R_3 RD2
+#define R_4 RD3
+
+#define C_1 RD4
+#define C_2 RD5
+#define C_3 RD6
+#define C_4 RD7
+
+
+#define KEYPAD_PORT PORTD
+#define KEYPAD_TRIS TRISD
+void keypad_init();
+char keypad_get_key();
+char keypad_scanner();
+
 // Function prototypes
 void LCD_Init();
 void LCD_Cmd(unsigned char);
@@ -71,56 +90,136 @@ void LCD_Clear();
 void Display_Oxygen_Level(uint16_t);
 void Display_Time(uint16_t);
 void Display_Temperature(uint16_t);
-uint16_t ADC_Read(uint8_t channel);
+void ADC_Init();
+unsigned int ADC_Read(uint8_t channel);
+void button_press_show(uint16_t level);
 
 // Global variables
 volatile uint16_t oxygenLevel = 0;
 volatile uint16_t timerCount = 0;
 volatile uint16_t temperature = 0;
+volatile uint16_t analog_choice = 3; // 3 - oxygen RA3, 6 - temperature RA6
 
 
 void main(void) {
+    ANSELA = 0b00001000; //RA3
+    TRISA =  0b11111111;
     // Initialize LCD and other modules
     LCD_Init();
 
     // Initialize ADC for oxygen level and temperature readings
-    //ADCON1bits.ADFM = 1;    // Right justify result
-    //ADCON1bits.ADCS = 0b111;    // FOSC/64 as the conversion clock source
-    //ADCON1bits.ADPREF = 0b00;   // VREF+ = AVDD, VREF- = AVSS
-    ADCON0bits.ADON = 1;    // Enable ADC module
-
-    // Initialize Timer1 for time conversion
-    //T1CONbits.TMR1CS = 0;   // Timer1 clock source is FOSC/4
-    //T1CONbits.T1CKPS = 0b11;    // Timer1 prescaler 1:8
-    TMR1 = 0;   // Clear Timer1 register
-    T1CONbits.TMR1ON = 1;   // Start Timer1
-
+    ADC_Init();
+    
+    //KEYPAD INIT
+    char key; //to read from keypad
+    //KEYPAD_TRIS = 0xF0; //need to fix Lower 4 bits as output (rows), upper 4 bits as input (columns)
+    //keypad_init();
+    //PORTD = 0;
+    
+    ANSELD = 0b00000000; //RA3
+    TRISD =  0b11111111;
+    
     while (1) {
-        // Read oxygen level from potentiometer
-        oxygenLevel = ADC_Read(14);
-
-        // Read temperature from temperature sensor
-        temperature = ADC_Read(2);
-
-        // Display oxygen level on LCD
         LCD_Clear();
-        LCD_String(" Oxygen Level:");
-        LCD_Cmd(0xC0);  // Move cursor to the second line
-        Display_Oxygen_Level(oxygenLevel);
-
-        // Convert 13 seconds to 24 hours and display on seven-segment display
-        Display_Time(13);
-
-        // Display temperature on LCD (optional)
+        LCD_Cmd(0xC0);
+        //LCD_Char('A');
+        if(PORTDbits.RD7==0)
+        {
+             __delay_ms(100); 
+             while(PORTDbits.RD7==0);
+            LCD_String("Button Pressed");
+        }
+        key = keypad_scanner();//keypad_get_key();
+        
+        if (key != '\0') {
+            LCD_Char(key);
+        }
+        if(PORTAbits.RA0 == 0)
+        {
+            analog_choice = 3; //oxygen RA3
+            
+        }
+        else if(PORTAbits.RA1 == 0)
+        {
+            analog_choice = 6; //temperature RA6
+            
+        }
+        // Read oxygen level from potentiometer
+        oxygenLevel = ADC_Read(analog_choice);       
+        // Display oxygen level on LCD
+        __delay_ms(100);
         //LCD_Clear();
-        //LCD_String("Temperature:");
+        //button_press_show(analog_choice);
+        //LCD_String(" Oxygen Level:");
         //LCD_Cmd(0xC0);  // Move cursor to the second line
-        //Display_Temperature(temperature);
+        //Display_Oxygen_Level(oxygenLevel);
 
-        __delay_ms(500);    // Delay between consecutive readings
+        //__delay_ms(500);    // Delay between consecutive readings
     }
 
     return;
+}
+
+char keypad_scanner() {
+    R_1=0; R_2=1; R_3=1; R_4=1;
+    if(C_1==0) { __delay_ms(100); return '1'; }
+    if(C_2==0) { __delay_ms(100); while(C_2==0); return '2'; }
+    if(C_3==0) { __delay_ms(100); while(C_3==0); return '3'; }
+    if(C_4==0) { __delay_ms(100); while(C_4==0); return 'A'; }
+    
+    R_2=0; R_1=1; R_3=1; R_4=1;
+    if(C_1==0) { __delay_ms(100); while(C_1==0); return '4'; }
+    if(C_2==0) { __delay_ms(100); while(C_2==0); return '5'; }
+    if(C_3==0) { __delay_ms(100); while(C_3==0); return '6'; }
+    if(C_4==0) { __delay_ms(100); while(C_4==0); return 'B'; }
+     
+    R_3=0; R_1=1; R_2=1; R_4=1;
+    if(C_1==0) { __delay_ms(100); while(C_1==0); return '7'; }
+    if(C_2==0) { __delay_ms(100); while(C_2==0); return '8'; }
+    if(C_3==0) { __delay_ms(100); while(C_3==0); return '9'; }
+    if(C_4==0) { __delay_ms(100); while(C_4==0); return 'C'; }
+      
+    R_4=0; R_2=1; R_3=1; R_1=1;
+    if(C_1==0) { __delay_ms(100); while(C_1==0); return '*'; }
+    if(C_2==0) { __delay_ms(100); while(C_2==0); return '0'; }
+    if(C_3==0) { __delay_ms(100); while(C_3==0); return '#'; }
+    if(C_4==0) { __delay_ms(100); while(C_4==0); return 'D'; }
+    
+    return '\0';
+}
+
+void keypad_init() {
+    // Initialize the keypad pins
+    KEYPAD_PORT = 0;
+    TRISD = 0b11110000;// INPUT 7654 , OUTPUT 0123
+    //OPTION_REGbits.nGPPU = 0; //internal pull up
+    WPUD = 0xFF;
+}
+char keypad_get_key() {
+    // Scan the keypad for a pressed button
+    unsigned char row, col;
+    const unsigned char keypad[4][4] = {
+        {'1', '2', '3', 'A'},
+        {'4', '5', '6', 'B'},
+        {'7', '8', '9', 'C'},
+        {'*', '0', '#', 'D'}
+    };
+
+    for (col = 0; col < 3; col++) { //initial 4
+        // Set the current column low
+        KEYPAD_PORT = (KEYPAD_PORT & 0xF0) | (1 << col);
+
+        for (row = 0; row < 4; row++) {
+            if ((KEYPAD_PORT & (1 << (row + 4))) == 0) {
+                // A button is pressed in this row and column
+                // Return the corresponding character
+                return keypad[row][col];
+            }
+        }
+    }
+
+    // No button pressed
+    return '\0';
 }
 
 void LCD_Init() {
@@ -215,14 +314,40 @@ void Display_Temperature(uint16_t temp) {
     sprintf(buffer, "%.2fC", temperature);
     LCD_String(buffer);
 }
+// Function to initialize the ADC module
+void ADC_Init() {
+    // Configure ADC module settings
+    // Set the ADC channel to ANA3 (RA3)
+    ANSELA = 0b00001000; //RA3
+    TRISA =  0b11111111; //all inputs (including digital inputs)
+    ADREF =  0b00000000; // VREF to VDD and VSS
+    ADCLK =  0b00000011; // Set TAD = 2 us
+    ADACQ =  0b00000000;
+    ADCON0 = 0b10000100;
+   
 
-uint16_t ADC_Read(uint8_t channel) {
-    //ADCON0bits.CHS = channel;    // Select ADC channel    
-    ADCON0bits.ADGO = 1;    // Start ADC conversion
- // Wait for ADC conversion to complete
-    while (ADCON0bits.ADGO)
-        ;
+    // Optional: Allow the ADC to stabilize before reading the first value
+    __delay_us(20);
+}
 
-    // Return the ADC result
-    return ((ADRESH << 8) + ADRESL);
+// Function to read the analog value from the ADC
+unsigned int ADC_Read(uint8_t channel) {
+    
+    unsigned int result;
+     ADPCH = channel; //0b00000011; //RA3 = 3
+    __delay_us(2);
+    
+    ADCON0bits.GO = 1; //Start  
+
+    // Wait for the conversion to complete
+    while (ADCON0bits.GO); //while (ADCON0bits.ADGO==1); 
+    result = ((unsigned int)ADRESH << 8) | ADRESL; // ADRESH * 256 + ADRESL;
+    // Return the ADC result (combine ADRESH and ADRESL)
+    return(result);
+}
+
+void button_press_show(uint16_t level) {
+    char buffer[5];
+    sprintf(buffer, "%3u%%", level);
+    LCD_String(buffer);
 }

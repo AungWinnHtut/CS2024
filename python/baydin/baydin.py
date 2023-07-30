@@ -4,25 +4,19 @@ day = eval(input('Pls enter day of your bithdate: '))
 
 day = (day % 5) + 1
 
-filename = ''
-if day==1:
-    filename='1.data'
-elif day==2:
-    filename='2.data'
-elif day==3:
-    filename='3.data'
-elif day==4:
-    filename='4.data'
-elif day==5:
-    filename='5.data'
-else:
-    print('Wrond day!')
+filename = str(day)+'.data' # str(day) => 1 -> '1', '1'+'.data' => '1.data'
+if not os.path.exists(filename):
+    print('file not found')
     exit()
 
-file = open(filename,'r')
-data = file.read()
-print(data)
-file.close()
+
+try:
+    file = open(filename,'r')
+    data = file.read()
+    print(data)
+    file.close()
+except:
+    print("file io error")
 
 
 os.system('notepad '+filename)

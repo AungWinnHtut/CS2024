@@ -1,15 +1,28 @@
-#include<iostream>
+#include <iostream>
+#include <string>
+#include <vector>
+//#include "C:\\Users\\bluephoenix\\Downloads\\Compressed\\boost_1_82_0\\boost\\filesystem.hpp"
+//#include "C:\\Program Files\\OpenSSL-Win64\\include\\openssl\\aes.h"
+//#include "C:\\Program Files\\OpenSSL-Win64\\include\\openssl\\rand.h"
+
 #include<fstream>
+
+#define GREETING printf("Hello World!")
+
+
 using namespace std;
 int encryption();
 int decryption();
 
+
 int main()
 {
+
 	encryption();
 	decryption();
 	return 0;
 }
+
 
 int encryption()
 {
@@ -39,8 +52,8 @@ int encryption()
 			cipher[i] = line[i] + key;
 		}
 	    cipher[i] = '\0';	
-		oFile << cipher << endl;
 		puts(cipher);
+		oFile << cipher << endl;		
 		for (int j = 0; j < 200; j++)
 		{			
 			line[j] = '\0';
@@ -76,8 +89,8 @@ int decryption()
 		{
 			plain[i] = line[i] - key;
 		}
-		oFile << plain << endl;
 		puts(plain);
+		oFile << plain << endl;		
 	}
 	iFile.close();
 	oFile.close();
