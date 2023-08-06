@@ -1,0 +1,11 @@
+E:\CS2024\CS\HelloWorld\HelloWorld\bin\Debug\HelloWorld.exe.config
+E:\CS2024\CS\HelloWorld\HelloWorld\bin\Debug\HelloWorld.exe
+E:\CS2024\CS\HelloWorld\HelloWorld\bin\Debug\HelloWorld.pdb
+E:\CS2024\CS\HelloWorld\HelloWorld\obj\Debug\HelloWorld.csproj.AssemblyReference.cache
+E:\CS2024\CS\HelloWorld\HelloWorld\obj\Debug\HelloWorld.csproj.SuggestedBindingRedirects.cache
+E:\CS2024\CS\HelloWorld\HelloWorld\obj\Debug\HelloWorld.frmHello.resources
+E:\CS2024\CS\HelloWorld\HelloWorld\obj\Debug\HelloWorld.Properties.Resources.resources
+E:\CS2024\CS\HelloWorld\HelloWorld\obj\Debug\HelloWorld.csproj.GenerateResource.cache
+E:\CS2024\CS\HelloWorld\HelloWorld\obj\Debug\HelloWorld.csproj.CoreCompileInputs.cache
+E:\CS2024\CS\HelloWorld\HelloWorld\obj\Debug\HelloWorld.exe
+E:\CS2024\CS\HelloWorld\HelloWorld\obj\Debug\HelloWorld.pdb

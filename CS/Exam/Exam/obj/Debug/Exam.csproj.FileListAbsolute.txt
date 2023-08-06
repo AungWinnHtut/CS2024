@@ -1,0 +1,11 @@
+E:\CS2024\CS\Exam\Exam\bin\Debug\Exam.exe.config
+E:\CS2024\CS\Exam\Exam\bin\Debug\Exam.exe
+E:\CS2024\CS\Exam\Exam\bin\Debug\Exam.pdb
+E:\CS2024\CS\Exam\Exam\obj\Debug\Exam.csproj.AssemblyReference.cache
+E:\CS2024\CS\Exam\Exam\obj\Debug\Exam.csproj.SuggestedBindingRedirects.cache
+E:\CS2024\CS\Exam\Exam\obj\Debug\Exam.Form1.resources
+E:\CS2024\CS\Exam\Exam\obj\Debug\Exam.Properties.Resources.resources
+E:\CS2024\CS\Exam\Exam\obj\Debug\Exam.csproj.GenerateResource.cache
+E:\CS2024\CS\Exam\Exam\obj\Debug\Exam.csproj.CoreCompileInputs.cache
+E:\CS2024\CS\Exam\Exam\obj\Debug\Exam.exe
+E:\CS2024\CS\Exam\Exam\obj\Debug\Exam.pdb

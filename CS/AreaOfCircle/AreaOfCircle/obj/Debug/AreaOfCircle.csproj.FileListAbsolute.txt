@@ -1,0 +1,11 @@
+E:\CS2024\CS\AreaOfCircle\AreaOfCircle\bin\Debug\AreaOfCircle.exe.config
+E:\CS2024\CS\AreaOfCircle\AreaOfCircle\bin\Debug\AreaOfCircle.exe
+E:\CS2024\CS\AreaOfCircle\AreaOfCircle\bin\Debug\AreaOfCircle.pdb
+E:\CS2024\CS\AreaOfCircle\AreaOfCircle\obj\Debug\AreaOfCircle.csproj.AssemblyReference.cache
+E:\CS2024\CS\AreaOfCircle\AreaOfCircle\obj\Debug\AreaOfCircle.csproj.SuggestedBindingRedirects.cache
+E:\CS2024\CS\AreaOfCircle\AreaOfCircle\obj\Debug\AreaOfCircle.frmArea.resources
+E:\CS2024\CS\AreaOfCircle\AreaOfCircle\obj\Debug\AreaOfCircle.Properties.Resources.resources
+E:\CS2024\CS\AreaOfCircle\AreaOfCircle\obj\Debug\AreaOfCircle.csproj.GenerateResource.cache
+E:\CS2024\CS\AreaOfCircle\AreaOfCircle\obj\Debug\AreaOfCircle.csproj.CoreCompileInputs.cache
+E:\CS2024\CS\AreaOfCircle\AreaOfCircle\obj\Debug\AreaOfCircle.exe
+E:\CS2024\CS\AreaOfCircle\AreaOfCircle\obj\Debug\AreaOfCircle.pdb

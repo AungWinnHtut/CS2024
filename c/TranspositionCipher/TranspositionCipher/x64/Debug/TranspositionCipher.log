@@ -1,0 +1,3 @@
+﻿  transposition_cipher.cpp
+E:\CS2024\c\TranspositionCipher\TranspositionCipher\transposition_cipher.cpp(7,10): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  TranspositionCipher.vcxproj -> E:\CS2024\c\TranspositionCipher\x64\Debug\TranspositionCipher.exe
