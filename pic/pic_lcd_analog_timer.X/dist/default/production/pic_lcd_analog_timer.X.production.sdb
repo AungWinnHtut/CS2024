@@ -39,42 +39,42 @@
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"90 E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+"91 E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
 [v _main main `(v  1 e 1 0 ]
-"144
+"151
 [v _Timer0_Init Timer0_Init `(v  1 e 1 0 ]
-"153
+"163
 [v _isr isr `II(v  1 e 1 0 ]
-"169
+"191
 [v _timer timer `(v  1 e 1 0 ]
-"182
+"204
 [v _ADC_Init ADC_Init `(v  1 e 1 0 ]
-"194
+"216
 [v _ADC_Read ADC_Read `(ui  1 e 2 0 ]
-"207
+"229
 [v _LCD_Init LCD_Init `(v  1 e 1 0 ]
-"219
+"241
 [v _LCD_Cmd LCD_Cmd `(v  1 e 1 0 ]
 [v i1_LCD_Cmd LCD_Cmd `(v  1 e 1 0 ]
-"223
+"245
 [v _LCD_Char LCD_Char `(v  1 e 1 0 ]
 [v i1_LCD_Char LCD_Char `(v  1 e 1 0 ]
-"227
+"249
 [v _LCD_Send LCD_Send `(v  1 e 1 0 ]
 [v i1_LCD_Send LCD_Send `(v  1 e 1 0 ]
-"246
+"268
 [v _LCD_String LCD_String `(v  1 e 1 0 ]
 [v i1_LCD_String LCD_String `(v  1 e 1 0 ]
-"252
+"274
 [v _LCD_Clear LCD_Clear `(v  1 e 1 0 ]
 [v i1_LCD_Clear LCD_Clear `(v  1 e 1 0 ]
-"257
+"279
 [v _lcd_set_cursor lcd_set_cursor `(v  1 e 1 0 ]
 [v i1_lcd_set_cursor lcd_set_cursor `(v  1 e 1 0 ]
-"266
+"288
 [v _init7Segment init7Segment `(v  1 e 1 0 ]
-"277
-[v _seven_seg_Show seven_seg_Show `(v  1 e 1 0 ]
+"319
+[v _seven_seg_All seven_seg_All `(v  1 e 1 0 ]
 [s S139 . 1 `uc 1 INTEDG 1 0 :1:0 
 `uc 1 . 1 0 :5:1 
 `uc 1 PEIE 1 0 :1:6 
@@ -220,36 +220,34 @@
 [v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
 "84 E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
 [v _hexvalue hexvalue `[10]uc  1 e 10 0 ]
-"90
+"91
 [v _main main `(v  1 e 1 0 ]
 {
-"111
-[v main@j j `i  1 a 2 32 ]
-"107
-[v main@O2_level O2_level `ui  1 a 2 36 ]
-"135
-[v main@PH_level PH_level `ui  1 a 2 34 ]
-"93
+"108
+[v main@Temperature Temperature `ui  1 a 2 34 ]
+"142
+[v main@PH_level PH_level `ui  1 a 2 32 ]
+"94
 [v main@buffer buffer `[16]uc  1 a 16 16 ]
-"92
+"93
 [v main@name name `[16]uc  1 a 16 0 ]
-"91
-[v main@F12497 F12497 `[16]uc  1 s 16 F12497 ]
-"143
+"92
+[v main@F12499 F12499 `[16]uc  1 s 16 F12499 ]
+"150
 } 0
-"169
+"191
 [v _timer timer `(v  1 e 1 0 ]
 {
-"180
+"202
 } 0
 "9 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_sprintf.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
 {
 [v sprintf@s s `*.4uc  1 a 1 wreg ]
-[u S803 . 2 `*.39uc 1 buffer 2 0 `*.39DCuc 1 source 2 0 ]
+[u S804 . 2 `*.39uc 1 buffer 2 0 `*.39DCuc 1 source 2 0 ]
 "13
-[s S806 _IO_FILE 11 `S803 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
-[v sprintf@f f `S806  1 a 11 61 ]
+[s S807 _IO_FILE 11 `S804 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v sprintf@f f `S807  1 a 11 61 ]
 "12
 [v sprintf@ap ap `[1]*.4v  1 a 1 59 ]
 "9
@@ -262,70 +260,70 @@
 "1546 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
 [v _vfprintf vfprintf `(i  1 e 2 0 ]
 {
-[s S838 _IO_FILE 0 ]
-[v vfprintf@fp fp `*.4S838  1 a 1 wreg ]
+[s S839 _IO_FILE 0 ]
+[v vfprintf@fp fp `*.4S839  1 a 1 wreg ]
 "1549
 [v vfprintf@cfmt cfmt `*.25uc  1 a 2 52 ]
 "1546
-[v vfprintf@fp fp `*.4S838  1 a 1 wreg ]
+[v vfprintf@fp fp `*.4S839  1 a 1 wreg ]
 [v vfprintf@fmt fmt `*.25DCuc  1 p 2 47 ]
 [v vfprintf@ap ap `*.4*.4v  1 p 1 49 ]
 "1551
 "1546
-[v vfprintf@fp fp `*.4S838  1 a 1 51 ]
+[v vfprintf@fp fp `*.4S839  1 a 1 51 ]
 "1569
 } 0
 "1048
 [v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
 {
-[s S838 _IO_FILE 0 ]
-[v vfpfcnvrt@fp fp `*.4S838  1 a 1 wreg ]
-[u S857 . 4 `i 1 sint 2 0 `ui 1 uint 2 0 `*.39v 1 vp 2 0 `d 1 f 4 0 ]
+[s S839 _IO_FILE 0 ]
+[v vfpfcnvrt@fp fp `*.4S839  1 a 1 wreg ]
+[u S858 . 4 `i 1 sint 2 0 `ui 1 uint 2 0 `*.39v 1 vp 2 0 `d 1 f 4 0 ]
 "1059
-[v vfpfcnvrt@convarg convarg `S857  1 a 4 40 ]
+[v vfpfcnvrt@convarg convarg `S858  1 a 4 40 ]
 "1050
 [v vfpfcnvrt@cp cp `*.25uc  1 a 2 44 ]
 "1048
-[v vfpfcnvrt@fp fp `*.4S838  1 a 1 wreg ]
+[v vfpfcnvrt@fp fp `*.4S839  1 a 1 wreg ]
 [v vfpfcnvrt@fmt fmt `*.4*.25uc  1 p 1 34 ]
 [v vfpfcnvrt@ap ap `*.4*.4v  1 p 1 35 ]
 "1062
 "1048
-[v vfpfcnvrt@fp fp `*.4S838  1 a 1 46 ]
+[v vfpfcnvrt@fp fp `*.4S839  1 a 1 46 ]
 "1543
 } 0
 "917
 [v _utoa utoa `(v  1 s 1 utoa ]
 {
-[s S838 _IO_FILE 0 ]
-[v utoa@fp fp `*.4S838  1 a 1 wreg ]
+[s S839 _IO_FILE 0 ]
+[v utoa@fp fp `*.4S839  1 a 1 wreg ]
 "919
 [v utoa@i i `i  1 a 2 32 ]
 [v utoa@p p `i  1 a 2 30 ]
 [v utoa@w w `i  1 a 2 27 ]
 "917
-[v utoa@fp fp `*.4S838  1 a 1 wreg ]
+[v utoa@fp fp `*.4S839  1 a 1 wreg ]
 [v utoa@d d `ui  1 p 2 24 ]
 "927
 "917
-[v utoa@fp fp `*.4S838  1 a 1 29 ]
+[v utoa@fp fp `*.4S839  1 a 1 29 ]
 "947
 } 0
 "152
 [v _pad pad `(v  1 s 1 pad ]
 {
-[s S838 _IO_FILE 0 ]
-[v pad@fp fp `*.4S838  1 a 1 wreg ]
+[s S839 _IO_FILE 0 ]
+[v pad@fp fp `*.4S839  1 a 1 wreg ]
 "154
 [v pad@w w `i  1 a 2 21 ]
 [v pad@i i `i  1 a 2 19 ]
 "152
-[v pad@fp fp `*.4S838  1 a 1 wreg ]
+[v pad@fp fp `*.4S839  1 a 1 wreg ]
 [v pad@buf buf `*.5uc  1 p 1 15 ]
 [v pad@p p `i  1 p 2 16 ]
 "158
 "152
-[v pad@fp fp `*.4S838  1 a 1 23 ]
+[v pad@fp fp `*.4S839  1 a 1 23 ]
 "183
 } 0
 "8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputs.c
@@ -338,9 +336,9 @@
 [v fputs@c c `uc  1 a 1 11 ]
 "8
 [v fputs@s s `*.5DCuc  1 a 1 wreg ]
-[u S803 . 2 `*.39uc 1 buffer 2 0 `*.39DCuc 1 source 2 0 ]
-[s S806 _IO_FILE 11 `S803 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
-[v fputs@fp fp `*.4S806  1 p 1 8 ]
+[u S804 . 2 `*.39uc 1 buffer 2 0 `*.39DCuc 1 source 2 0 ]
+[s S807 _IO_FILE 11 `S804 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputs@fp fp `*.4S807  1 p 1 8 ]
 "13
 [v fputs@s s `*.5DCuc  1 a 1 14 ]
 "19
@@ -349,9 +347,9 @@
 [v _fputc fputc `(i  1 e 2 0 ]
 {
 [v fputc@c c `i  1 p 2 0 ]
-[u S803 . 2 `*.39uc 1 buffer 2 0 `*.39DCuc 1 source 2 0 ]
-[s S806 _IO_FILE 11 `S803 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
-[v fputc@fp fp `*.4S806  1 p 1 2 ]
+[u S804 . 2 `*.39uc 1 buffer 2 0 `*.39DCuc 1 source 2 0 ]
+[s S807 _IO_FILE 11 `S804 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputc@fp fp `*.4S807  1 p 1 2 ]
 "24
 } 0
 "7 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\putch.c
@@ -405,163 +403,137 @@
 [v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
 "53
 } 0
-"277 E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-[v _seven_seg_Show seven_seg_Show `(v  1 e 1 0 ]
+"319 E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+[v _seven_seg_All seven_seg_All `(v  1 e 1 0 ]
 {
-"280
-[v seven_seg_Show@ones_digit ones_digit `uc  1 a 1 20 ]
+"323
+[v seven_seg_All@k k `i  1 a 2 3 ]
+"319
+[v seven_seg_All@i i `i  1 p 2 0 ]
+"344
+} 0
 "279
-[v seven_seg_Show@tens_digit tens_digit `uc  1 a 1 19 ]
-"277
-[v seven_seg_Show@i i `i  1 p 2 16 ]
-"295
-} 0
-"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awmod.c
-[v ___awmod __awmod `(i  1 e 2 0 ]
-{
-"10
-[v ___awmod@sign sign `uc  1 a 1 15 ]
-[v ___awmod@counter counter `uc  1 a 1 14 ]
-"5
-[v ___awmod@divisor divisor `i  1 p 2 9 ]
-[v ___awmod@dividend dividend `i  1 p 2 11 ]
-"34
-} 0
-"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awdiv.c
-[v ___awdiv __awdiv `(i  1 e 2 0 ]
-{
-"10
-[v ___awdiv@quotient quotient `i  1 a 2 7 ]
-"11
-[v ___awdiv@sign sign `uc  1 a 1 6 ]
-[v ___awdiv@counter counter `uc  1 a 1 5 ]
-"5
-[v ___awdiv@divisor divisor `i  1 p 2 0 ]
-[v ___awdiv@dividend dividend `i  1 p 2 2 ]
-"41
-} 0
-"257 E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
 [v _lcd_set_cursor lcd_set_cursor `(v  1 e 1 0 ]
 {
 [v lcd_set_cursor@col col `uc  1 a 1 wreg ]
 [v lcd_set_cursor@col col `uc  1 a 1 wreg ]
 [v lcd_set_cursor@line line `uc  1 p 1 6 ]
-"259
+"281
 [v lcd_set_cursor@col col `uc  1 a 1 7 ]
-"265
+"287
 } 0
-"266
+"288
 [v _init7Segment init7Segment `(v  1 e 1 0 ]
 {
-"273
+"295
 } 0
-"144
+"151
 [v _Timer0_Init Timer0_Init `(v  1 e 1 0 ]
 {
-"152
+"159
 } 0
-"246
+"268
 [v _LCD_String LCD_String `(v  1 e 1 0 ]
 {
 [v LCD_String@text text `*.26DCuc  1 p 2 6 ]
-"250
+"272
 } 0
-"223
+"245
 [v _LCD_Char LCD_Char `(v  1 e 1 0 ]
 {
 [v LCD_Char@data data `uc  1 a 1 wreg ]
 [v LCD_Char@data data `uc  1 a 1 wreg ]
 [v LCD_Char@data data `uc  1 a 1 5 ]
-"225
+"247
 } 0
-"207
+"229
 [v _LCD_Init LCD_Init `(v  1 e 1 0 ]
 {
-"217
+"239
 } 0
-"252
+"274
 [v _LCD_Clear LCD_Clear `(v  1 e 1 0 ]
 {
-"255
+"277
 } 0
-"219
+"241
 [v _LCD_Cmd LCD_Cmd `(v  1 e 1 0 ]
 {
 [v LCD_Cmd@command command `uc  1 a 1 wreg ]
 [v LCD_Cmd@command command `uc  1 a 1 wreg ]
 [v LCD_Cmd@command command `uc  1 a 1 5 ]
-"221
+"243
 } 0
-"227
+"249
 [v _LCD_Send LCD_Send `(v  1 e 1 0 ]
 {
 [v LCD_Send@RS RS `i  1 p 2 0 ]
 [v LCD_Send@data data `uc  1 p 1 2 ]
-"244
+"266
 } 0
-"194
+"216
 [v _ADC_Read ADC_Read `(ui  1 e 2 0 ]
 {
 [v ADC_Read@channel channel `uc  1 a 1 wreg ]
-"195
+"217
 [v ADC_Read@result result `ui  1 a 2 2 ]
-"194
+"216
 [v ADC_Read@channel channel `uc  1 a 1 wreg ]
-"196
+"218
 [v ADC_Read@channel channel `uc  1 a 1 4 ]
-"205
+"227
 } 0
-"182
+"204
 [v _ADC_Init ADC_Init `(v  1 e 1 0 ]
 {
-"193
+"215
 } 0
-"153
+"163
 [v _isr isr `II(v  1 e 1 0 ]
 {
-"167
+"189
 } 0
-"257
+"279
 [v i1_lcd_set_cursor lcd_set_cursor `(v  1 e 1 0 ]
 {
 [v i1lcd_set_cursor@col col `uc  1 a 1 wreg ]
 [v i1lcd_set_cursor@col col `uc  1 a 1 wreg ]
 [v i1lcd_set_cursor@line line `uc  1 p 1 6 ]
-"259
+"281
 [v i1lcd_set_cursor@col col `uc  1 a 1 7 ]
-"265
+"287
 } 0
-"246
+"268
 [v i1_LCD_String LCD_String `(v  1 e 1 0 ]
 {
 [v i1LCD_String@text text `*.26DCuc  1 p 2 6 ]
-"250
+"272
 } 0
-"223
+"245
 [v i1_LCD_Char LCD_Char `(v  1 e 1 0 ]
 {
 [v i1LCD_Char@data data `uc  1 a 1 wreg ]
 [v i1LCD_Char@data data `uc  1 a 1 wreg ]
 [v i1LCD_Char@data data `uc  1 a 1 5 ]
-"225
+"247
 } 0
-"252
+"274
 [v i1_LCD_Clear LCD_Clear `(v  1 e 1 0 ]
 {
-"255
+"277
 } 0
-"219
+"241
 [v i1_LCD_Cmd LCD_Cmd `(v  1 e 1 0 ]
 {
 [v i1LCD_Cmd@command command `uc  1 a 1 wreg ]
 [v i1LCD_Cmd@command command `uc  1 a 1 wreg ]
 [v i1LCD_Cmd@command command `uc  1 a 1 5 ]
-"221
+"243
 } 0
-"227
+"249
 [v i1_LCD_Send LCD_Send `(v  1 e 1 0 ]
 {
 [v i1LCD_Send@RS RS `i  1 p 2 0 ]
 [v i1LCD_Send@data data `uc  1 p 1 2 ]
-"244
+"266
 } 0

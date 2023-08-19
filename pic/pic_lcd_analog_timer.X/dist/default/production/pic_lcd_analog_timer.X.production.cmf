@@ -11,60 +11,58 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_20.o
+$C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_20.o
 reset_vec CODE 0 0 0 2 2 1
-end_init CODE 0 2F 2F 2 2 1
+end_init CODE 0 48 48 2 2 1
 config CONFIG 4 8007 8007 5 2 1
 $dist/default/production\pic_lcd_analog_timer.X.production.o
-cinit CODE 0 31 31 1D 2 1
-text1 CODE 0 702 702 D 2 1
-text2 CODE 0 5D7 5D7 1D 2 1
-text3 CODE 0 5F4 5F4 1C 2 1
-text4 CODE 0 173 173 C6 2 1
-text5 CODE 0 239 239 72 2 1
-text6 CODE 0 45C 45C 44 2 1
-text7 CODE 0 572 572 25 2 1
-text8 CODE 0 3BF 3BF 52 2 1
-text9 CODE 0 767 767 1 2 1
-text10 CODE 0 4DD 4DD 35 2 1
-text11 CODE 0 4A0 4A0 3D 2 1
-text12 CODE 0 2AB 2AB 60 2 1
-text13 CODE 0 597 597 20 2 1
-text14 CODE 0 411 411 4B 2 1
-text15 CODE 0 36B 36B 54 2 1
-text16 CODE 0 30B 30B 60 2 1
-text17 CODE 0 62A 62A 19 2 1
-text18 CODE 0 73D 73D A 2 1
-text19 CODE 0 747 747 A 2 1
-text20 CODE 0 643 643 19 2 1
-text21 CODE 0 70F 70F C 2 1
-text22 CODE 0 5B7 5B7 20 2 1
-text23 CODE 0 6F4 6F4 E 2 1
-text24 CODE 0 727 727 B 2 1
-text25 CODE 0 512 512 31 2 1
-text26 CODE 0 65C 65C 18 2 1
-text27 CODE 0 6A3 6A3 12 2 1
-text29 CODE 0 674 674 18 2 1
-text30 CODE 0 68C 68C 17 2 1
-text31 CODE 0 732 732 B 2 1
-text32 CODE 0 71B 71B C 2 1
-text33 CODE 0 751 751 A 2 1
-text34 CODE 0 543 543 2F 2 1
-maintext CODE 0 4E 4E 125 2 1
+cinit CODE 0 4A 4A 1D 2 1
+text1 CODE 0 674 674 D 2 1
+text2 CODE 0 544 544 1D 2 1
+text3 CODE 0 561 561 1C 2 1
+text4 CODE 0 1A8 1A8 C6 2 1
+text5 CODE 0 26E 26E 72 2 1
+text6 CODE 0 392 392 44 2 1
+text7 CODE 0 4DF 4DF 25 2 1
+text8 CODE 0 340 340 52 2 1
+text9 CODE 0 6D9 6D9 1 2 1
+text10 CODE 0 44A 44A 35 2 1
+text11 CODE 0 3D6 3D6 3D 2 1
+text12 CODE 0 2E0 2E0 60 2 1
+text13 CODE 0 504 504 20 2 1
+text14 CODE 0 413 413 37 2 1
+text15 CODE 0 597 597 19 2 1
+text16 CODE 0 6AF 6AF A 2 1
+text17 CODE 0 6B9 6B9 A 2 1
+text18 CODE 0 5B0 5B0 19 2 1
+text19 CODE 0 681 681 C 2 1
+text20 CODE 0 524 524 20 2 1
+text21 CODE 0 666 666 E 2 1
+text22 CODE 0 699 699 B 2 1
+text23 CODE 0 47F 47F 31 2 1
+text24 CODE 0 5C9 5C9 18 2 1
+text25 CODE 0 624 624 12 2 1
+text27 CODE 0 5E1 5E1 18 2 1
+text28 CODE 0 5F9 5F9 17 2 1
+text29 CODE 0 6A4 6A4 B 2 1
+text30 CODE 0 68D 68D C 2 1
+text31 CODE 0 6C3 6C3 A 2 1
+text32 CODE 0 4B0 4B0 2F 2 1
+maintext CODE 0 67 67 141 2 1
 cstackCOMMON COMMON 1 70 70 B 1 1
 cstackBANK0 BANK0 1 20 20 4A 1 1
-cstackBANK1 BANK1 1 A0 A0 26 1 1
-inittext CODE 0 75B 75B 6 2 1
-stringtext1 STRCODE 0 6B5 6B5 11 2 1
-stringtext2 STRCODE 0 6C6 6C6 10 2 1
-stringtext3 STRCODE 0 6D6 6D6 F 2 1
-stringtext4 STRCODE 0 6E5 6E5 F 2 1
-intentry CODE 0 4 4 2B 2 1
+cstackBANK1 BANK1 1 A0 A0 24 1 1
+inittext CODE 0 6CD 6CD 6 2 1
+stringtext1 STRCODE 0 610 610 14 2 1
+stringtext2 STRCODE 0 636 636 11 2 1
+stringtext3 STRCODE 0 647 647 10 2 1
+stringtext4 STRCODE 0 657 657 F 2 1
+intentry CODE 0 4 4 44 2 1
 bssBANK0 BANK0 1 6A 6A 5 1 1
 bssBANK2 BANK2 1 120 120 20 1 1
-idataBANK1 CODE 0 610 610 1A 2 1
-dataBANK1 BANK1 1 C6 C6 1A 1 1
-clrtext CODE 0 761 761 6 2 1
+idataBANK1 CODE 0 57D 57D 1A 2 1
+dataBANK1 BANK1 1 C4 C4 1A 1 1
+clrtext CODE 0 6D3 6D3 6 2 1
 config CONFIG 4 8007 8007 5 2 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
@@ -73,7 +71,7 @@ config CONFIG 4 8007 8007 5 2 1
 # Addresses given in the range are in hexadecimal and units of delta.
 %UNUSED
 RAM 6F-6F 1
-RAM E0-EF 1
+RAM DE-EF 1
 RAM 140-16F 1
 RAM 1A0-1EF 1
 RAM 220-26F 1
@@ -124,7 +122,7 @@ RAM 1820-186F 1
 RAM 18A0-18EF 1
 RAM 1920-196F 1
 BANK0 6F-6F 1
-BANK1 E0-EF 1
+BANK1 DE-EF 1
 BANK2 140-16F 1
 BANK3 1A0-1EF 1
 BANK4 220-26F 1
@@ -134,9 +132,9 @@ BANK7 3A0-3EF 1
 BANK8 420-46F 1
 BANK9 4A0-4EF 1
 CONST 2-3 2
-CONST 768-7FFF 2
+CONST 6DA-7FFF 2
 ENTRY 2-3 2
-ENTRY 768-7FFF 2
+ENTRY 6DA-7FFF 2
 IDLOC 8000-8003 2
 SFR10 500-51F 1
 SFR11 580-59F 1
@@ -193,7 +191,7 @@ SFR61 1E80-1EEF 1
 SFR62 1F00-1F6F 1
 SFR63 1F80-1FEF 1
 CODE 2-3 2
-CODE 768-7FFF 2
+CODE 6DA-7FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
 SFR2 100-11F 1
@@ -249,9 +247,9 @@ BIGRAM 2000-2FEF 1
 COMMON 7B-7D 1
 EEDATA F000-F0FF 2
 STRCODE 2-3 2
-STRCODE 768-7FFF 2
+STRCODE 6DA-7FFF 2
 STRING 2-3 2
-STRING 768-7FFF 2
+STRING 6DA-7FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -266,436 +264,396 @@ STRING 768-7FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\pic_lcd_analog_timer.X.production.o
-31 cinit CODE >2539:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-31 cinit CODE >2542:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-31 cinit CODE >2590:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-32 cinit CODE >2591:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-33 cinit CODE >2592:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-34 cinit CODE >2593:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-35 cinit CODE >2594:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-36 cinit CODE >2595:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-37 cinit CODE >2596:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-38 cinit CODE >2597:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-39 cinit CODE >2598:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-3A cinit CODE >2599:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-3D cinit CODE >2616:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-3E cinit CODE >2617:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-3F cinit CODE >2618:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-40 cinit CODE >2619:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-41 cinit CODE >2620:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-42 cinit CODE >2624:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-43 cinit CODE >2625:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-44 cinit CODE >2626:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-45 cinit CODE >2627:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-46 cinit CODE >2628:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-47 cinit CODE >2629:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-4A cinit CODE >2635:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-4A cinit CODE >2637:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-4B cinit CODE >2638:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-4C cinit CODE >2639:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-4 intentry CODE >153:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-6 intentry CODE >155:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-B intentry CODE >157:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-C intentry CODE >158:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-E intentry CODE >159:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-11 intentry CODE >160:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-17 intentry CODE >161:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-1E intentry CODE >162:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-2A intentry CODE >163:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-2D intentry CODE >167:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-543 text34 CODE >227:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-543 text34 CODE >230:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-545 text34 CODE >230:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-547 text34 CODE >230:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-549 text34 CODE >231:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-550 text34 CODE >233:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-551 text34 CODE >234:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-552 text34 CODE >235:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-554 text34 CODE >236:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-558 text34 CODE >237:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-566 text34 CODE >239:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-567 text34 CODE >240:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-568 text34 CODE >241:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-56A text34 CODE >242:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-571 text34 CODE >244:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-751 text33 CODE >219:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-752 text33 CODE >220:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-75A text33 CODE >221:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-71B text32 CODE >252:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-71B text32 CODE >253:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-71F text32 CODE >254:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-726 text32 CODE >255:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-732 text31 CODE >223:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-733 text31 CODE >224:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-73C text31 CODE >225:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-68C text30 CODE >246:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-68C text30 CODE >247:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-68D text30 CODE >248:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-699 text30 CODE >247:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-6A2 text30 CODE >250:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-674 text29 CODE >257:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-675 text29 CODE >259:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-67A text29 CODE >260:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-67F text29 CODE >261:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-680 text29 CODE >262:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-686 text29 CODE >263:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-68B text29 CODE >265:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-6A3 text27 CODE >182:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-6A3 text27 CODE >185:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-6A6 text27 CODE >186:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-6A9 text27 CODE >187:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-6AB text27 CODE >188:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-6AD text27 CODE >189:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-6AE text27 CODE >190:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-6B0 text27 CODE >192:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-6B4 text27 CODE >193:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-65C text26 CODE >194:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-65E text26 CODE >196:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-661 text26 CODE >197:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-662 text26 CODE >199:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-664 text26 CODE >201:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-668 text26 CODE >202:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-66F text26 CODE >204:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-673 text26 CODE >205:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-512 text25 CODE >227:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-512 text25 CODE >230:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-514 text25 CODE >230:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-516 text25 CODE >230:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-518 text25 CODE >231:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-51F text25 CODE >233:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-520 text25 CODE >234:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-521 text25 CODE >235:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-523 text25 CODE >236:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-527 text25 CODE >237:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-535 text25 CODE >239:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-536 text25 CODE >240:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-537 text25 CODE >241:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-539 text25 CODE >242:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-542 text25 CODE >244:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-727 text24 CODE >219:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-729 text24 CODE >220:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-731 text24 CODE >221:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-6F4 text23 CODE >252:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-6F4 text23 CODE >253:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-6F8 text23 CODE >254:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-701 text23 CODE >255:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-5B7 text22 CODE >207:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-5B7 text22 CODE >209:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-5B9 text22 CODE >210:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-5C2 text22 CODE >212:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-5C6 text22 CODE >213:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-5CA text22 CODE >214:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-5CE text22 CODE >215:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-5D2 text22 CODE >216:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-5D6 text22 CODE >217:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-70F text21 CODE >223:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-711 text21 CODE >224:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-71A text21 CODE >225:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-643 text20 CODE >246:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-643 text20 CODE >247:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-644 text20 CODE >248:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-651 text20 CODE >247:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-65B text20 CODE >250:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-747 text19 CODE >144:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-747 text19 CODE >146:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-74A text19 CODE >148:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-74C text19 CODE >150:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-74E text19 CODE >151:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-750 text19 CODE >152:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-73D text18 CODE >266:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-73D text18 CODE >268:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-742 text18 CODE >269:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-743 text18 CODE >270:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-744 text18 CODE >271:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-745 text18 CODE >272:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-746 text18 CODE >273:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-62A text17 CODE >257:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-62C text17 CODE >259:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-631 text17 CODE >260:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-636 text17 CODE >261:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-637 text17 CODE >262:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-63D text17 CODE >263:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-642 text17 CODE >265:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-30B text16 CODE >5:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awdiv.c
-30B text16 CODE >13:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awdiv.c
-30D text16 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awdiv.c
-311 text16 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awdiv.c
-314 text16 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awdiv.c
-316 text16 CODE >16:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awdiv.c
-318 text16 CODE >18:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awdiv.c
-31C text16 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awdiv.c
-31F text16 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awdiv.c
-321 text16 CODE >20:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awdiv.c
-325 text16 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awdiv.c
-327 text16 CODE >23:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awdiv.c
-32D text16 CODE >24:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awdiv.c
-32F text16 CODE >25:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awdiv.c
-330 text16 CODE >26:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awdiv.c
-335 text16 CODE >27:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awdiv.c
-339 text16 CODE >25:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awdiv.c
-33D text16 CODE >30:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awdiv.c
-342 text16 CODE >31:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awdiv.c
-344 text16 CODE >31:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awdiv.c
-348 text16 CODE >31:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awdiv.c
-34C text16 CODE >32:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awdiv.c
-350 text16 CODE >33:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awdiv.c
-351 text16 CODE >35:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awdiv.c
-356 text16 CODE >36:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awdiv.c
-35C text16 CODE >38:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awdiv.c
-361 text16 CODE >39:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awdiv.c
-364 text16 CODE >39:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awdiv.c
-366 text16 CODE >40:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awdiv.c
-36A text16 CODE >41:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awdiv.c
-36B text15 CODE >5:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awmod.c
-36B text15 CODE >12:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awmod.c
-36D text15 CODE >13:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awmod.c
-371 text15 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awmod.c
-374 text15 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awmod.c
-376 text15 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awmod.c
-378 text15 CODE >17:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awmod.c
-37C text15 CODE >18:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awmod.c
-37F text15 CODE >18:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awmod.c
-381 text15 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awmod.c
-387 text15 CODE >20:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awmod.c
-389 text15 CODE >21:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awmod.c
-38A text15 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awmod.c
-38F text15 CODE >23:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awmod.c
-393 text15 CODE >21:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awmod.c
-397 text15 CODE >26:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awmod.c
-399 text15 CODE >26:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awmod.c
-39D text15 CODE >26:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awmod.c
-3A1 text15 CODE >27:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awmod.c
-3A5 text15 CODE >28:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awmod.c
-3AA text15 CODE >29:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awmod.c
-3B0 text15 CODE >31:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awmod.c
-3B5 text15 CODE >32:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awmod.c
-3B8 text15 CODE >32:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awmod.c
-3BA text15 CODE >33:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awmod.c
-3BE text15 CODE >34:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awmod.c
-411 text14 CODE >277:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-411 text14 CODE >279:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-42C text14 CODE >280:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-43A text14 CODE >283:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-43B text14 CODE >284:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-441 text14 CODE >285:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-442 text14 CODE >286:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-44A text14 CODE >289:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-44C text14 CODE >290:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-452 text14 CODE >291:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-453 text14 CODE >292:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-45B text14 CODE >295:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-597 text13 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul16.c
-597 text13 CODE >43:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul16.c
-59A text13 CODE >45:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul16.c
-59E text13 CODE >46:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul16.c
-5A2 text13 CODE >47:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul16.c
-5A7 text13 CODE >48:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul16.c
-5AC text13 CODE >49:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul16.c
-5B2 text13 CODE >52:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul16.c
-5B6 text13 CODE >53:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul16.c
-2AB text12 CODE >1029:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-2AD text12 CODE >1030:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-2AF text12 CODE >1031:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-2C0 text12 CODE >1032:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-2C6 text12 CODE >1032:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-2C8 text12 CODE >1033:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-2D4 text12 CODE >1034:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-2D5 text12 CODE >1037:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-2EA text12 CODE >1038:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-2F0 text12 CODE >1038:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-2F2 text12 CODE >1036:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-302 text12 CODE >1036:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-306 text12 CODE >1041:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-30A text12 CODE >1042:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-4A0 text11 CODE >5:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
-4A0 text11 CODE >13:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
-4A3 text11 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
-4A9 text11 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
-4AB text11 CODE >16:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
-4AC text11 CODE >17:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
-4B1 text11 CODE >18:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
-4B5 text11 CODE >16:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
-4B9 text11 CODE >21:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
-4BE text11 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
-4C0 text11 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
-4C4 text11 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
-4C8 text11 CODE >23:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
-4CC text11 CODE >24:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
-4CD text11 CODE >26:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
-4D2 text11 CODE >27:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
-4D8 text11 CODE >29:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
-4DC text11 CODE >30:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
-4DD text10 CODE >5:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
-4DD text10 CODE >12:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
-4E4 text10 CODE >13:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
-4E6 text10 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
-4E7 text10 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
-4EC text10 CODE >16:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
-4F0 text10 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
-4F4 text10 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
-4F6 text10 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
-4FA text10 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
-4FE text10 CODE >20:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
-502 text10 CODE >21:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
-507 text10 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
-50D text10 CODE >24:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
-511 text10 CODE >25:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
-767 text9 CODE >7:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\putch.c
-767 text9 CODE >9:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\putch.c
-3BF text8 CODE >8:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputc.c
-3BF text8 CODE >12:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputc.c
-3CA text8 CODE >13:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputc.c
-3CE text8 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputc.c
-3CF text8 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputc.c
-3EF text8 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputc.c
-3F3 text8 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputc.c
-3F7 text8 CODE >18:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputc.c
-407 text8 CODE >20:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputc.c
-40E text8 CODE >20:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputc.c
-410 text8 CODE >24:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputc.c
-572 text7 CODE >8:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputs.c
-574 text7 CODE >13:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputs.c
-576 text7 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputs.c
-577 text7 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputs.c
-583 text7 CODE >16:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputs.c
-588 text7 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputs.c
-596 text7 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputs.c
-45C text6 CODE >152:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-45E text6 CODE >158:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-462 text6 CODE >159:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-468 text6 CODE >164:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-474 text6 CODE >165:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-476 text6 CODE >166:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-477 text6 CODE >167:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-481 text6 CODE >168:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-486 text6 CODE >166:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-48C text6 CODE >166:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-490 text6 CODE >166:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-494 text6 CODE >173:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-499 text6 CODE >175:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-49F text6 CODE >183:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-239 text5 CODE >917:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-23B text5 CODE >927:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-248 text5 CODE >928:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-24C text5 CODE >931:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-250 text5 CODE >932:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-252 text5 CODE >933:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-253 text5 CODE >938:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-258 text5 CODE >939:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-26C text5 CODE >940:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-270 text5 CODE >941:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-274 text5 CODE >942:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-284 text5 CODE >933:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-296 text5 CODE >933:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-29A text5 CODE >933:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-29E text5 CODE >946:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-2AA text5 CODE >947:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-173 text4 CODE >1048:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-175 text4 CODE >1062:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-186 text4 CODE >1063:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-18C text4 CODE >1063:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-18E text4 CODE >1065:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-190 text4 CODE >1065:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-195 text4 CODE >1066:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-199 text4 CODE >1117:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-1A4 text4 CODE >1118:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-1A8 text4 CODE >1119:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-1A9 text4 CODE >1120:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-1AC text4 CODE >1120:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-1AE text4 CODE >1143:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-1B5 text4 CODE >1265:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-1BF text4 CODE >1321:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-1CB text4 CODE >1323:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-1D8 text4 CODE >1324:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-1D9 text4 CODE >1331:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-1E2 text4 CODE >1342:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-1EB text4 CODE >1342:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-1F0 text4 CODE >1342:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-1F3 text4 CODE >1527:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-204 text4 CODE >1528:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-20A text4 CODE >1528:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-20C text4 CODE >1529:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-216 text4 CODE >1535:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-21D text4 CODE >1535:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-220 text4 CODE >1540:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-238 text4 CODE >1543:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-5F4 text3 CODE >1546:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-5F6 text3 CODE >1551:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-5FA text3 CODE >1555:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-5FB text3 CODE >1559:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-603 text3 CODE >1555:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-60D text3 CODE >1564:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-60F text3 CODE >1569:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
-5D7 text2 CODE >9:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_sprintf.c
-5D9 text2 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_sprintf.c
-5DB text2 CODE >16:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_sprintf.c
-5DD text2 CODE >17:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_sprintf.c
-5DF text2 CODE >18:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_sprintf.c
-5E1 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_sprintf.c
-5EB text2 CODE >20:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_sprintf.c
-5F3 text2 CODE >23:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_sprintf.c
-702 text1 CODE >169:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-702 text1 CODE >171:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-703 text1 CODE >172:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-706 text1 CODE >173:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-708 text1 CODE >174:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-70A text1 CODE >175:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-70C text1 CODE >176:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-70D text1 CODE >177:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-70E text1 CODE >180:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-4E maintext CODE >90:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-4E maintext CODE >91:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-50 maintext CODE >92:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-5E maintext CODE >94:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-5E maintext CODE >95:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-61 maintext CODE >96:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-64 maintext CODE >97:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-67 maintext CODE >98:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-6A maintext CODE >99:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-6D maintext CODE >100:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-6D maintext CODE >101:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-79 maintext CODE >107:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-85 maintext CODE >108:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-A9 maintext CODE >109:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-BA maintext CODE >111:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-BD maintext CODE >112:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-D3 maintext CODE >112:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-D8 maintext CODE >112:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-DC maintext CODE >113:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-E0 maintext CODE >113:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-E2 maintext CODE >113:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-E6 maintext CODE >116:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-E6 maintext CODE >117:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-E8 maintext CODE >118:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-EB maintext CODE >119:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-F2 maintext CODE >120:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-FA maintext CODE >121:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-FD maintext CODE >122:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-105 maintext CODE >130:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-108 maintext CODE >131:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-10F maintext CODE >132:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-117 maintext CODE >135:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-123 maintext CODE >136:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-147 maintext CODE >137:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-158 maintext CODE >138:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-15F maintext CODE >139:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-167 maintext CODE >140:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
-761 clrtext CODE >2605:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-761 clrtext CODE >2606:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-762 clrtext CODE >2607:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-762 clrtext CODE >2608:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-763 clrtext CODE >2609:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-764 clrtext CODE >2610:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-765 clrtext CODE >2611:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-766 clrtext CODE >2612:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-75B inittext CODE >2579:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-75B inittext CODE >2580:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-75C inittext CODE >2581:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-75C inittext CODE >2582:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-75D inittext CODE >2583:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-75E inittext CODE >2584:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-75F inittext CODE >2585:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
-760 inittext CODE >2586:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_1.s
+4A cinit CODE >2543:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+4A cinit CODE >2546:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+4A cinit CODE >2594:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+4B cinit CODE >2595:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+4C cinit CODE >2596:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+4D cinit CODE >2597:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+4E cinit CODE >2598:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+4F cinit CODE >2599:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+50 cinit CODE >2600:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+51 cinit CODE >2601:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+52 cinit CODE >2602:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+53 cinit CODE >2603:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+56 cinit CODE >2620:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+57 cinit CODE >2621:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+58 cinit CODE >2622:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+59 cinit CODE >2623:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+5A cinit CODE >2624:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+5B cinit CODE >2628:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+5C cinit CODE >2629:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+5D cinit CODE >2630:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+5E cinit CODE >2631:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+5F cinit CODE >2632:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+60 cinit CODE >2633:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+63 cinit CODE >2639:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+63 cinit CODE >2641:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+64 cinit CODE >2642:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+65 cinit CODE >2643:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+4 intentry CODE >163:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+6 intentry CODE >165:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+B intentry CODE >167:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+C intentry CODE >168:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+E intentry CODE >169:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+11 intentry CODE >170:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+17 intentry CODE >171:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+1E intentry CODE >172:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+2A intentry CODE >173:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+2D intentry CODE >175:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+2E intentry CODE >176:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+32 intentry CODE >178:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+33 intentry CODE >179:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+35 intentry CODE >180:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+38 intentry CODE >181:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+3E intentry CODE >182:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+46 intentry CODE >189:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+4B0 text32 CODE >249:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+4B0 text32 CODE >252:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+4B2 text32 CODE >252:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+4B4 text32 CODE >252:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+4B6 text32 CODE >253:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+4BD text32 CODE >255:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+4BE text32 CODE >256:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+4BF text32 CODE >257:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+4C1 text32 CODE >258:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+4C5 text32 CODE >259:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+4D3 text32 CODE >261:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+4D4 text32 CODE >262:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+4D5 text32 CODE >263:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+4D7 text32 CODE >264:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+4DE text32 CODE >266:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+6C3 text31 CODE >241:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+6C4 text31 CODE >242:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+6CC text31 CODE >243:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+68D text30 CODE >274:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+68D text30 CODE >275:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+691 text30 CODE >276:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+698 text30 CODE >277:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+6A4 text29 CODE >245:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+6A5 text29 CODE >246:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+6AE text29 CODE >247:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+5F9 text28 CODE >268:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+5F9 text28 CODE >269:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+5FA text28 CODE >270:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+606 text28 CODE >269:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+60F text28 CODE >272:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+5E1 text27 CODE >279:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+5E2 text27 CODE >281:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+5E7 text27 CODE >282:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+5EC text27 CODE >283:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+5ED text27 CODE >284:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+5F3 text27 CODE >285:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+5F8 text27 CODE >287:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+624 text25 CODE >204:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+624 text25 CODE >207:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+627 text25 CODE >208:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+62A text25 CODE >209:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+62C text25 CODE >210:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+62E text25 CODE >211:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+62F text25 CODE >212:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+631 text25 CODE >214:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+635 text25 CODE >215:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+5C9 text24 CODE >216:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+5CB text24 CODE >218:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+5CE text24 CODE >219:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+5CF text24 CODE >221:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+5D1 text24 CODE >223:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+5D5 text24 CODE >224:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+5DC text24 CODE >226:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+5E0 text24 CODE >227:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+47F text23 CODE >249:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+47F text23 CODE >252:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+481 text23 CODE >252:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+483 text23 CODE >252:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+485 text23 CODE >253:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+48C text23 CODE >255:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+48D text23 CODE >256:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+48E text23 CODE >257:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+490 text23 CODE >258:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+494 text23 CODE >259:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+4A2 text23 CODE >261:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+4A3 text23 CODE >262:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+4A4 text23 CODE >263:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+4A6 text23 CODE >264:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+4AF text23 CODE >266:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+699 text22 CODE >241:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+69B text22 CODE >242:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+6A3 text22 CODE >243:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+666 text21 CODE >274:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+666 text21 CODE >275:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+66A text21 CODE >276:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+673 text21 CODE >277:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+524 text20 CODE >229:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+524 text20 CODE >231:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+526 text20 CODE >232:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+52F text20 CODE >234:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+533 text20 CODE >235:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+537 text20 CODE >236:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+53B text20 CODE >237:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+53F text20 CODE >238:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+543 text20 CODE >239:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+681 text19 CODE >245:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+683 text19 CODE >246:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+68C text19 CODE >247:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+5B0 text18 CODE >268:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+5B0 text18 CODE >269:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+5B1 text18 CODE >270:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+5BE text18 CODE >269:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+5C8 text18 CODE >272:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+6B9 text17 CODE >151:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+6B9 text17 CODE >153:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+6BC text17 CODE >155:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+6BE text17 CODE >157:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+6C0 text17 CODE >158:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+6C2 text17 CODE >159:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+6AF text16 CODE >288:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+6AF text16 CODE >290:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+6B4 text16 CODE >291:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+6B5 text16 CODE >292:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+6B6 text16 CODE >293:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+6B7 text16 CODE >294:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+6B8 text16 CODE >295:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+597 text15 CODE >279:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+599 text15 CODE >281:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+59E text15 CODE >282:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+5A3 text15 CODE >283:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+5A4 text15 CODE >284:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+5AA text15 CODE >285:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+5AF text15 CODE >287:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+413 text14 CODE >319:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+413 text14 CODE >321:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+41A text14 CODE >323:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+41C text14 CODE >325:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+41E text14 CODE >326:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+41F text14 CODE >327:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+420 text14 CODE >328:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+428 text14 CODE >330:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+42A text14 CODE >331:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+42B text14 CODE >332:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+42C text14 CODE >333:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+434 text14 CODE >334:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+43E text14 CODE >334:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+442 text14 CODE >334:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+447 text14 CODE >336:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+447 text14 CODE >338:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+448 text14 CODE >339:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+449 text14 CODE >344:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+504 text13 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul16.c
+504 text13 CODE >43:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul16.c
+507 text13 CODE >45:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul16.c
+50B text13 CODE >46:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul16.c
+50F text13 CODE >47:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul16.c
+514 text13 CODE >48:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul16.c
+519 text13 CODE >49:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul16.c
+51F text13 CODE >52:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul16.c
+523 text13 CODE >53:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul16.c
+2E0 text12 CODE >1029:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+2E2 text12 CODE >1030:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+2E4 text12 CODE >1031:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+2F5 text12 CODE >1032:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+2FB text12 CODE >1032:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+2FD text12 CODE >1033:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+309 text12 CODE >1034:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+30A text12 CODE >1037:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+31F text12 CODE >1038:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+325 text12 CODE >1038:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+327 text12 CODE >1036:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+337 text12 CODE >1036:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+33B text12 CODE >1041:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+33F text12 CODE >1042:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+3D6 text11 CODE >5:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+3D6 text11 CODE >13:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+3D9 text11 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+3DF text11 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+3E1 text11 CODE >16:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+3E2 text11 CODE >17:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+3E7 text11 CODE >18:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+3EB text11 CODE >16:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+3EF text11 CODE >21:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+3F4 text11 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+3F6 text11 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+3FA text11 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+3FE text11 CODE >23:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+402 text11 CODE >24:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+403 text11 CODE >26:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+408 text11 CODE >27:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+40E text11 CODE >29:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+412 text11 CODE >30:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+44A text10 CODE >5:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
+44A text10 CODE >12:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
+451 text10 CODE >13:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
+453 text10 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
+454 text10 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
+459 text10 CODE >16:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
+45D text10 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
+461 text10 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
+463 text10 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
+467 text10 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
+46B text10 CODE >20:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
+46F text10 CODE >21:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
+474 text10 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
+47A text10 CODE >24:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
+47E text10 CODE >25:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
+6D9 text9 CODE >7:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\putch.c
+6D9 text9 CODE >9:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\putch.c
+340 text8 CODE >8:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputc.c
+340 text8 CODE >12:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputc.c
+34B text8 CODE >13:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputc.c
+34F text8 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputc.c
+350 text8 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputc.c
+370 text8 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputc.c
+374 text8 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputc.c
+378 text8 CODE >18:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputc.c
+388 text8 CODE >20:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputc.c
+38F text8 CODE >20:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputc.c
+391 text8 CODE >24:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputc.c
+4DF text7 CODE >8:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputs.c
+4E1 text7 CODE >13:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputs.c
+4E3 text7 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputs.c
+4E4 text7 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputs.c
+4F0 text7 CODE >16:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputs.c
+4F5 text7 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputs.c
+503 text7 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputs.c
+392 text6 CODE >152:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+394 text6 CODE >158:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+398 text6 CODE >159:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+39E text6 CODE >164:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+3AA text6 CODE >165:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+3AC text6 CODE >166:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+3AD text6 CODE >167:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+3B7 text6 CODE >168:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+3BC text6 CODE >166:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+3C2 text6 CODE >166:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+3C6 text6 CODE >166:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+3CA text6 CODE >173:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+3CF text6 CODE >175:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+3D5 text6 CODE >183:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+26E text5 CODE >917:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+270 text5 CODE >927:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+27D text5 CODE >928:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+281 text5 CODE >931:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+285 text5 CODE >932:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+287 text5 CODE >933:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+288 text5 CODE >938:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+28D text5 CODE >939:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+2A1 text5 CODE >940:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+2A5 text5 CODE >941:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+2A9 text5 CODE >942:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+2B9 text5 CODE >933:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+2CB text5 CODE >933:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+2CF text5 CODE >933:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+2D3 text5 CODE >946:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+2DF text5 CODE >947:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+1A8 text4 CODE >1048:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+1AA text4 CODE >1062:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+1BB text4 CODE >1063:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+1C1 text4 CODE >1063:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+1C3 text4 CODE >1065:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+1C5 text4 CODE >1065:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+1CA text4 CODE >1066:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+1CE text4 CODE >1117:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+1D9 text4 CODE >1118:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+1DD text4 CODE >1119:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+1DE text4 CODE >1120:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+1E1 text4 CODE >1120:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+1E3 text4 CODE >1143:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+1EA text4 CODE >1265:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+1F4 text4 CODE >1321:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+200 text4 CODE >1323:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+20D text4 CODE >1324:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+20E text4 CODE >1331:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+217 text4 CODE >1342:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+220 text4 CODE >1342:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+225 text4 CODE >1342:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+228 text4 CODE >1527:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+239 text4 CODE >1528:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+23F text4 CODE >1528:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+241 text4 CODE >1529:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+24B text4 CODE >1535:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+252 text4 CODE >1535:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+255 text4 CODE >1540:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+26D text4 CODE >1543:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+561 text3 CODE >1546:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+563 text3 CODE >1551:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+567 text3 CODE >1555:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+568 text3 CODE >1559:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+570 text3 CODE >1555:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+57A text3 CODE >1564:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+57C text3 CODE >1569:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+544 text2 CODE >9:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_sprintf.c
+546 text2 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_sprintf.c
+548 text2 CODE >16:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_sprintf.c
+54A text2 CODE >17:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_sprintf.c
+54C text2 CODE >18:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_sprintf.c
+54E text2 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_sprintf.c
+558 text2 CODE >20:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_sprintf.c
+560 text2 CODE >23:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_sprintf.c
+674 text1 CODE >191:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+674 text1 CODE >193:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+675 text1 CODE >194:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+678 text1 CODE >195:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+67A text1 CODE >196:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+67C text1 CODE >197:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+67E text1 CODE >198:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+67F text1 CODE >199:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+680 text1 CODE >202:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+67 maintext CODE >91:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+67 maintext CODE >92:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+69 maintext CODE >93:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+77 maintext CODE >95:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+77 maintext CODE >96:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+7A maintext CODE >97:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+7D maintext CODE >98:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+80 maintext CODE >99:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+83 maintext CODE >100:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+86 maintext CODE >101:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+86 maintext CODE >102:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+92 maintext CODE >108:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+9E maintext CODE >109:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+C2 maintext CODE >110:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+E6 maintext CODE >111:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+F7 maintext CODE >113:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+FB maintext CODE >113:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+FD maintext CODE >113:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+101 maintext CODE >115:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+109 maintext CODE >116:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+10A maintext CODE >118:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+111 maintext CODE >120:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+115 maintext CODE >120:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+117 maintext CODE >120:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+11B maintext CODE >123:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+11B maintext CODE >124:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+11D maintext CODE >125:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+120 maintext CODE >126:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+127 maintext CODE >127:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+12F maintext CODE >128:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+132 maintext CODE >129:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+13A maintext CODE >137:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+13D maintext CODE >138:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+144 maintext CODE >139:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+14C maintext CODE >142:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+158 maintext CODE >143:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+17C maintext CODE >144:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+18D maintext CODE >145:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+194 maintext CODE >146:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+19C maintext CODE >147:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
+6D3 clrtext CODE >2609:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+6D3 clrtext CODE >2610:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+6D4 clrtext CODE >2611:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+6D4 clrtext CODE >2612:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+6D5 clrtext CODE >2613:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+6D6 clrtext CODE >2614:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+6D7 clrtext CODE >2615:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+6D8 clrtext CODE >2616:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+6CD inittext CODE >2583:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+6CD inittext CODE >2584:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+6CE inittext CODE >2585:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+6CE inittext CODE >2586:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+6CF inittext CODE >2587:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+6D0 inittext CODE >2588:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+6D1 inittext CODE >2589:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
+6D2 inittext CODE >2590:C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_1.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -709,10 +667,9 @@ FD maintext CODE >122:E:\CS2024\pic\pic_lcd_analog_timer.X\timer.c
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
 ___latbits 4 0 ABS 0 - dist/default/production\pic_lcd_analog_timer.X.production.o
-___awdiv@counter 25 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 ___lwmod@counter 25 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 __LdataBANK1 0 0 ABS 0 dataBANK1 -
-__Hspace_0 768 0 ABS 0 - -
+__Hspace_0 6DA 0 ABS 0 - -
 __Hspace_1 140 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
@@ -720,14 +677,13 @@ __Hspace_4 10013 0 ABS 0 - -
 __HidataBANK1 0 0 ABS 0 idataBANK1 -
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 __L__absolute__ 0 0 ABS 0 __absolute__ -
-main@j C0 0 BANK1 1 cstackBANK1 dist/default/production\pic_lcd_analog_timer.X.production.o
 __Hstrings 0 0 ABS 0 strings -
 ?_vfprintf 4F 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_20.o
+___sp 0 0 STACK 2 stack C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_20.o
 _dbuf 120 0 BANK2 1 bssBANK2 dist/default/production\pic_lcd_analog_timer.X.production.o
-_main 9C 0 CODE 0 maintext dist/default/production\pic_lcd_analog_timer.X.production.o
+_main CE 0 CODE 0 maintext dist/default/production\pic_lcd_analog_timer.X.production.o
 _prec 6C 0 BANK0 1 bssBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
-_utoa 472 0 CODE 0 text5 dist/default/production\pic_lcd_analog_timer.X.production.o
+_utoa 4DC 0 CODE 0 text5 dist/default/production\pic_lcd_analog_timer.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\pic_lcd_analog_timer.X.production.o
 i1lcd_set_cursor@col 77 0 COMMON 1 cstackCOMMON dist/default/production\pic_lcd_analog_timer.X.production.o
 read_prec_or_width@c 2B 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
@@ -735,83 +691,77 @@ read_prec_or_width@n 2C 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_an
 pad@i 33 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 pad@p 30 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 pad@w 35 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
-start 5E 0 CODE 0 init C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_20.o
+start 90 0 CODE 0 init C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_20.o
 pad@fp 37 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 ?___wmul 20 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 LCD_Send@RS 20 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 __LidataBANK1 0 0 ABS 0 idataBANK1 -
-_LCD_Char E1E 0 CODE 0 text21 dist/default/production\pic_lcd_analog_timer.X.production.o
-_LCD_Init B6E 0 CODE 0 text22 dist/default/production\pic_lcd_analog_timer.X.production.o
-_LCD_Send A24 0 CODE 0 text25 dist/default/production\pic_lcd_analog_timer.X.production.o
+_LCD_Char D02 0 CODE 0 text19 dist/default/production\pic_lcd_analog_timer.X.production.o
+_LCD_Init A48 0 CODE 0 text20 dist/default/production\pic_lcd_analog_timer.X.production.o
+_LCD_Send 8FE 0 CODE 0 text23 dist/default/production\pic_lcd_analog_timer.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
-seven_seg_Show@tens_digit 33 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
-__end_of_vfpfcnvrt 472 0 CODE 0 text4 dist/default/production\pic_lcd_analog_timer.X.production.o
-___awmod@sign 2F 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
+__end_of_vfpfcnvrt 4DC 0 CODE 0 text4 dist/default/production\pic_lcd_analog_timer.X.production.o
 utoa@d 38 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 utoa@i 40 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 utoa@p 3E 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 utoa@w 3B 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
-__end_of_LCD_Char E36 0 CODE 0 text21 dist/default/production\pic_lcd_analog_timer.X.production.o
-__end_of_LCD_Init BAE 0 CODE 0 text22 dist/default/production\pic_lcd_analog_timer.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_20.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_20.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_20.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_20.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_20.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_20.o
-__end_of_LCD_Send A86 0 CODE 0 text25 dist/default/production\pic_lcd_analog_timer.X.production.o
+__end_of_LCD_Char D1A 0 CODE 0 text19 dist/default/production\pic_lcd_analog_timer.X.production.o
+__end_of_LCD_Init A88 0 CODE 0 text20 dist/default/production\pic_lcd_analog_timer.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_20.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_20.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_20.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_20.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_20.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_20.o
+__end_of_LCD_Send 960 0 CODE 0 text23 dist/default/production\pic_lcd_analog_timer.X.production.o
 i1LCD_String@text 76 0 COMMON 1 cstackCOMMON dist/default/production\pic_lcd_analog_timer.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\pic_lcd_analog_timer.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
-main@O2_level C4 0 BANK1 1 cstackBANK1 dist/default/production\pic_lcd_analog_timer.X.production.o
-___awdiv@sign 26 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 __Hclrtext 0 0 ABS 0 clrtext -
-_vfpfcnvrt 2E6 0 CODE 0 text4 dist/default/production\pic_lcd_analog_timer.X.production.o
+_vfpfcnvrt 350 0 CODE 0 text4 dist/default/production\pic_lcd_analog_timer.X.production.o
 ___wmul@multiplicand 22 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 i1LCD_Send@data 72 0 COMMON 1 cstackCOMMON dist/default/production\pic_lcd_analog_timer.X.production.o
 _ADCON0 93 0 ABS 0 - dist/default/production\pic_lcd_analog_timer.X.production.o
 _ADRESH 8D 0 ABS 0 - dist/default/production\pic_lcd_analog_timer.X.production.o
 _ADRESL 8C 0 ABS 0 - dist/default/production\pic_lcd_analog_timer.X.production.o
 _ANSELA 1F38 0 ABS 0 - dist/default/production\pic_lcd_analog_timer.X.production.o
-i1_LCD_Clear E36 0 CODE 0 text32 dist/default/production\pic_lcd_analog_timer.X.production.o
+i1_LCD_Clear D1A 0 CODE 0 text30 dist/default/production\pic_lcd_analog_timer.X.production.o
 lcd_set_cursor@col 27 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
-___awdiv@dividend 22 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
-_LCD_String C86 0 CODE 0 text20 dist/default/production\pic_lcd_analog_timer.X.production.o
-__end_of___wmul B6E 0 CODE 0 text13 dist/default/production\pic_lcd_analog_timer.X.production.o
+main@Temperature C2 0 BANK1 1 cstackBANK1 dist/default/production\pic_lcd_analog_timer.X.production.o
+_LCD_String B60 0 CODE 0 text18 dist/default/production\pic_lcd_analog_timer.X.production.o
+__end_of___wmul A48 0 CODE 0 text13 dist/default/production\pic_lcd_analog_timer.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
-_ADC_Init D46 0 CODE 0 text27 dist/default/production\pic_lcd_analog_timer.X.production.o
-_ADC_Read CB8 0 CODE 0 text26 dist/default/production\pic_lcd_analog_timer.X.production.o
-___awdiv@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
+_ADC_Init C48 0 CODE 0 text25 dist/default/production\pic_lcd_analog_timer.X.production.o
+_ADC_Read B92 0 CODE 0 text24 dist/default/production\pic_lcd_analog_timer.X.production.o
 ___lwmod@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
-__end_of___awdiv 6D6 0 CODE 0 text16 dist/default/production\pic_lcd_analog_timer.X.production.o
-__end_of___awmod 77E 0 CODE 0 text15 dist/default/production\pic_lcd_analog_timer.X.production.o
-i1_lcd_set_cursor CE8 0 CODE 0 text29 dist/default/production\pic_lcd_analog_timer.X.production.o
-__end_of___lwdiv 9BA 0 CODE 0 text11 dist/default/production\pic_lcd_analog_timer.X.production.o
-__end_of___lwmod A24 0 CODE 0 text10 dist/default/production\pic_lcd_analog_timer.X.production.o
-__end_ofi1_LCD_Cmd EB6 0 CODE 0 text33 dist/default/production\pic_lcd_analog_timer.X.production.o
+i1_lcd_set_cursor BC2 0 CODE 0 text27 dist/default/production\pic_lcd_analog_timer.X.production.o
+__end_of___lwdiv 826 0 CODE 0 text11 dist/default/production\pic_lcd_analog_timer.X.production.o
+__end_of___lwmod 8FE 0 CODE 0 text10 dist/default/production\pic_lcd_analog_timer.X.production.o
+__end_ofi1_LCD_Cmd D9A 0 CODE 0 text31 dist/default/production\pic_lcd_analog_timer.X.production.o
 i1LCD_Cmd@command 75 0 COMMON 1 cstackCOMMON dist/default/production\pic_lcd_analog_timer.X.production.o
-__end_of_ADC_Init D6A 0 CODE 0 text27 dist/default/production\pic_lcd_analog_timer.X.production.o
-__end_of_ADC_Read CE8 0 CODE 0 text26 dist/default/production\pic_lcd_analog_timer.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_20.o
-___stacklo 0 0 ABS 0 - C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_20.o
-__end_of_LCD_Cmd E64 0 CODE 0 text24 dist/default/production\pic_lcd_analog_timer.X.production.o
+__end_of_ADC_Init C6C 0 CODE 0 text25 dist/default/production\pic_lcd_analog_timer.X.production.o
+__end_of_ADC_Read BC2 0 CODE 0 text24 dist/default/production\pic_lcd_analog_timer.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_20.o
+___stacklo 0 0 ABS 0 - C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_20.o
+__end_of_LCD_Cmd D48 0 CODE 0 text22 dist/default/production\pic_lcd_analog_timer.X.production.o
 utoa@fp 3D 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 ___lwdiv@quotient 2B 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 ___lwmod@dividend 22 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 ADC_Read@channel 24 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
-start_initialization 62 0 CODE 0 cinit dist/default/production\pic_lcd_analog_timer.X.production.o
-i1_LCD_Cmd EA2 0 CODE 0 text33 dist/default/production\pic_lcd_analog_timer.X.production.o
-__end_of_LCD_String CB8 0 CODE 0 text20 dist/default/production\pic_lcd_analog_timer.X.production.o
-clear_ram0 EC2 0 CODE 0 clrtext dist/default/production\pic_lcd_analog_timer.X.production.o
+start_initialization 94 0 CODE 0 cinit dist/default/production\pic_lcd_analog_timer.X.production.o
+i1_LCD_Cmd D86 0 CODE 0 text31 dist/default/production\pic_lcd_analog_timer.X.production.o
+_seven_seg_All 826 0 CODE 0 text14 dist/default/production\pic_lcd_analog_timer.X.production.o
+__end_of_LCD_String B92 0 CODE 0 text18 dist/default/production\pic_lcd_analog_timer.X.production.o
+clear_ram0 DA6 0 CODE 0 clrtext dist/default/production\pic_lcd_analog_timer.X.production.o
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 __pcstackBANK1 A0 0 BANK1 1 cstackBANK1 dist/default/production\pic_lcd_analog_timer.X.production.o
 _T0CON0 1E 0 ABS 0 - dist/default/production\pic_lcd_analog_timer.X.production.o
 _T0CON1 1F 0 ABS 0 - dist/default/production\pic_lcd_analog_timer.X.production.o
-_init7Segment E7A 0 CODE 0 text18 dist/default/production\pic_lcd_analog_timer.X.production.o
+_init7Segment D5E 0 CODE 0 text16 dist/default/production\pic_lcd_analog_timer.X.production.o
 fputc@fp 22 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 fputs@fp 28 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
-__end_of_LCD_Clear E04 0 CODE 0 text23 dist/default/production\pic_lcd_analog_timer.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_20.o
+__end_of_LCD_Clear CE8 0 CODE 0 text21 dist/default/production\pic_lcd_analog_timer.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_20.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -822,7 +772,7 @@ __Hbank6 0 0 ABS 0 bank6 -
 __Hbank7 0 0 ABS 0 bank7 -
 __Hbank8 0 0 ABS 0 bank8 -
 __Hbank9 0 0 ABS 0 bank9 -
-__Hcinit 9C 0 CODE 0 cinit -
+__Hcinit CE 0 CODE 0 cinit -
 __Hsfr10 0 0 ABS 0 sfr10 -
 __Hsfr11 0 0 ABS 0 sfr11 -
 __Hsfr12 0 0 ABS 0 sfr12 -
@@ -934,14 +884,16 @@ __Hbank60 0 0 BANK60 1 bank60 -
 __Hbank61 0 0 BANK61 1 bank61 -
 __Hbank62 0 0 BANK62 1 bank62 -
 __Hbank63 0 0 BANK63 1 bank63 -
+seven_seg_All@i 20 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
+seven_seg_All@k 23 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 ?_read_prec_or_width 26 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 __Hbigram 0 0 ABS 0 bigram -
 __Hmaintext 0 0 ABS 0 maintext -
-main@F12497 C6 0 BANK1 1 dataBANK1 dist/default/production\pic_lcd_analog_timer.X.production.o
-__end_of_sprintf BE8 0 CODE 0 text2 dist/default/production\pic_lcd_analog_timer.X.production.o
+main@F12499 C4 0 BANK1 1 dataBANK1 dist/default/production\pic_lcd_analog_timer.X.production.o
+__end_of_sprintf AC2 0 CODE 0 text2 dist/default/production\pic_lcd_analog_timer.X.production.o
 __Hcommon 0 0 ABS 0 common -
 __Hconfig 10018 0 CONFIG 4 config -
-__end_ofi1_lcd_set_cursor D18 0 CODE 0 text29 dist/default/production\pic_lcd_analog_timer.X.production.o
+__end_ofi1_lcd_set_cursor BF2 0 CODE 0 text27 dist/default/production\pic_lcd_analog_timer.X.production.o
 __Lbank0 0 0 ABS 0 bank0 -
 __Lbank1 0 0 ABS 0 bank1 -
 __Lbank2 0 0 ABS 0 bank2 -
@@ -952,7 +904,7 @@ __Lbank6 0 0 ABS 0 bank6 -
 __Lbank7 0 0 ABS 0 bank7 -
 __Lbank8 0 0 ABS 0 bank8 -
 __Lbank9 0 0 ABS 0 bank9 -
-__Lcinit 62 0 CODE 0 cinit -
+__Lcinit 94 0 CODE 0 cinit -
 __Lsfr10 0 0 ABS 0 sfr10 -
 __Lsfr11 0 0 ABS 0 sfr11 -
 __Lsfr12 0 0 ABS 0 sfr12 -
@@ -1008,8 +960,8 @@ __Lsfr61 0 0 ABS 0 sfr61 -
 __Lsfr62 0 0 ABS 0 sfr62 -
 __Lsfr63 0 0 ABS 0 sfr63 -
 __Lstack 0 0 STACK 2 stack -
-init_ram EB6 0 CODE 0 inittext dist/default/production\pic_lcd_analog_timer.X.production.o
-_LCD_Clear DE8 0 CODE 0 text23 dist/default/production\pic_lcd_analog_timer.X.production.o
+init_ram D9A 0 CODE 0 inittext dist/default/production\pic_lcd_analog_timer.X.production.o
+_LCD_Clear CCC 0 CODE 0 text21 dist/default/production\pic_lcd_analog_timer.X.production.o
 __Linittext 0 0 ABS 0 inittext -
 _PORTBbits D 0 ABS 0 - dist/default/production\pic_lcd_analog_timer.X.production.o
 _PORTCbits E 0 ABS 0 - dist/default/production\pic_lcd_analog_timer.X.production.o
@@ -1018,7 +970,7 @@ _INTCONbits B 0 ABS 0 - dist/default/production\pic_lcd_analog_timer.X.productio
 __Habs1 0 0 ABS 0 abs1 -
 __Hcode 0 0 ABS 0 code -
 __Hheap 0 0 HEAP 7 heap -
-__Hinit 5E 0 CODE 0 init -
+__Hinit 90 0 CODE 0 init -
 __Hsfr0 0 0 ABS 0 sfr0 -
 __Hsfr1 0 0 ABS 0 sfr1 -
 __Hsfr2 0 0 ABS 0 sfr2 -
@@ -1033,7 +985,7 @@ __Htext 0 0 ABS 0 text -
 __Labs1 0 0 ABS 0 abs1 -
 __Lcode 0 0 ABS 0 code -
 __Lheap 0 0 HEAP 7 heap -
-__Linit 5E 0 CODE 0 init -
+__Linit 90 0 CODE 0 init -
 __Lsfr0 0 0 ABS 0 sfr0 -
 __Lsfr1 0 0 ABS 0 sfr1 -
 __Lsfr2 0 0 ABS 0 sfr2 -
@@ -1045,34 +997,34 @@ __Lsfr7 0 0 ABS 0 sfr7 -
 __Lsfr8 0 0 ABS 0 sfr8 -
 __Lsfr9 0 0 ABS 0 sfr9 -
 __Ltext 0 0 ABS 0 text -
-__pstringtext1 D6A 0 STRCODE 0 stringtext1 dist/default/production\pic_lcd_analog_timer.X.production.o
-__pstringtext2 D8C 0 STRCODE 0 stringtext2 dist/default/production\pic_lcd_analog_timer.X.production.o
-__pstringtext3 DAC 0 STRCODE 0 stringtext3 dist/default/production\pic_lcd_analog_timer.X.production.o
-__pstringtext4 DCA 0 STRCODE 0 stringtext4 dist/default/production\pic_lcd_analog_timer.X.production.o
+__pstringtext1 C20 0 STRCODE 0 stringtext1 dist/default/production\pic_lcd_analog_timer.X.production.o
+__pstringtext2 C6C 0 STRCODE 0 stringtext2 dist/default/production\pic_lcd_analog_timer.X.production.o
+__pstringtext3 C8E 0 STRCODE 0 stringtext3 dist/default/production\pic_lcd_analog_timer.X.production.o
+__pstringtext4 CAE 0 STRCODE 0 stringtext4 dist/default/production\pic_lcd_analog_timer.X.production.o
 __pstringtext5 0 0 STRCODE 0 stringtext5 dist/default/production\pic_lcd_analog_timer.X.production.o
-___wmul B2E 0 CODE 0 text13 dist/default/production\pic_lcd_analog_timer.X.production.o
+___wmul A08 0 CODE 0 text13 dist/default/production\pic_lcd_analog_timer.X.production.o
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __LcstackBANK1 0 0 ABS 0 cstackBANK1 -
 int$flags 7E 0 ABS 0 - dist/default/production\pic_lcd_analog_timer.X.production.o
-_Timer0_Init E8E 0 CODE 0 text19 dist/default/production\pic_lcd_analog_timer.X.production.o
+_Timer0_Init D72 0 CODE 0 text17 dist/default/production\pic_lcd_analog_timer.X.production.o
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
-__S0 768 0 ABS 0 - -
+__S0 6DA 0 ABS 0 - -
 __S1 140 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
 _isr 8 0 CODE 0 intentry dist/default/production\pic_lcd_analog_timer.X.production.o
-_pad 8B8 0 CODE 0 text6 dist/default/production\pic_lcd_analog_timer.X.production.o
+_pad 724 0 CODE 0 text6 dist/default/production\pic_lcd_analog_timer.X.production.o
 lcd_set_cursor@line 26 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 ?_ADC_Read 20 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 i1LCD_Send@RS 70 0 COMMON 1 cstackCOMMON dist/default/production\pic_lcd_analog_timer.X.production.o
-__end_of_init7Segment E8E 0 CODE 0 text18 dist/default/production\pic_lcd_analog_timer.X.production.o
+__end_of_init7Segment D72 0 CODE 0 text16 dist/default/production\pic_lcd_analog_timer.X.production.o
 sprintf@fmt 56 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
-__end_of_isr 5E 0 CODE 0 intentry dist/default/production\pic_lcd_analog_timer.X.production.o
-__end_of_pad 940 0 CODE 0 text6 dist/default/production\pic_lcd_analog_timer.X.production.o
-i1_LCD_Char E64 0 CODE 0 text31 dist/default/production\pic_lcd_analog_timer.X.production.o
-i1_LCD_Send A86 0 CODE 0 text34 dist/default/production\pic_lcd_analog_timer.X.production.o
+__end_of_isr 90 0 CODE 0 intentry dist/default/production\pic_lcd_analog_timer.X.production.o
+__end_of_pad 7AC 0 CODE 0 text6 dist/default/production\pic_lcd_analog_timer.X.production.o
+i1_LCD_Char D48 0 CODE 0 text29 dist/default/production\pic_lcd_analog_timer.X.production.o
+i1_LCD_Send 960 0 CODE 0 text32 dist/default/production\pic_lcd_analog_timer.X.production.o
 __Lintentry 8 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_20.o
-__pdataBANK1 C6 0 BANK1 1 dataBANK1 dist/default/production\pic_lcd_analog_timer.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_20.o
+__pdataBANK1 C4 0 BANK1 1 dataBANK1 dist/default/production\pic_lcd_analog_timer.X.production.o
 __LbssBANK0 0 0 ABS 0 bssBANK0 -
 __LbssBANK2 0 0 ABS 0 bssBANK2 -
 __Lstringtext1 0 0 ABS 0 stringtext1 -
@@ -1081,38 +1033,34 @@ __Lstringtext3 0 0 ABS 0 stringtext3 -
 __Lstringtext4 0 0 ABS 0 stringtext4 -
 __Lstringtext5 0 0 ABS 0 stringtext5 -
 vfpfcnvrt@fmt 42 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
-___awmod@counter 2E 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
-__end_ofi1_LCD_Clear E4E 0 CODE 0 text32 dist/default/production\pic_lcd_analog_timer.X.production.o
+__end_ofi1_LCD_Clear D32 0 CODE 0 text30 dist/default/production\pic_lcd_analog_timer.X.production.o
 _PIE0bits 716 0 ABS 0 - dist/default/production\pic_lcd_analog_timer.X.production.o
+__end_of_seven_seg_All 894 0 CODE 0 text14 dist/default/production\pic_lcd_analog_timer.X.production.o
 pad@buf 2F 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
-__ptext10 9BA 0 CODE 0 text10 dist/default/production\pic_lcd_analog_timer.X.production.o
-__ptext11 940 0 CODE 0 text11 dist/default/production\pic_lcd_analog_timer.X.production.o
-__ptext12 556 0 CODE 0 text12 dist/default/production\pic_lcd_analog_timer.X.production.o
-__ptext13 B2E 0 CODE 0 text13 dist/default/production\pic_lcd_analog_timer.X.production.o
-__ptext14 822 0 CODE 0 text14 dist/default/production\pic_lcd_analog_timer.X.production.o
-__ptext15 6D6 0 CODE 0 text15 dist/default/production\pic_lcd_analog_timer.X.production.o
-__ptext16 616 0 CODE 0 text16 dist/default/production\pic_lcd_analog_timer.X.production.o
-__ptext17 C54 0 CODE 0 text17 dist/default/production\pic_lcd_analog_timer.X.production.o
-__ptext18 E7A 0 CODE 0 text18 dist/default/production\pic_lcd_analog_timer.X.production.o
-__ptext19 E8E 0 CODE 0 text19 dist/default/production\pic_lcd_analog_timer.X.production.o
-__ptext20 C86 0 CODE 0 text20 dist/default/production\pic_lcd_analog_timer.X.production.o
-__ptext21 E1E 0 CODE 0 text21 dist/default/production\pic_lcd_analog_timer.X.production.o
-__ptext22 B6E 0 CODE 0 text22 dist/default/production\pic_lcd_analog_timer.X.production.o
-__ptext23 DE8 0 CODE 0 text23 dist/default/production\pic_lcd_analog_timer.X.production.o
-__ptext24 E4E 0 CODE 0 text24 dist/default/production\pic_lcd_analog_timer.X.production.o
-__ptext25 A24 0 CODE 0 text25 dist/default/production\pic_lcd_analog_timer.X.production.o
-__ptext26 CB8 0 CODE 0 text26 dist/default/production\pic_lcd_analog_timer.X.production.o
-__ptext27 D46 0 CODE 0 text27 dist/default/production\pic_lcd_analog_timer.X.production.o
-__ptext29 CE8 0 CODE 0 text29 dist/default/production\pic_lcd_analog_timer.X.production.o
-__ptext30 D18 0 CODE 0 text30 dist/default/production\pic_lcd_analog_timer.X.production.o
-__ptext31 E64 0 CODE 0 text31 dist/default/production\pic_lcd_analog_timer.X.production.o
-__ptext32 E36 0 CODE 0 text32 dist/default/production\pic_lcd_analog_timer.X.production.o
-__ptext33 EA2 0 CODE 0 text33 dist/default/production\pic_lcd_analog_timer.X.production.o
-__ptext34 A86 0 CODE 0 text34 dist/default/production\pic_lcd_analog_timer.X.production.o
-___awdiv 616 0 CODE 0 text16 dist/default/production\pic_lcd_analog_timer.X.production.o
-___awmod 6D6 0 CODE 0 text15 dist/default/production\pic_lcd_analog_timer.X.production.o
-___lwdiv 940 0 CODE 0 text11 dist/default/production\pic_lcd_analog_timer.X.production.o
-___lwmod 9BA 0 CODE 0 text10 dist/default/production\pic_lcd_analog_timer.X.production.o
+__ptext10 894 0 CODE 0 text10 dist/default/production\pic_lcd_analog_timer.X.production.o
+__ptext11 7AC 0 CODE 0 text11 dist/default/production\pic_lcd_analog_timer.X.production.o
+__ptext12 5C0 0 CODE 0 text12 dist/default/production\pic_lcd_analog_timer.X.production.o
+__ptext13 A08 0 CODE 0 text13 dist/default/production\pic_lcd_analog_timer.X.production.o
+__ptext14 826 0 CODE 0 text14 dist/default/production\pic_lcd_analog_timer.X.production.o
+__ptext15 B2E 0 CODE 0 text15 dist/default/production\pic_lcd_analog_timer.X.production.o
+__ptext16 D5E 0 CODE 0 text16 dist/default/production\pic_lcd_analog_timer.X.production.o
+__ptext17 D72 0 CODE 0 text17 dist/default/production\pic_lcd_analog_timer.X.production.o
+__ptext18 B60 0 CODE 0 text18 dist/default/production\pic_lcd_analog_timer.X.production.o
+__ptext19 D02 0 CODE 0 text19 dist/default/production\pic_lcd_analog_timer.X.production.o
+__ptext20 A48 0 CODE 0 text20 dist/default/production\pic_lcd_analog_timer.X.production.o
+__ptext21 CCC 0 CODE 0 text21 dist/default/production\pic_lcd_analog_timer.X.production.o
+__ptext22 D32 0 CODE 0 text22 dist/default/production\pic_lcd_analog_timer.X.production.o
+__ptext23 8FE 0 CODE 0 text23 dist/default/production\pic_lcd_analog_timer.X.production.o
+__ptext24 B92 0 CODE 0 text24 dist/default/production\pic_lcd_analog_timer.X.production.o
+__ptext25 C48 0 CODE 0 text25 dist/default/production\pic_lcd_analog_timer.X.production.o
+__ptext27 BC2 0 CODE 0 text27 dist/default/production\pic_lcd_analog_timer.X.production.o
+__ptext28 BF2 0 CODE 0 text28 dist/default/production\pic_lcd_analog_timer.X.production.o
+__ptext29 D48 0 CODE 0 text29 dist/default/production\pic_lcd_analog_timer.X.production.o
+__ptext30 D1A 0 CODE 0 text30 dist/default/production\pic_lcd_analog_timer.X.production.o
+__ptext31 D86 0 CODE 0 text31 dist/default/production\pic_lcd_analog_timer.X.production.o
+__ptext32 960 0 CODE 0 text32 dist/default/production\pic_lcd_analog_timer.X.production.o
+___lwdiv 7AC 0 CODE 0 text11 dist/default/production\pic_lcd_analog_timer.X.production.o
+___lwmod 894 0 CODE 0 text10 dist/default/production\pic_lcd_analog_timer.X.production.o
 __Lbank10 0 0 ABS 0 bank10 -
 __Lbank11 0 0 ABS 0 bank11 -
 __Lbank12 0 0 ABS 0 bank12 -
@@ -1167,24 +1115,24 @@ __Lbank60 0 0 BANK60 1 bank60 -
 __Lbank61 0 0 BANK61 1 bank61 -
 __Lbank62 0 0 BANK62 1 bank62 -
 __Lbank63 0 0 BANK63 1 bank63 -
-__pmaintext 9C 0 CODE 0 maintext dist/default/production\pic_lcd_analog_timer.X.production.o
+__pmaintext CE 0 CODE 0 maintext dist/default/production\pic_lcd_analog_timer.X.production.o
 __Lbigram 0 0 ABS 0 bigram -
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 0 0 CONFIG 4 config -
-i1_LCD_String D18 0 CODE 0 text30 dist/default/production\pic_lcd_analog_timer.X.production.o
+i1_LCD_String BF2 0 CODE 0 text28 dist/default/production\pic_lcd_analog_timer.X.production.o
 __Hinittext 0 0 ABS 0 inittext -
-_LCD_Cmd E4E 0 CODE 0 text24 dist/default/production\pic_lcd_analog_timer.X.production.o
+_LCD_Cmd D32 0 CODE 0 text22 dist/default/production\pic_lcd_analog_timer.X.production.o
 ___wmul@multiplier 20 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 _LATBbits 17 0 ABS 0 - dist/default/production\pic_lcd_analog_timer.X.production.o
-__end_of_read_prec_or_width 616 0 CODE 0 text12 dist/default/production\pic_lcd_analog_timer.X.production.o
-_hexvalue D6 0 BANK1 1 dataBANK1 dist/default/production\pic_lcd_analog_timer.X.production.o
+__end_of_read_prec_or_width 680 0 CODE 0 text12 dist/default/production\pic_lcd_analog_timer.X.production.o
+_hexvalue D4 0 BANK1 1 dataBANK1 dist/default/production\pic_lcd_analog_timer.X.production.o
 main@name A0 0 BANK1 1 cstackBANK1 dist/default/production\pic_lcd_analog_timer.X.production.o
 ___lwdiv@divisor 26 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
-__end_ofi1_LCD_Char E7A 0 CODE 0 text31 dist/default/production\pic_lcd_analog_timer.X.production.o
-__end_ofi1_LCD_Send AE4 0 CODE 0 text34 dist/default/production\pic_lcd_analog_timer.X.production.o
+__end_ofi1_LCD_Char D5E 0 CODE 0 text29 dist/default/production\pic_lcd_analog_timer.X.production.o
+__end_ofi1_LCD_Send 9BE 0 CODE 0 text32 dist/default/production\pic_lcd_analog_timer.X.production.o
 _ADCON0bits 93 0 ABS 0 - dist/default/production\pic_lcd_analog_timer.X.production.o
 main@buffer B0 0 BANK1 1 cstackBANK1 dist/default/production\pic_lcd_analog_timer.X.production.o
-main@PH_level C2 0 BANK1 1 cstackBANK1 dist/default/production\pic_lcd_analog_timer.X.production.o
+main@PH_level C0 0 BANK1 1 cstackBANK1 dist/default/production\pic_lcd_analog_timer.X.production.o
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
 __Lspace_2 0 0 ABS 0 - -
@@ -1195,21 +1143,17 @@ LCD_Send@data 22 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_ti
 __HcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __HcstackBANK1 0 0 ABS 0 cstackBANK1 -
 _PIR0bits 70C 0 ABS 0 - dist/default/production\pic_lcd_analog_timer.X.production.o
-__Lend_init 5E 0 CODE 0 end_init -
+__Lend_init 90 0 CODE 0 end_init -
 vfpfcnvrt@convarg 48 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 __LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
-end_of_initialization 94 0 CODE 0 cinit dist/default/production\pic_lcd_analog_timer.X.production.o
-_seven_seg_Show 822 0 CODE 0 text14 dist/default/production\pic_lcd_analog_timer.X.production.o
-_read_prec_or_width 556 0 CODE 0 text12 dist/default/production\pic_lcd_analog_timer.X.production.o
-__Hintentry 5E 0 CODE 0 intentry -
+end_of_initialization C6 0 CODE 0 cinit dist/default/production\pic_lcd_analog_timer.X.production.o
+_read_prec_or_width 5C0 0 CODE 0 text12 dist/default/production\pic_lcd_analog_timer.X.production.o
+__Hintentry 90 0 CODE 0 intentry -
 fputc@c 20 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 fputs@c 2B 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 fputs@i 2C 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 fputs@s 2E 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 __Lstrings 0 0 ABS 0 strings -
-___awdiv@quotient 27 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
-?___awdiv 20 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
-?___awmod 29 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 ___lwdiv@dividend 28 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 ?___lwdiv 26 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 ?___lwmod 20 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
@@ -1217,62 +1161,58 @@ vfprintf@fmt 4F 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_tim
 __Hreset_vec 4 0 CODE 0 reset_vec -
 __HbssBANK0 0 0 ABS 0 bssBANK0 -
 __HbssBANK2 0 0 ABS 0 bssBANK2 -
-___awmod@dividend 2B 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 vfpfcnvrt@ap 43 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 vfpfcnvrt@cp 4C 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 vfpfcnvrt@fp 4E 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
-__ptext1 E04 0 CODE 0 text1 dist/default/production\pic_lcd_analog_timer.X.production.o
-__ptext2 BAE 0 CODE 0 text2 dist/default/production\pic_lcd_analog_timer.X.production.o
-__ptext3 BE8 0 CODE 0 text3 dist/default/production\pic_lcd_analog_timer.X.production.o
-__ptext4 2E6 0 CODE 0 text4 dist/default/production\pic_lcd_analog_timer.X.production.o
-__ptext5 472 0 CODE 0 text5 dist/default/production\pic_lcd_analog_timer.X.production.o
-__ptext6 8B8 0 CODE 0 text6 dist/default/production\pic_lcd_analog_timer.X.production.o
-__ptext7 AE4 0 CODE 0 text7 dist/default/production\pic_lcd_analog_timer.X.production.o
-__ptext8 77E 0 CODE 0 text8 dist/default/production\pic_lcd_analog_timer.X.production.o
-__ptext9 ECE 0 CODE 0 text9 dist/default/production\pic_lcd_analog_timer.X.production.o
+__ptext1 CE8 0 CODE 0 text1 dist/default/production\pic_lcd_analog_timer.X.production.o
+__ptext2 A88 0 CODE 0 text2 dist/default/production\pic_lcd_analog_timer.X.production.o
+__ptext3 AC2 0 CODE 0 text3 dist/default/production\pic_lcd_analog_timer.X.production.o
+__ptext4 350 0 CODE 0 text4 dist/default/production\pic_lcd_analog_timer.X.production.o
+__ptext5 4DC 0 CODE 0 text5 dist/default/production\pic_lcd_analog_timer.X.production.o
+__ptext6 724 0 CODE 0 text6 dist/default/production\pic_lcd_analog_timer.X.production.o
+__ptext7 9BE 0 CODE 0 text7 dist/default/production\pic_lcd_analog_timer.X.production.o
+__ptext8 680 0 CODE 0 text8 dist/default/production\pic_lcd_analog_timer.X.production.o
+__ptext9 DB2 0 CODE 0 text9 dist/default/production\pic_lcd_analog_timer.X.production.o
 vfprintf@ap 51 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 vfprintf@fp 53 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 ADC_Read@result 22 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 vfprintf@cfmt 54 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
-_sprintf BAE 0 CODE 0 text2 dist/default/production\pic_lcd_analog_timer.X.production.o
-_vfprintf BE8 0 CODE 0 text3 dist/default/production\pic_lcd_analog_timer.X.production.o
-__end_ofi1_LCD_String D46 0 CODE 0 text30 dist/default/production\pic_lcd_analog_timer.X.production.o
+_sprintf A88 0 CODE 0 text2 dist/default/production\pic_lcd_analog_timer.X.production.o
+_vfprintf AC2 0 CODE 0 text3 dist/default/production\pic_lcd_analog_timer.X.production.o
+__end_ofi1_LCD_String C20 0 CODE 0 text28 dist/default/production\pic_lcd_analog_timer.X.production.o
 __Lpowerup 0 0 CODE 0 powerup -
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
 sprintf@ap 5B 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 __H__absolute__ 0 0 ABS 0 __absolute__ -
 __Lreset_vec 0 0 CODE 0 reset_vec -
-_lcd_set_cursor C54 0 CODE 0 text17 dist/default/production\pic_lcd_analog_timer.X.production.o
+_lcd_set_cursor B2E 0 CODE 0 text15 dist/default/production\pic_lcd_analog_timer.X.production.o
 __Hstringtext1 0 0 ABS 0 stringtext1 -
 __Hstringtext2 0 0 ABS 0 stringtext2 -
 __Hstringtext3 0 0 ABS 0 stringtext3 -
 __Hstringtext4 0 0 ABS 0 stringtext4 -
 __Hstringtext5 0 0 ABS 0 stringtext5 -
-seven_seg_Show@ones_digit 34 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
-__end_of_vfprintf C20 0 CODE 0 text3 dist/default/production\pic_lcd_analog_timer.X.production.o
+__end_of_vfprintf AFA 0 CODE 0 text3 dist/default/production\pic_lcd_analog_timer.X.production.o
 LCD_Cmd@command 25 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
-___heap_hi 0 0 ABS 0 - C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_20.o
-___heap_lo 0 0 ABS 0 - C:\Users\BLUEPH~1\AppData\Local\Temp\xcAsjso.\driver_tmp_20.o
-__end_of__initialization 94 0 CODE 0 cinit dist/default/production\pic_lcd_analog_timer.X.production.o
-___awmod@divisor 29 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
+___heap_hi 0 0 ABS 0 - C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_20.o
+___heap_lo 0 0 ABS 0 - C:\Users\BLUEPH~1\AppData\Local\Temp\xcAs15d4.\driver_tmp_20.o
+__end_of__initialization C6 0 CODE 0 cinit dist/default/production\pic_lcd_analog_timer.X.production.o
 __Lfunctab 0 0 ENTRY 0 functab -
-__end_of_seven_seg_Show 8B8 0 CODE 0 text14 dist/default/production\pic_lcd_analog_timer.X.production.o
-__pidataBANK1 C20 0 CODE 0 idataBANK1 dist/default/production\pic_lcd_analog_timer.X.production.o
+__pidataBANK1 AFA 0 CODE 0 idataBANK1 dist/default/production\pic_lcd_analog_timer.X.production.o
 __Lclrtext 0 0 ABS 0 clrtext -
-__end_of_Timer0_Init EA2 0 CODE 0 text19 dist/default/production\pic_lcd_analog_timer.X.production.o
+__end_of_Timer0_Init D86 0 CODE 0 text17 dist/default/production\pic_lcd_analog_timer.X.production.o
 __pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\pic_lcd_analog_timer.X.production.o
-__Hend_init 62 0 CODE 0 end_init -
+__Hend_init 94 0 CODE 0 end_init -
 i1LCD_Char@data 75 0 COMMON 1 cstackCOMMON dist/default/production\pic_lcd_analog_timer.X.production.o
 sprintf@f 5D 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 sprintf@s 5C 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
-__end_of_main 2E6 0 CODE 0 maintext dist/default/production\pic_lcd_analog_timer.X.production.o
-__end_of_utoa 556 0 CODE 0 text5 dist/default/production\pic_lcd_analog_timer.X.production.o
+__end_of_main 350 0 CODE 0 maintext dist/default/production\pic_lcd_analog_timer.X.production.o
+__end_of_utoa 5C0 0 CODE 0 text5 dist/default/production\pic_lcd_analog_timer.X.production.o
 _ADACQ 9D 0 ABS 0 - dist/default/production\pic_lcd_analog_timer.X.production.o
 _ADCLK 98 0 ABS 0 - dist/default/production\pic_lcd_analog_timer.X.production.o
 _ADPCH 9E 0 ABS 0 - dist/default/production\pic_lcd_analog_timer.X.production.o
 _ADREF 9A 0 ABS 0 - dist/default/production\pic_lcd_analog_timer.X.production.o
-__end_of_fputc 822 0 CODE 0 text8 dist/default/production\pic_lcd_analog_timer.X.production.o
-__end_of_fputs B2E 0 CODE 0 text7 dist/default/production\pic_lcd_analog_timer.X.production.o
+__end_of_fputc 724 0 CODE 0 text8 dist/default/production\pic_lcd_analog_timer.X.production.o
+__end_of_fputs A08 0 CODE 0 text7 dist/default/production\pic_lcd_analog_timer.X.production.o
 _LATE0 D0 0 ABS 0 - dist/default/production\pic_lcd_analog_timer.X.production.o
 _LATE2 D2 0 ABS 0 - dist/default/production\pic_lcd_analog_timer.X.production.o
 ?_sprintf 56 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
@@ -1285,25 +1225,24 @@ _TRISB 12 0 ABS 0 - dist/default/production\pic_lcd_analog_timer.X.production.o
 _TRISC 13 0 ABS 0 - dist/default/production\pic_lcd_analog_timer.X.production.o
 _TRISD 14 0 ABS 0 - dist/default/production\pic_lcd_analog_timer.X.production.o
 _TRISE 15 0 ABS 0 - dist/default/production\pic_lcd_analog_timer.X.production.o
-__end_of_putch ED0 0 CODE 0 text9 dist/default/production\pic_lcd_analog_timer.X.production.o
-__end_of_timer E1E 0 CODE 0 text1 dist/default/production\pic_lcd_analog_timer.X.production.o
+__end_of_putch DB4 0 CODE 0 text9 dist/default/production\pic_lcd_analog_timer.X.production.o
+__end_of_timer D02 0 CODE 0 text1 dist/default/production\pic_lcd_analog_timer.X.production.o
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
 _flags 6E 0 BANK0 1 bssBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
-_fputc 77E 0 CODE 0 text8 dist/default/production\pic_lcd_analog_timer.X.production.o
-_fputs AE4 0 CODE 0 text7 dist/default/production\pic_lcd_analog_timer.X.production.o
-_putch ECE 0 CODE 0 text9 dist/default/production\pic_lcd_analog_timer.X.production.o
-_timer E04 0 CODE 0 text1 dist/default/production\pic_lcd_analog_timer.X.production.o
+_fputc 680 0 CODE 0 text8 dist/default/production\pic_lcd_analog_timer.X.production.o
+_fputs 9BE 0 CODE 0 text7 dist/default/production\pic_lcd_analog_timer.X.production.o
+_putch DB2 0 CODE 0 text9 dist/default/production\pic_lcd_analog_timer.X.production.o
+_timer CE8 0 CODE 0 text1 dist/default/production\pic_lcd_analog_timer.X.production.o
 read_prec_or_width@fmt 2E 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 _width 6A 0 BANK0 1 bssBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 __pintentry 8 0 CODE 0 intentry dist/default/production\pic_lcd_analog_timer.X.production.o
-__end_of_lcd_set_cursor C86 0 CODE 0 text17 dist/default/production\pic_lcd_analog_timer.X.production.o
+__end_of_lcd_set_cursor B60 0 CODE 0 text15 dist/default/production\pic_lcd_analog_timer.X.production.o
 __HdataBANK1 0 0 ABS 0 dataBANK1 -
-__initialization 62 0 CODE 0 cinit dist/default/production\pic_lcd_analog_timer.X.production.o
+__initialization 94 0 CODE 0 cinit dist/default/production\pic_lcd_analog_timer.X.production.o
 __pbssBANK0 6A 0 BANK0 1 bssBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 __pbssBANK2 120 0 BANK2 1 bssBANK2 dist/default/production\pic_lcd_analog_timer.X.production.o
 ___wmul@product 24 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
-seven_seg_Show@i 30 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 i1lcd_set_cursor@line 76 0 COMMON 1 cstackCOMMON dist/default/production\pic_lcd_analog_timer.X.production.o
 read_prec_or_width@ap 26 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_analog_timer.X.production.o
 # %SPLITSTAB Section
@@ -1331,12 +1270,14 @@ read_prec_or_width@ap 26 0 BANK0 1 cstackBANK0 dist/default/production\pic_lcd_a
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-text23 0 6F4 DE8 74 2
+text21 0 666 CCC 74 2
+text25 0 624 C48 12 2
 cstackCOMMON 1 70 70 B 1
 cstackBANK0 1 20 20 4F 1
-cstackBANK1 1 A0 A0 40 1
-stringtext1 0 6B5 D6A 3F 2
-intentry 0 4 8 6B1 2
+cstackBANK1 1 A0 A0 3E 1
+stringtext1 0 610 C20 14 2
+stringtext2 0 636 C6C 30 2
+intentry 0 4 8 60C 2
 reset_vec 0 0 0 2 2
 bssBANK2 1 120 120 20 1
 # %NOTES Section

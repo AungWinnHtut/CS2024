@@ -1,0 +1,11 @@
+E:\CS2024\CS\HelloMinKhant\HelloMinKhant\bin\Debug\HelloMinKhant.exe.config
+E:\CS2024\CS\HelloMinKhant\HelloMinKhant\bin\Debug\HelloMinKhant.exe
+E:\CS2024\CS\HelloMinKhant\HelloMinKhant\bin\Debug\HelloMinKhant.pdb
+E:\CS2024\CS\HelloMinKhant\HelloMinKhant\obj\Debug\HelloMinKhant.csproj.AssemblyReference.cache
+E:\CS2024\CS\HelloMinKhant\HelloMinKhant\obj\Debug\HelloMinKhant.csproj.SuggestedBindingRedirects.cache
+E:\CS2024\CS\HelloMinKhant\HelloMinKhant\obj\Debug\HelloMinKhant.Properties.Resources.resources
+E:\CS2024\CS\HelloMinKhant\HelloMinKhant\obj\Debug\HelloMinKhant.csproj.GenerateResource.cache
+E:\CS2024\CS\HelloMinKhant\HelloMinKhant\obj\Debug\HelloMinKhant.csproj.CoreCompileInputs.cache
+E:\CS2024\CS\HelloMinKhant\HelloMinKhant\obj\Debug\HelloMinKhant.exe
+E:\CS2024\CS\HelloMinKhant\HelloMinKhant\obj\Debug\HelloMinKhant.pdb
+E:\CS2024\CS\HelloMinKhant\HelloMinKhant\obj\Debug\HelloMinKhant.frmHello.resources

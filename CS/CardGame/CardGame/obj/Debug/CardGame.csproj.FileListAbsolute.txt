@@ -1,0 +1,11 @@
+E:\CS2024\CS\CardGame\CardGame\bin\Debug\CardGame.exe.config
+E:\CS2024\CS\CardGame\CardGame\bin\Debug\CardGame.exe
+E:\CS2024\CS\CardGame\CardGame\bin\Debug\CardGame.pdb
+E:\CS2024\CS\CardGame\CardGame\obj\Debug\CardGame.csproj.AssemblyReference.cache
+E:\CS2024\CS\CardGame\CardGame\obj\Debug\CardGame.csproj.SuggestedBindingRedirects.cache
+E:\CS2024\CS\CardGame\CardGame\obj\Debug\CardGame.Properties.Resources.resources
+E:\CS2024\CS\CardGame\CardGame\obj\Debug\CardGame.csproj.GenerateResource.cache
+E:\CS2024\CS\CardGame\CardGame\obj\Debug\CardGame.csproj.CoreCompileInputs.cache
+E:\CS2024\CS\CardGame\CardGame\obj\Debug\CardGame.exe
+E:\CS2024\CS\CardGame\CardGame\obj\Debug\CardGame.pdb
+E:\CS2024\CS\CardGame\CardGame\obj\Debug\CardGame.frmCardGame.resources

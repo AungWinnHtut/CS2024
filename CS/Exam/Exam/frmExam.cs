@@ -13,7 +13,8 @@ namespace Exam
 {
     public partial class frmExam : Form
     {
-
+        //global variables
+        //external variables
         string q;
         string m1;
         string m2;
@@ -62,7 +63,7 @@ namespace Exam
             {
                 string fname = "question.txt";
                 questions = File.ReadAllLines(fname);
-                question_count = questions.Length;
+                question_count = questions.Length;                
                 String [] QandA = questions[current_question_number].Split('#');
                 current_question_number = current_question_number + 1;
                 q = QandA[0];

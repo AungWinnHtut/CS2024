@@ -1,0 +1,146 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F18877 ]
+[d frameptr 6 ]
+"10 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"69 E:\CS2024\pic\lcd_retest.X\lcd_retest.c
+[v _main main `(i  1 e 2 0 ]
+"78
+[v _initLCD initLCD `(v  1 e 1 0 ]
+"92
+[v _lcdWriteCtrlWord lcdWriteCtrlWord `(v  1 e 1 0 ]
+"104
+[v _lcdWriteDspData lcdWriteDspData `(v  1 e 1 0 ]
+"115
+[v _lcdWriteNibble lcdWriteNibble `(v  1 e 1 0 ]
+"129
+[v _lcdCtrl_SetPos lcdCtrl_SetPos `(v  1 e 1 0 ]
+"140
+[v _lcdCtrl_FunctionSet lcdCtrl_FunctionSet `(v  1 e 1 0 ]
+"145
+[v _lcdCtrl_OnOffDisplay lcdCtrl_OnOffDisplay `(v  1 e 1 0 ]
+"157
+[v _lcdCtrl_SetEntryMode lcdCtrl_SetEntryMode `(v  1 e 1 0 ]
+"162
+[v _lcdCtrl_ClearDisplay lcdCtrl_ClearDisplay `(v  1 e 1 0 ]
+"177
+[v _oxygen_medium oxygen_medium `(v  1 e 1 0 ]
+[s S66 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"531 C:\Program Files\Microchip\xc8\v2.41\pic\include\proc\pic16f18877.h
+[u S75 . 1 `S66 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES75  1 e 1 @14 ]
+"800
+[v _TRISC TRISC `VEuc  1 e 1 @19 ]
+"69 E:\CS2024\pic\lcd_retest.X\lcd_retest.c
+[v _main main `(i  1 e 2 0 ]
+{
+"76
+} 0
+"177
+[v _oxygen_medium oxygen_medium `(v  1 e 1 0 ]
+{
+"179
+[v oxygen_medium@message2 message2 `[19]uc  1 a 19 0 ]
+"180
+[v oxygen_medium@i i `ui  1 a 2 19 ]
+"177
+[v oxygen_medium@F12520 F12520 `[19]uc  1 s 19 F12520 ]
+"187
+} 0
+"104
+[v _lcdWriteDspData lcdWriteDspData `(v  1 e 1 0 ]
+{
+[v lcdWriteDspData@x x `uc  1 a 1 wreg ]
+"106
+[v lcdWriteDspData@lower_nibble lower_nibble `uc  1 a 1 5 ]
+[v lcdWriteDspData@upper_nibble upper_nibble `uc  1 a 1 4 ]
+"104
+[v lcdWriteDspData@x x `uc  1 a 1 wreg ]
+"108
+[v lcdWriteDspData@x x `uc  1 a 1 6 ]
+"114
+} 0
+"129
+[v _lcdCtrl_SetPos lcdCtrl_SetPos `(v  1 e 1 0 ]
+{
+[v lcdCtrl_SetPos@row row `uc  1 a 1 wreg ]
+"131
+[v lcdCtrl_SetPos@ramAddr ramAddr `uc  1 a 1 9 ]
+"129
+[v lcdCtrl_SetPos@row row `uc  1 a 1 wreg ]
+[v lcdCtrl_SetPos@col col `uc  1 p 1 7 ]
+"133
+[v lcdCtrl_SetPos@row row `uc  1 a 1 8 ]
+"138
+} 0
+"78
+[v _initLCD initLCD `(v  1 e 1 0 ]
+{
+"91
+} 0
+"157
+[v _lcdCtrl_SetEntryMode lcdCtrl_SetEntryMode `(v  1 e 1 0 ]
+{
+"160
+} 0
+"145
+[v _lcdCtrl_OnOffDisplay lcdCtrl_OnOffDisplay `(v  1 e 1 0 ]
+{
+[v lcdCtrl_OnOffDisplay@display_state display_state `uc  1 a 1 wreg ]
+"147
+[v lcdCtrl_OnOffDisplay@pattern pattern `uc  1 a 1 10 ]
+"145
+[v lcdCtrl_OnOffDisplay@display_state display_state `uc  1 a 1 wreg ]
+[v lcdCtrl_OnOffDisplay@cursor_state cursor_state `uc  1 p 1 7 ]
+"147
+[v lcdCtrl_OnOffDisplay@display_state display_state `uc  1 a 1 9 ]
+"155
+} 0
+"140
+[v _lcdCtrl_FunctionSet lcdCtrl_FunctionSet `(v  1 e 1 0 ]
+{
+"143
+} 0
+"162
+[v _lcdCtrl_ClearDisplay lcdCtrl_ClearDisplay `(v  1 e 1 0 ]
+{
+"165
+} 0
+"92
+[v _lcdWriteCtrlWord lcdWriteCtrlWord `(v  1 e 1 0 ]
+{
+[v lcdWriteCtrlWord@x x `uc  1 a 1 wreg ]
+"94
+[v lcdWriteCtrlWord@lower_nibble lower_nibble `uc  1 a 1 5 ]
+[v lcdWriteCtrlWord@upper_nibble upper_nibble `uc  1 a 1 4 ]
+"92
+[v lcdWriteCtrlWord@x x `uc  1 a 1 wreg ]
+"96
+[v lcdWriteCtrlWord@x x `uc  1 a 1 6 ]
+"102
+} 0
+"115
+[v _lcdWriteNibble lcdWriteNibble `(v  1 e 1 0 ]
+{
+[v lcdWriteNibble@nibble nibble `uc  1 a 1 wreg ]
+[v lcdWriteNibble@nibble nibble `uc  1 a 1 wreg ]
+"117
+[v lcdWriteNibble@nibble nibble `uc  1 a 1 2 ]
+"126
+} 0

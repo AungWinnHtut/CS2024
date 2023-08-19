@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/default/production\lcd_retest.X.production.hex">
+    <memory name="program">
+      <units>words</units>
+      <length>32768</length>
+      <used>355</used>
+      <free>32413</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>4096</length>
+      <used>85</used>
+      <free>4011</free>
+    </memory>
+  </executable>
+</project>

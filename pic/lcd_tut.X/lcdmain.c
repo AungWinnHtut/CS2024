@@ -66,7 +66,7 @@ unsigned int ADC_Read(uint8_t channel);
 
 //O2 Lvl = 3543 %
 //PH lvl = 3432 %
-
+static int sec =0;
 void main(void) {
     char name[16] = "Aung Win Htut";
     char buffer[16];
@@ -93,6 +93,48 @@ void main(void) {
     }
     return;
 }
+
+void Timer0_Init() {
+    // Set Timer0 to 16-bit mode and use the internal clock (Fosc/4)
+    T0CON0 = 0b10000000; // 16-bit mode, Fosc/4    
+    // Set the prescaler to 1:256, so each Timer0 tick is 256 instruction cycles
+    T0CON1 = 0b00000110; // 1:256 prescaler    
+    // Load Timer0 with the initial value to achieve a 1-minute delay
+    TMR0H = 0x85; // High byte
+    TMR0L = 0xEE; // Low byte
+}
+void __interrupt()isr(void) //timer on interrupt
+{
+    if(PIR0bits.TMR0IF==1)   //Timer 0 time up
+    {
+        PIR0bits.TMR0IF=0;   //Timer 0 OFF 
+       //To DO
+        sec++;
+        //sevenseg_show(sec);
+        if(sec == 7 )
+        {
+            PORTB=~PORTB;
+            sec=0;
+        }
+    }
+   
+    
+    
+}
+
+void timer(void)
+{
+    INTCONbits.GIE = 0;
+    T0CON0 = 0b10000100;
+    T0CON1 = 0b01001011;
+    TMR0H = 200;//0xC8;
+    PIR0bits.TMR0IF = 0; //to sure timer flage is off
+    PIE0bits.TMR0IE = 1;
+    INTCONbits.GIE = 1;
+
+
+}
+
 
 void ADC_Init() {
     // Configure ADC module settings

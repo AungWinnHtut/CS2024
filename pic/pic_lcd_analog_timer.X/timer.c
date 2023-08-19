@@ -83,13 +83,14 @@ void init7Segment(void);
 //void displayDigit(unsigned char display, unsigned char digit);
 char hexvalue[10]= {0xC0,0xC9,0xA4,0xB0,0x99,0x92,0x82,0xF8,0x80,0x90};
  void seven_seg_Show(int i);
+ void seven_seg_All(int i); //i=0 off, 1 on
 
 //O2 Lvl = 3543 %
 //PH lvl = 3432 %
 
 void main(void) {
     TRISB = 0b00000000;
-    char name[16] = "Aung Win Htut";
+    char name[16] = "Temasat";
     char buffer[16];
     int i = 32;
     Timer0_Init();
@@ -104,14 +105,19 @@ void main(void) {
     
     
     while (1) {
-        unsigned int O2_level = ADC_Read(0);
-        O2_level = O2_level * 100 / 1023;
-        O2_level = O2_level * 25 / 60;
-        sprintf(buffer, "O2 lvl = %3u%%", O2_level);
+        unsigned int Temperature = ADC_Read(0);
+        Temperature = Temperature * 100 / 1023;
+        Temperature = Temperature * 25 / 60;
+        sprintf(buffer, "Temperature = %3u%%", Temperature);
         // Display the formatted string on the 2-digit 7-segment display
-        for(int j=0;j<10;j++)
-            seven_seg_Show(O2_level);
-        if(O2_level<=20)
+        if (Temperature>30)
+        {
+            seven_seg_All(1); //1 - all on
+        }
+        else{
+            seven_seg_All(0);  //0 - all off
+        }
+        if(Temperature<=20)
         {
             //start motor
             motor_status=1;
@@ -119,7 +125,7 @@ void main(void) {
             LCD_Clear();
             lcd_set_cursor(1,1);
             LCD_String("O2 is in danger!");
-            timer();
+            timer(); //timer ON (start counting time!)
             __delay_ms(30); 
             
             
@@ -151,9 +157,23 @@ void Timer0_Init() {
     TMR0H = 0x85; // High byte
     TMR0L = 0xEE; // Low byte
 }
-void __interrupt()isr(void)
+
+
+
+void __interrupt()isr(void) //timer on interrupt
 {
-    if(PIR0bits.TMR0IF==1)
+    if(PIR0bits.TMR0IF==1)   //Timer 0 time up
+    {
+        PIR0bits.TMR0IF=0;   //Timer 0 OFF 
+        PORTBbits.RB0=0;
+        LCD_Clear();
+        lcd_set_cursor(1,1);
+        LCD_String("O2 is OK again!");
+        __delay_ms(300); 
+         LCD_Clear();
+       // __delay_ms(2000);
+    }
+    else if(PIR0bits.TMR0IF==1)
     {
         PIR0bits.TMR0IF=0;
         PORTBbits.RB0=0;
@@ -164,6 +184,7 @@ void __interrupt()isr(void)
          LCD_Clear();
        // __delay_ms(2000);
     }
+    
     
 }
 
@@ -295,15 +316,29 @@ void init7Segment(void) {
    
 }
 
-  void seven_seg_Test(int i){
-     
-   
+  void seven_seg_All(int i){   
+           
+      if(i==1) //turn on
+      {
+        for(int k=0;k<10;k++)
+        {
+            PORTEbits.RE0 = 0;  // Set first digit high
+            PORTD = 0x00;
+            PORTEbits.RE2 = 1;  // Set second digit low
+            __delay_ms(30);
+        
+            PORTEbits.RE0 = 1;  // Set first digit high
+            PORTD = 0x00;
+            PORTEbits.RE2 = 0;  // Set second digit low
+            __delay_ms(30);          
+        }        
+      }
+      else
+      {
+          PORTEbits.RE0 = 1;
+          PORTEbits.RE2 = 1;
+      }
+      // Display tens digit on first digit
+       
     
-    // Display tens digit on first digit
-    PORTEbits.RE0 = 0;  // Set first digit high
-    PORTD = 0xFF;
-    __delay_ms(30);
-   
- 
-   
 }

@@ -1,0 +1,11 @@
+E:\CS2024\CS\HelloBoston\HelloBoston\bin\Debug\HelloBoston.exe.config
+E:\CS2024\CS\HelloBoston\HelloBoston\bin\Debug\HelloBoston.exe
+E:\CS2024\CS\HelloBoston\HelloBoston\bin\Debug\HelloBoston.pdb
+E:\CS2024\CS\HelloBoston\HelloBoston\obj\Debug\HelloBoston.csproj.AssemblyReference.cache
+E:\CS2024\CS\HelloBoston\HelloBoston\obj\Debug\HelloBoston.csproj.SuggestedBindingRedirects.cache
+E:\CS2024\CS\HelloBoston\HelloBoston\obj\Debug\HelloBoston.frmHello.resources
+E:\CS2024\CS\HelloBoston\HelloBoston\obj\Debug\HelloBoston.Properties.Resources.resources
+E:\CS2024\CS\HelloBoston\HelloBoston\obj\Debug\HelloBoston.csproj.GenerateResource.cache
+E:\CS2024\CS\HelloBoston\HelloBoston\obj\Debug\HelloBoston.csproj.CoreCompileInputs.cache
+E:\CS2024\CS\HelloBoston\HelloBoston\obj\Debug\HelloBoston.exe
+E:\CS2024\CS\HelloBoston\HelloBoston\obj\Debug\HelloBoston.pdb

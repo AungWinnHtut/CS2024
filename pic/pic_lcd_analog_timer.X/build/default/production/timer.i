@@ -20929,15 +20929,16 @@ void timer(void);
 
 void init7Segment(void);
 
-char hexvalue[10]= {0x3F,0x06,0x5B,0x4F,0x66,0x6D,0x7D,0x07,0x7F,0x6F};
+char hexvalue[10]= {0xC0,0xC9,0xA4,0xB0,0x99,0x92,0x82,0xF8,0x80,0x90};
  void seven_seg_Show(int i);
+ void seven_seg_All(int i);
 
 
 
 
 void main(void) {
     TRISB = 0b00000000;
-    char name[16] = "Aung Win Htut";
+    char name[16] = "Temasat";
     char buffer[16];
     int i = 32;
     Timer0_Init();
@@ -20952,13 +20953,19 @@ void main(void) {
 
 
     while (1) {
-        unsigned int O2_level = ADC_Read(0);
-        O2_level = O2_level * 100 / 1023;
-        sprintf(buffer, "O2 lvl = %3u%%", O2_level);
+        unsigned int Temperature = ADC_Read(0);
+        Temperature = Temperature * 100 / 1023;
+        Temperature = Temperature * 25 / 60;
+        sprintf(buffer, "Temperature = %3u%%", Temperature);
 
-        for(int j=0;j<10;j++)
-            seven_seg_Show(O2_level);
-        if(O2_level<=20)
+        if (Temperature>30)
+        {
+            seven_seg_All(1);
+        }
+        else{
+            seven_seg_All(0);
+        }
+        if(Temperature<=20)
         {
 
             motor_status=1;
@@ -20998,6 +21005,9 @@ void Timer0_Init() {
     TMR0H = 0x85;
     TMR0L = 0xEE;
 }
+
+
+
 void __attribute__((picinterrupt((""))))isr(void)
 {
     if(PIR0bits.TMR0IF==1)
@@ -21011,6 +21021,18 @@ void __attribute__((picinterrupt((""))))isr(void)
          LCD_Clear();
 
     }
+    else if(PIR0bits.TMR0IF==1)
+    {
+        PIR0bits.TMR0IF=0;
+        PORTBbits.RB0=0;
+        LCD_Clear();
+        lcd_set_cursor(1,1);
+        LCD_String("O2 is OK again!");
+        _delay((unsigned long)((300)*(4000000/4000.0)));
+         LCD_Clear();
+
+    }
+
 
 }
 
@@ -21142,14 +21164,28 @@ void init7Segment(void) {
 
 }
 
-  void seven_seg_Test(int i){
+  void seven_seg_All(int i){
 
+      if(i==1)
+      {
+        for(int k=0;k<10;k++)
+        {
+            PORTEbits.RE0 = 0;
+            PORTD = 0x00;
+            PORTEbits.RE2 = 1;
+            _delay((unsigned long)((30)*(4000000/4000.0)));
 
-
-
-    PORTEbits.RE0 = 0;
-    PORTD = 0xFF;
-    _delay((unsigned long)((30)*(4000000/4000.0)));
+            PORTEbits.RE0 = 1;
+            PORTD = 0x00;
+            PORTEbits.RE2 = 0;
+            _delay((unsigned long)((30)*(4000000/4000.0)));
+        }
+      }
+      else
+      {
+          PORTEbits.RE0 = 1;
+          PORTEbits.RE2 = 1;
+      }
 
 
 

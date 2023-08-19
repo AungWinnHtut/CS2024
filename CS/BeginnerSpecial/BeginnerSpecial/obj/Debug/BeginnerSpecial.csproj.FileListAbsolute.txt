@@ -1,0 +1,11 @@
+E:\CS2024\CS\BeginnerSpecial\BeginnerSpecial\bin\Debug\BeginnerSpecial.exe.config
+E:\CS2024\CS\BeginnerSpecial\BeginnerSpecial\bin\Debug\BeginnerSpecial.exe
+E:\CS2024\CS\BeginnerSpecial\BeginnerSpecial\bin\Debug\BeginnerSpecial.pdb
+E:\CS2024\CS\BeginnerSpecial\BeginnerSpecial\obj\Debug\BeginnerSpecial.csproj.AssemblyReference.cache
+E:\CS2024\CS\BeginnerSpecial\BeginnerSpecial\obj\Debug\BeginnerSpecial.csproj.SuggestedBindingRedirects.cache
+E:\CS2024\CS\BeginnerSpecial\BeginnerSpecial\obj\Debug\BeginnerSpecial.frmRockie.resources
+E:\CS2024\CS\BeginnerSpecial\BeginnerSpecial\obj\Debug\BeginnerSpecial.Properties.Resources.resources
+E:\CS2024\CS\BeginnerSpecial\BeginnerSpecial\obj\Debug\BeginnerSpecial.csproj.GenerateResource.cache
+E:\CS2024\CS\BeginnerSpecial\BeginnerSpecial\obj\Debug\BeginnerSpecial.csproj.CoreCompileInputs.cache
+E:\CS2024\CS\BeginnerSpecial\BeginnerSpecial\obj\Debug\BeginnerSpecial.exe
+E:\CS2024\CS\BeginnerSpecial\BeginnerSpecial\obj\Debug\BeginnerSpecial.pdb
